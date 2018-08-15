@@ -1,6 +1,6 @@
-# TXT Shared Library Interface for ROBOPro
+# TXT Shared Library Interface (SLI) for ROBOPro
 
-## Input
+## Shared Library / C Input
 The shared library input element allows to call functions and return a value from shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing ROBOPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing. Each input element allows to return only one numeric value. If parameters are required, the shared library output element can be used to first set parameters in the library. If multiple parameters or multiple return values are required, multiple input and/or output elements can be used. This means that it is typically required to write a small wrapper layer to interface ROBOPro to existing shared libraries. fischertechnik provides a library for the BME680 environmental sensor as example.
 
 The input element can either retrieve a 16 bit signed short or a 64 bit double value from the shared library. Example C decalartions for such functions are:
@@ -9,7 +9,7 @@ int getTemperatureDouble(double* t);
 int getTemperatureShort(short* t);
 ```
 
-## Output
+## Shared Library / C Output
 The shared library output element allows to call functions and supply a value to shared library modules installed on the TXT controller. For outputs the C functions should be declared like:
 ```
 int setValueDouble(double v);
@@ -20,7 +20,7 @@ int setValueShort(short v);
 see example
 
 ### LibExampleSLI.cpp
-```cpp
+```c
 #include <stdio.h>
 
 #include "KeLibTxtDl.h"          // TXT Lib
