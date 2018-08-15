@@ -1,4 +1,4 @@
-# FT-TXT_SharedLibraryInterface
+# TXT Shared Library Interface for ROBOPro
 
 ## Shared Library
 see example
@@ -10,7 +10,6 @@ The input element can either retrieve a 16 bit signed short or a 64 bit double v
 
 ```
 int getTemperatureDouble(double* t);
-
 int getTemperatureShort(short* t);
 ```
 
