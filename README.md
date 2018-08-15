@@ -1,6 +1,14 @@
 # TXT Shared Library Interface for ROBOPro
+The shared library input element allows to call functions and return a value from shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing ROBOPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing. Each input element allows to return only one numeric value. If parameters are required, the shared library output element can be used to first set parameters in the library. If multiple parameters or multiple return values are required, multiple input and/or output elements can be used. This means that it is typically required to write a small wrapper layer to interface ROBOPro to existing shared libraries. fischertechnik provides a library for the BME680 environmental sensor as example.
 
-## Shared Library
+The input element can either retrieve a 16 bit signed short or a 64 bit double value from the shared library. Example C decalartions for such functions are:
+
+```
+int getTemperatureDouble(double* t);
+int getTemperatureShort(short* t);
+```
+
+## Shared Library in C / C++
 see example
 
 ### LibExampleSLI.cpp
@@ -89,15 +97,6 @@ int getValueShort(INT16* v)
 ```
 
 ## ROBOPro
-The shared library input element allows to call functions and return a value from shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing ROBOPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing. Each input element allows to return only one numeric value. If parameters are required, the shared library output element can be used to first set parameters in the library. If multiple parameters or multiple return values are required, multiple input and/or output elements can be used. This means that it is typically required to write a small wrapper layer to interface ROBOPro to existing shared libraries. fischertechnik provides a library for the BME680 environmental sensor as example.
-
-The input element can either retrieve a 16 bit signed short or a 64 bit double value from the shared library. Example C decalartions for such functions are:
-
-```
-int getTemperatureDouble(double* t);
-int getTemperatureShort(short* t);
-```
-
 The function names should start with get and end with Short or Double to indicate the type, but arbitrary names can be used as well. A return value of 0 is interpreted as success, all other return values as error.
 
 > Please note: the functions must be declared as extern “C” in C++ code, because at the link level C++ functions have complicated mengled names, which encode the data type of the function. C functions have their usual name at the link level.
