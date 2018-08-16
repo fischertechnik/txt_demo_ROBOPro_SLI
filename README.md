@@ -13,8 +13,8 @@ Each input element allows to return only one numeric value. If parameters are re
 
 The input element can either retrieve a 16 bit signed short or a 64 bit double value from the shared library. Example C decalartions for such functions are:
 ```c
-int getTemperatureDouble(double* t);
-int getTemperatureShort(short* t);
+int getValueDouble(double* t);
+int getValueShort(short* t);
 ```
 
 ## Shared Library / C Output
