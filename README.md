@@ -27,7 +27,7 @@ int setValueShort(short v);
 ## Shared Library in C / C++
 The next section shows an example interface written in C / C++.
 
-### LibExampleSLI.cpp
+### libExampleSLI.so
 ```c
 #include <stdio.h>
 
