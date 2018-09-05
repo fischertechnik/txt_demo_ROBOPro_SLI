@@ -1,3 +1,5 @@
+> If you have any questions, please contact us: fischertechnik-technik@fischer.de
+
 # TXT Shared Library Interface (SLI) for ROBOPro
 
 The shared library input/output element allows to call functions and return/supply a value from/to shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing ROBOPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing.
