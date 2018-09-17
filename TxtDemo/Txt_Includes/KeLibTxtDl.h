@@ -79,7 +79,7 @@
     // Set Callback function
     void SetTransferAreaCompleteCallback(bool (*callback)(FISH_X1_TRANSFER *transarea, int nareas));
     
-    
+
 
 extern "C" 
 {
@@ -90,6 +90,7 @@ extern "C"
     // I2C
     uint32_t InitI2C(void);
     uint32_t KeLibI2cTransfer(uint8_t u8DevAddr, uint16_t u16NumWrite, uint8_t *pWriteData, uint16_t u16NumRead, uint8_t *pReadData, uint16_t u16Clock400kHz);
+
 }
 
 
@@ -482,7 +483,7 @@ extern "C"
     // u8CycleCount is a 8 Bit Counter only for validating the Transfer, 
     // normaly increment the Value each calling
     uint32_t SerIoTransfer(uint8_t u8CycleCount, uint8_t u8KzDownload); 
-    
+
     // Flush serial buffers, in case something remained from some previous requests    
     void FlushSerPort(void);
        
@@ -494,7 +495,7 @@ extern "C"
    
    
     // Get Adress of Transfer Area
-    FISH_X1_TRANSFER * GetKeLibTransferAreaMainAddress(void);
+    //FISH_X1_TRANSFER * GetKeLibTransferAreaMainAddress(void);
    
    
     // TXT Mode / Role
@@ -508,7 +509,7 @@ extern "C"
     uint32_t KeLibPlaySound (uint16_t u16Action, uint16_t u16SoundNr, uint16_t u16Repeat, uint16_t u16Cmd);
     void KeLibResetSoundEngine (void);
 
-   
+
     // I2C
     #define I2C_SPEED_100_KHZ       0
     #define I2C_SPEED_400_KHZ       1
