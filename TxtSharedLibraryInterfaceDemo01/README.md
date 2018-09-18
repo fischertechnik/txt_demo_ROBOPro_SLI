@@ -20,7 +20,7 @@ In this library are two main RoboPro element available
   See RoboPro example code: TxtSliDemo01_A.rpp with extra debug data.
                             TxtSliDemo01_AA.rpp.
 
-![RoboPro sample program AA](docs/Demo01_AA.PNG.png)
+![RoboPro sample program AA](./docs/Demo01_AA.PNG)
  
 > The RoboPro element "JoystickMotors" 
   Is an extended version of the RoboPro element "Joystick".
@@ -29,7 +29,7 @@ In this library are two main RoboPro element available
   See RoboPro example code: TxtSliDemo01_B.rpp with extra debug data.
                             TxtSliDemo01_BB.rpp.
 							
-![RoboPro sample program BB](docs/Demo01_BB.PNG.png)							
+![RoboPro sample program BB](docs/Demo01_BB.PNG)							
 										
 ## (set) Joystick:
    Result:  Set the values for MotorLeftPower and MotorRightPower.
