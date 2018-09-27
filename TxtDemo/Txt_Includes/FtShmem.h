@@ -1,19 +1,25 @@
 //=============================================================================
 //              |
 // Headerfile   |   FtShmem.h
+//              |   Original:
 //              |   Common header file for Library [ftMscLib] and ROBO-TX
 //              |   Controller firmware
-//              |
+//              |   Actual:
+//              |   Extended for the fischertechnik TXT controller
 // Created      |   09.01.2009, by H.-Peter Classen
+// Last Change  |       2016 by ??????
+//              |              extended for the TXT firmware 4.1.6
+//              |   August 2018 by ??????
+//              |              extended for the TXT firmware 4.2.4
+//              |             tested with TXT firmware 4.4.3
 //              |
-// Last Change  |   
 //-----------------------------------------------------------------------------
 
 #ifndef __FT_SHMEM_H__
 // Protect against multiple file inclusion
 #define __FT_SHMEM_H__
 
-
+//still the firmware number for the TX-C
 #define FIRMWARE_VER        0x011E      // firmware version is 1.30
 
 
@@ -542,8 +548,9 @@ typedef struct _hook_table
 
 
 // --------------------------------------------
-// New TXT Data
+// New TXT Data  firmware 4.1.6
 // --------------------------------------------
+//new firmware 4.1.6
 typedef struct  _IR_DATA
 {
     INT16   i16JoyLeftX;                // Value of left Joystick X-Axis  (0=middle -15..0..+15)
@@ -569,7 +576,7 @@ typedef struct  _IR_DATA
     UINT16  u16DipSwitch2;              // 1: Switch ON, 0: Switch OFF
 } KE_IR_INPUT_V01;
 
-
+//new firmware 4.1.6
 typedef struct _TXT_SPECIAL_INPUTS
 {
     // Supply voltage
@@ -605,13 +612,14 @@ typedef struct _TXT_SPECIAL_INPUTS
     
 } TXT_SPECIAL_INPUTS;
 
+//new firmware 4.2.4 and 4.4.3
 typedef struct _TXT_SPECIAL_INPUTS_2
 {
     // Microphone
     INT16  u16MicLin;
     INT16  u16MicLog;
 } TXT_SPECIAL_INPUTS_2;
-
+//new firmware 4.1.6
 typedef struct _TXT_SPECIAL_OUTPUTS
 {
     // Id of sound command - incremented whenever a new command is sent
