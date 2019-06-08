@@ -3,11 +3,18 @@
  * Demo about the use of the Transfer Area and the Ir (Joystick) part
  * started 2018-09-16
  * version 1.1.1.1
+ * version 1.1.1.2 2018-09-23 resolve some bugs, M1..M4, and Joysticks
+ * version 1.1.1.3 2018-11-16 resolve some bugs, M1..M4, and Joysticks
+ * version 1.1.1.4 2019-05-04 adjust some details in the algoritme
+ *
  * For fischertechnik GmbH by ing. C. van Leeuwen Btw.
  */
 #include <stdio.h>          // for printf()
 #include <unistd.h>         // for sleep()
 #include <math.h>
+#include <iostream>
+#include <fstream>
+using namespace std;
 #include "KeLibTxtDl.h"          // TXT Lib
 #include "FtShmem.h"
 #include "XYTransformer.h"
@@ -33,7 +40,6 @@
  *          or https://winscp.net
  */
 static bool IsInit = false;
-
 static INT16 motorRightPower=0,motorLeftPower=0; //power [-512..512]
 static INT16 motorRightDirection=0, motorLeftDirection=0; //direction [CCW=-1, halt=0, CW=1]
 static INT16 transformer=1;
@@ -156,11 +162,12 @@ extern "C" {
 	fprintf(stderr, "SliDemo01.setTransformerShort: Error not initialized!\n");
 	return -1;
       }
-    if( v<1 || v>3)
+    if( v<0 || v>5)
       {
 	fprintf(stderr, "SliDemo01.setTransformerShort: Error wrong transformer!\n");
 	return -1;
-      }   transformer=v;
+      }
+    transformer=v;
     printf( "SliDemo01.setTransformerShort: transformer code = %d\n", v);
     return 0;
   }
@@ -177,7 +184,7 @@ extern "C" {
 	fprintf(stderr, "SliDemo01.setMotorLeftShort: Error not initialized!\n");
 	return -1;
       }
-    if( v<1 || v>3)
+    if( v<1 || v>IZ_MOTOR  )
       {
 	fprintf(stderr, "SliDemo01.setMotorLeftShort: Error wrong motor!\n");
 	return -1;
@@ -196,7 +203,7 @@ extern "C" {
 	fprintf(stderr, "SliDemo01.setMotorRightShort: Error not initialized!\n");
 	return -1;
       }
-    if( v<1 || v>3)
+    if( v<1 || v>IZ_MOTOR  )
       {
 	fprintf(stderr, "SliDemo01.setMotorRightShort: Error wrong motor!\n");
 	return -1;
@@ -223,9 +230,9 @@ extern "C" {
        fprintf(stderr, "SliDemo01.setJoystickMotorsShort: Not initialized!\n");
        return -1;
      }
-   if( v<0 || v>3 )
+   if( v<0 || v>NUM_OF_IR_RECEIVER )  //2018-09-22 was 3 and error
      {
-       fprintf(stderr, "SliDemo01.setJoystickMotorsShort: Error, transformation ID is out of range!\n");
+       fprintf(stderr, "SliDemo01.setJoystickMotorsShort: Error, Joystick ID is out of range!\n");
        return -2;
      }
 
