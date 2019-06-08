@@ -3,6 +3,7 @@
  * Demo about the use of the Transfer Area and the Ir (Joystick) part
  * started 2018-09-16
  * version 1.1.1.1
+ * version 1.1.1.2 2018-09-23 resolve some bugs, M1..M4, and Joysticks
  * For fischertechnik GmbH by ing. C. van Leeuwen Btw.
  */
 #include <stdio.h>          // for printf()
@@ -160,7 +161,8 @@ extern "C" {
       {
 	fprintf(stderr, "SliDemo01.setTransformerShort: Error wrong transformer!\n");
 	return -1;
-      }   transformer=v;
+      }
+    transformer=v;
     printf( "SliDemo01.setTransformerShort: transformer code = %d\n", v);
     return 0;
   }
@@ -177,7 +179,7 @@ extern "C" {
 	fprintf(stderr, "SliDemo01.setMotorLeftShort: Error not initialized!\n");
 	return -1;
       }
-    if( v<1 || v>3)
+    if( v<1 || v>IZ_MOTOR  )
       {
 	fprintf(stderr, "SliDemo01.setMotorLeftShort: Error wrong motor!\n");
 	return -1;
@@ -196,7 +198,7 @@ extern "C" {
 	fprintf(stderr, "SliDemo01.setMotorRightShort: Error not initialized!\n");
 	return -1;
       }
-    if( v<1 || v>3)
+    if( v<1 || v>IZ_MOTOR  )
       {
 	fprintf(stderr, "SliDemo01.setMotorRightShort: Error wrong motor!\n");
 	return -1;
@@ -223,9 +225,9 @@ extern "C" {
        fprintf(stderr, "SliDemo01.setJoystickMotorsShort: Not initialized!\n");
        return -1;
      }
-   if( v<0 || v>3 )
+   if( v<0 || v>NUM_OF_IR_RECEIVER )  //2018-09-22 was 3 and error
      {
-       fprintf(stderr, "SliDemo01.setJoystickMotorsShort: Error, transformation ID is out of range!\n");
+       fprintf(stderr, "SliDemo01.setJoystickMotorsShort: Error, Joystick ID is out of range!\n");
        return -2;
      }
 
