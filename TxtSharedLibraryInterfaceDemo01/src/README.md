@@ -1,5 +1,5 @@
 # TXT Shared Library Interface (SLI) Demo01 for ROBOPro
-
+version: 2019-06-09
 This demo shows how to use the incoming  TA-IR data from the IR-JoyStick in a SLI.
 The left Joystick is use to calculate the motor powers for a two wheel drive FT-Bot. For example the TXT-discovery set.
 Joystick up: is more forwards speed; down is backwards speed. Joystick left/right makes the FT-bot turns or even rotated.
