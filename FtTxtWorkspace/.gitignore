@@ -1,0 +1,10 @@
+/.metadata/
+.settings/
+.tracecompass/
+/TxtSharedLibraryInterface/Debug/
+/TxtSharedLibraryInterface/Release/src
+/TxtSharedLibraryInterface/Release/*.*
+/TxtSharedLibraryInterfaceDemo01/Debug
+/TxtSharedLibraryInterfaceDemo01/Release/src
+/TxtSharedLibraryInterfaceDemo01/Release/*.*
+RemoteSystemsTempFiles/
