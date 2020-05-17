@@ -21,36 +21,208 @@
   }
 </style>
 </head>
-<body><div id="readme" class="container"><article class="markdown-body entry-content"><p>&#xFEFF;# Extended /C++ programming for the TXT</p>
-<h2 id="introduction">Introduction</h2>
-<p>There are 2 possibilities</p>
+<body><div id="readme" class="container"><article class="markdown-body entry-content"><h1 id="which-tools-you-need-">Which tools you need?</h1>
+<p>As software developer you need a tool box, the sofware development environment. For the more experiance software engineers this is a personal set of tools. But were to start as beginner? Creatif programming and problem solving is more then only entering program code and compiling. It has also something to do with:</p>
 <ul>
-<li>TXT Shared Library Interface (SLI) for ROBOPro
-A SLI extends the basic set of RoboPro elements with new one&apos;s.<br>It enable the user to add functionality to RoboPro.</li>
-<li>TXT local programs
-A local program replaces a local RoboPro program.</li>
+<li>understand and decrib the problem</li>
+<li>create and decrib a solution</li>
+<li>implement this solution including documentation</li>
+<li>testing an error searching.</li>
 </ul>
-<p>A developerwill find a description about setting up a development environment on MS-Windows.<br>How to use this environment to ceate, document and use your custom SLI&apos;s or executable.<br>An End-User will find here some usable examples.</p>
-<h2 id="the-organisation">The organisation</h2>
+<p>For this there are a set of tools needed.
+Here an overview.</p>
 <ul>
-<li>The map FtTxtExamples is aiming on the end user.<br>The map contains usable examples.</li>
-<li>The map FtTxtWorkspace is aiming on the developer
-The maps contains Eclipse example projects and the supporting TXT libraries.</li>
-<li>In the root you will find a description of &quot;How to ... ? and overviews&quot;</li>
+<li>a program development environment with some plug in tools<ul>
+<li>documentation generator</li>
 </ul>
-<p>The shared library input/output element allows to call functions and return/supply a value from/to shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing ROBOPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing.</p>
-<h2 id="documentaion">Documentaion</h2>
+</li>
+<li>a basic text editor for text, markdown, XML/JSON/HTML</li>
+<li>a remote SSH terminal</li>
+<li>a SFTP file transfer tools</li>
+<li>RoboPro 4.6.6</li>
+<li>TXT with firmware 4.6.6 or 4.7.0</li>
+</ul>
+<h2 id="toolbox-for-the-starter-advice-">Toolbox for the starter (advice)</h2>
+<h3 id="step-1-what-do-download-">Step 1 What do download?</h3>
+<ol>
+<li><p>Eclipse
+Versie: Eclipse 2020-03 or higher (only 64 bits)
+<a href="https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-ide-cc-developers-includes-incubating-components">Download</a>
+Remark: This is only the installer.
+Here you can find <a href="https://help.eclipse.org/2020-03/index.jsp">additional help</a>
+Eclipse has two different possibilities to install additinal functionality.</p>
+</li>
+<li><p>Linaro
+The TXT firmware is using gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.
+<a href="https://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/arm-linux-gnueabihf/gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.tar.xz">Download</a></p>
+</li>
+<li><p>FileZilla
+<a href="https://filezilla-project.org/download.php">Download</a></p>
+</li>
+<li><p>Putty
+<a href="https://putty.org/">Download</a></p>
+</li>
+</ol>
+<ol start="5">
+<li><p>Notepad ++
+ <a href="https://notepad-plus-plus.org/downloads/">Download</a>
+ This software can be use to inspect log files and edit text files.</p>
+<p> [Plugins overview]( <a href="https://npp-user-manual.org/docs/plugins/">https://npp-user-manual.org/docs/plugins/</a>
+<a href="https://github.com/notepad-plus-plus/nppPluginList/">https://github.com/notepad-plus-plus/nppPluginList/</a>)
+  Suggestions for Plugins:</p>
 <ul>
-<li>this Document</li>
-<li><a href="SLI.md">What is an SLI</a>.</li>
-<li><a href="tools.md">The program development environment</a>.</li>
-<li><a href="Notes.md">Notes</a>.</li>
-<li><a href="FtTxtWorkspace/README.md">Introduction and overview SLI project for Eclipse</a>.</li>
-<li><a href="FtTxtExamples/README.md">Introduction and overview SLI applications for the end user</a>.</li>
+<li>MarkdownViewerPlusPlus</li>
 </ul>
+</li>
+</ol>
+<ol start="6">
+<li><p>ATOM editor
+Download: <a href="https://atom.io/">https://atom.io/</a> Atom 1.46.0 ot higher
+Packages: <a href="https://atom.io/packages">The functionality of Atom can be extended with the so called packages.</a>
+Suggestions for packages:</p>
+<ul>
+<li>language-markdown</li>
+<li>markdown-preview-plus</li>
+<li>markdown-image-paste</li>
+</ul>
+</li>
+<li><p>VNC-client
+To make use of the TXT VNC-server you will need a viewer:
+<a href="https://www.realvnc.com/en/connect/download/viewer/">Download RealVNC viewer </a></p>
+</li>
+<li><p>Graphviz
+For the graphical part of the DOxyGen documentation tool you will need to install graphviz.
+<a href="https://graphviz.gitlab.io/_pages/Download/Download_windows.html">Download</a></p>
+</li>
+<li><p>RoboPro
+<a href="https://github.com/fischertechnik/FT-TXT/releases">See RoboPro 4.6.6 and the firmware 4.6.6 and 4.7.0</a>
+Firmware 4.7.0 can be boot from SD-card ans used in coorporation with RoboPro 4.6.6.</p>
+</li>
+</ol>
+<h3 id="step-2-how-to-install-">Step 2 How to install?</h3>
+<h4 id="maps">Maps</h4>
+<p>First of all, create on the same drive, the following maps:</p>
+<ul>
+<li>\eclipse\
+Installation map for Eclipse</li>
+<li>\workspaces\
+Map were you can put the root maps for the Eclipse workspaces.</li>
+<li>\TXT\</li>
+<li>\TXT\toolchain\
+Installation map for the Linaro toochain</li>
+<li>\Log\</li>
+<li>\Log\Putty\
+ Map for the Putty Log-files<h4 id="software">Software</h4>
+After this start with the installations of the downloaded software</li>
+<li><p>Install Notepad ++, Atom ,FileZilla, Putty and RealVNC viewer
+like you are use to do with Windows programs.
+Their installation programs will guide you through the process.</p>
+</li>
+<li><p>Eclipse
+Run the installer.
+Install &#x201C;Eclipse IDE for C/C++ developers&#x201D; in the map: <code>H:\eclipse\cpp-2020-03</code>.
+The installer will also install or ask for &#x201C;Java 1.8+ VM&#x201D;
+Eclipse is a JAVA application and needs Java.
+See also the following 3 screen dumps:</p>
+</li>
+</ul>
+<img src="./docs/toolbox/install(Eclipse01).png" width="40%">
+<img src="./docs/toolbox/install(Eclipse02).png" width="40%">
+ <img src="./docs/toolbox/install(Eclipse03).png" width="40%">
+
+<ul>
+<li><p>Linaro
+  Last but not least is making the Linaro toolchain available.
+Unzip the Linaro toolchain into the map \TXT\toolchain.
+You will get something like this.
+<code>H:\TXT\toolchain\gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf</code>
+In this case <code>H:</code> can be a different drive. This path you will need later to configurate the tool chain in your C/C++ project in Eclipse.
+An image of how this looks like in the Windows explorer:</p>
+<img src="./docs/toolbox/install(Linaro01).png" width="70%">
+
+</li>
+</ul>
+<h3 id="step-3-how-to-setup-the-software-">Step 3 How to setup the software?</h3>
+<p>Prepare the TXT, the SSH remote console) and SFTP (remote file system)
+Setting up FileZilla and Putty</p>
+<h4 id="how-to-prepare-the-txt-controller-">How to prepare the TXT controller?</h4>
+<p>  It is time to create the connections with your TXT.</p>
+<ul>
+<li>Start your TXT and test the connection with RoboPro.</li>
+<li>Write down the IP-address of this connection. It does not matter if you are using Bluetooth, USB, Wifi or Wifi-access point.</li>
+<li>Don&#x2019;t forget to activate on the your the SSH Daemon and WEB server</li>
+</ul>
+<img src="./docs/toolbox/install(TXT01).png" width="35%">
+<img src="./docs/toolbox/install(TXT02).png" width="35%">
+
+<h4 id="how-to-set-up-putty-for-a-ssh-connection-with-the-txt-">How to set up Putty for a SSH connection with the TXT?</h4>
+<p>Putty is a remote console; it can be used to work with LINUX command.
+We are using Putty as console.</p>
+<p>Start Putty and create a new SSH-session with the general user ROBOPro.
+The user name: <code>ROBOPro</code>, the password: <code>ROBOPro</code></p>
+<ul>
+<li>Fill in the IP-address from your TXT01</li>
+<li>Choose SHH</li>
+<li>Fill in the map for the logfiles: <code>h:/Log/Putty/putty_&amp;Y-&amp;M-&amp;D_&amp;T.log</code> .</li>
+<li>As remote command: <a href="https://www.geeksforgeeks.org/screen-command-in-linux-with-examples/">screen -r</a>
+You can find what this means in the Linux command help on the internet.
+When you leave this line blanc, you will get the console prompt.</li>
+<li>Save these setting and start the connection.</li>
+<li>Run with RoboPro a small RoboPro program and observe what the console shows you.</li>
+<li>Go with the Windows file manager to the \Log\Putty\ map and open with Notepad++ the log file.
+Now you can also inspect the results. When the log file changes, Notepad++ will reload the file.</li>
+<li>Warning: Use only the TXT root account for very special activities.</li>
+</ul>
+<img src="./docs/toolbox/install(putty01).png" width="45%">
+<img src="./docs/toolbox/install(putty02).png" width="45%">
+<img src="./docs/toolbox/install(putty03).png" width="45%">
+
+<h4 id="how-to-set-up-filezilla-">How to set up FileZilla?</h4>
+<p>FileZilla is a file transfer program.</p>
+<ul>
+<li>Start FileZilla, go to the &#x201C;file&#x201D; menu and start the &#x201C;site manager&#x201D;.</li>
+<li>Create a &#x201C;new site&#x201D; for a SFTP- (Secure File Transfer Protocol)
+for the IP-address of the TXT controller.
+The user name: <code>ROBOPro</code>,
+the password: <code>ROBOPro</code>.<ul>
+<li>Warning: Use only the root account for very special activities</li>
+</ul>
+</li>
+</ul>
+<img src="./docs/toolbox/install(FileZilla01).png" width="60%">
+
+<p>Start FileZilla and observe what you are seeing.
+Remark: The public maps can also be inspected and maintain via the TXT web interface.
+See for an introduction the first part on <a href="https://github.com/fischertechnik/txt_training_factory/blob/master/doc/WEBServer_de.md">this link:</a></p>
+<img src="./docs/toolbox/install(FileZilla02).png" width="60%">
+
+<ul>
+<li>The &#x201C;default local directory&#x201D; is for later.</li>
+<li>The &#x201C;default remote library&#x201D; is normally <code>/opt/Knobloch/</code>.
+ Here you will find the maps for the <code>Data</code>, <code>libs</code>, <code>C-program</code>, etc.</li>
+</ul>
+<h4 id="how-to-set-up-eclipse-">How to set up Eclipse?</h4>
+<p>How to work with the SLI workspace and set up a new project will discuss Later. But we still have to install the DoxyGen tool.
+  Code documentation plugin for Eclipse.
+   installation <a href="https://anb0s.github.io/eclox/">Eclox via Eclipse Markplace</a>, <a href="http://www.doxygen.nl/download.html">See also</a></p>
+<ul>
+<li>Start Eclipse</li>
+<li>Go to top menu <code>Help</code></li>
+<li>Select <code>Eclipse Markplace..</code></li>
+<li>Search for <code>Eclox</code></li>
+<li>Instal eclox</li>
+<li><code>Instal Now</code> and <code>Finish</code><img src="./docs/toolbox/install(DoxyGen01).png" width="45%">
+<img src="./docs/toolbox/install(DoxyGen02).png" width="50%">
+
+
+</li>
+</ul>
+<p>We are ready to start with the <a href="HowToStartProgramming.md">set up of the SLI workspace and start programming</a></p>
 <h1 id="document-history">document history</h1>
 <ul>
-<li>2020-05-16 v 466.1.1 new</li>
+<li>2020-05-16/17 v 466.1.1 new</li>
+<li>Original: on-line training SLI-programming
+&#xA9; 2020-04  ing. C. van Leeuwen Btw.  Enschede Netherlands</li>
 </ul>
 </article></div><div style="background-color: #b4b2b2;width: 50px;height:50px;line-height: 50px;text-align: center;position: fixed;bottom: 10px;right: 10px;padding-top:5px;" onclick="document.documentElement.scrollTop = document.body.scrollTop =0;">
   <svg t="1533629773982" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1035" xlink="http://www.w3.org/1999/xlink" width="40" height="40"><defs><style type="text/css">@font-face { font-family: uc-nexus-iconfont; src: url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff") format("woff"), url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf") format("truetype"); }
