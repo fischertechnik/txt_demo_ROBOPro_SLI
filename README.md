@@ -46,4 +46,4 @@ Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "rele
 - [Introduction and overview SLI projects for the end user](./FtTxtExamples/README.md).
 
 # document history
-- 2020-05-16 v 466.1.1 new
+- 2020-05-16,18 CvL 466.1.1 new
