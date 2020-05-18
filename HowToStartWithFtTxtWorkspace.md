@@ -7,6 +7,7 @@ Now that our toolbox [our toolbox](./WhichToolsYouNeed.md) is ready, it is time 
 `H:/workspaces` has been used  in this example as path to the `FtTxtWorkspace`. But feel free to use your own path.
 - Download the `FtTxtWorkspace.zip` from the [txt_demo_ROBOPro_SLI/releases](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/releases)
 - Unzip this file in the `H:/workspaces`. This will looks like something like:
+  <img src="./docs/toolbox/install(DoxyGen01).png" width="45%">
 
   <img src="./docs/psetup/start(01).png" width="65%">
 - Start now Eclipse <br/>
