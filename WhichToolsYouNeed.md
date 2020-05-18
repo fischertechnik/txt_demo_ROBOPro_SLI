@@ -145,11 +145,11 @@ When you leave this line blanc, you will get the console prompt.
 Now you can also inspect the results. When the log file changes, Notepad++ will reload the file.
 - Warning: Use only the TXT root account for very special activities.
 
-<img src="./docs/toolbox/install(putty01).png" width="45%" >
+<img src="./docs/toolbox/install(Putty01).png" width="45%" >
 
-<img src="./docs/toolbox/install(putty02).png" width="45%" >
+<img src="./docs/toolbox/install(Putty02).png" width="45%" >
 
-<img src="./docs/toolbox/install(putty03).png" width="45%" >
+<img src="./docs/toolbox/install(Putty03).png" width="45%" >
 
 #### How to set up FileZilla?
 FileZilla is a file transfer program.
