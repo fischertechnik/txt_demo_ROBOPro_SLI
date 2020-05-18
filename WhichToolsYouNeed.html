@@ -29,11 +29,10 @@
 <li>implement this solution including documentation</li>
 <li>testing an error searching.</li>
 </ul>
-<p>For this there are a set of tools needed.
-Here an overview.</p>
+<p>For this there is  needed a set of tools. Hereby an overview:</p>
 <ul>
-<li>a program development environment with some plug in tools<ul>
-<li>documentation generator</li>
+<li>a program development environment with some plug in tools, like<ul>
+<li>a  documentation generator</li>
 </ul>
 </li>
 <li>a basic text editor for text, markdown, XML/JSON/HTML</li>
@@ -43,42 +42,39 @@ Here an overview.</p>
 <li>TXT with firmware 4.6.6 or 4.7.0</li>
 </ul>
 <h2 id="toolbox-for-the-starter-advice-">Toolbox for the starter (advice)</h2>
-<h3 id="step-1-what-do-download-">Step 1 What do download?</h3>
+<h3 id="step-1-what-to-download-">Step 1 What to download?</h3>
 <ol>
 <li><p>Eclipse
-Versie: Eclipse 2020-03 or higher (only 64 bits)
-<a href="https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-ide-cc-developers-includes-incubating-components">Download</a>
-Remark: This is only the installer.
-Here you can find <a href="https://help.eclipse.org/2020-03/index.jsp">additional help</a>
+Versie: Eclipse 2020-03 or higher (only 64 bits)</p>
+<p><a href="https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-ide-cc-developers-includes-incubating-components">Download</a>  Remark: This is only the installer.</p>
+<p>Here you can find <a href="https://help.eclipse.org/2020-03/index.jsp">additional help</a> <br>
 Eclipse has two different possibilities to install additinal functionality.</p>
 </li>
 <li><p>Linaro
-The TXT firmware is using gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.
-<a href="https://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/arm-linux-gnueabihf/gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.tar.xz">Download</a></p>
+The TXT firmware is using gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.</p>
+<p><a href="https://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/arm-linux-gnueabihf/gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.tar.xz">Download</a></p>
 </li>
-<li><p>FileZilla
-<a href="https://filezilla-project.org/download.php">Download</a></p>
+<li><p>FileZilla</p>
+<p><a href="https://filezilla-project.org/download.php">Download</a></p>
 </li>
-<li><p>Putty
-<a href="https://putty.org/">Download</a></p>
+<li><p>Putty</p>
+<p> <a href="https://putty.org/">Download</a></p>
 </li>
 </ol>
 <ol start="5">
-<li><p>Notepad ++
- <a href="https://notepad-plus-plus.org/downloads/">Download</a>
- This software can be use to inspect log files and edit text files.</p>
-<p> [Plugins overview]( <a href="https://npp-user-manual.org/docs/plugins/">https://npp-user-manual.org/docs/plugins/</a>
-<a href="https://github.com/notepad-plus-plus/nppPluginList/">https://github.com/notepad-plus-plus/nppPluginList/</a>)
+<li><p>Notepad ++</p>
+<p> <a href="https://notepad-plus-plus.org/downloads/">Download</a>
+ This software can be use to inspect log files and edit text files.
+<a href="https://npp-user-manual.org/docs/plugins/">Plugins overview</a><br>
+<a href="https://github.com/notepad-plus-plus/nppPluginList/">Plugins List</a><br>
   Suggestions for Plugins:</p>
 <ul>
 <li>MarkdownViewerPlusPlus</li>
 </ul>
 </li>
-</ol>
-<ol start="6">
-<li><p>ATOM editor
-Download: <a href="https://atom.io/">https://atom.io/</a> Atom 1.46.0 ot higher
-Packages: <a href="https://atom.io/packages">The functionality of Atom can be extended with the so called packages.</a>
+<li><p>ATOM editor</p>
+<p>[Download](<a href="https://atom.io/">https://atom.io/</a> Atom 1.46.0 ot higher) <br>
+Packages: <a href="https://atom.io/packages">The functionality of Atom can be extended with the so called packages.</a><br>
 Suggestions for packages:</p>
 <ul>
 <li>language-markdown</li>
@@ -128,15 +124,15 @@ See also the following 3 screen dumps:</p>
 </ul>
 <img src="./docs/toolbox/install(Eclipse01).png" width="40%">
 <img src="./docs/toolbox/install(Eclipse02).png" width="40%">
- <img src="./docs/toolbox/install(Eclipse03).png" width="40%">
+<img src="./docs/toolbox/install(Eclipse03).png" width="40%">
 
 <ul>
-<li><p>Linaro
-  Last but not least is making the Linaro toolchain available.
-Unzip the Linaro toolchain into the map \TXT\toolchain.
-You will get something like this.
-<code>H:\TXT\toolchain\gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf</code>
-In this case <code>H:</code> can be a different drive. This path you will need later to configurate the tool chain in your C/C++ project in Eclipse.
+<li><p>Linaro</p>
+<p>  Last but not least is making the Linaro toolchain available.<br>
+Unzip the Linaro toolchain into the map \TXT\toolchain.<br>
+You will get something like this.<br>
+<code>H:\TXT\toolchain\gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf</code><br>
+In this case <code>H:</code> can be a different drive. This path you will need later to configurate the tool chain in your C/C++ project in Eclipse.<br>
 An image of how this looks like in the Windows explorer:</p>
 <img src="./docs/toolbox/install(Linaro01).png" width="70%">
 
@@ -144,7 +140,7 @@ An image of how this looks like in the Windows explorer:</p>
 </ul>
 <h3 id="step-3-how-to-setup-the-software-">Step 3 How to setup the software?</h3>
 <p>Prepare the TXT, the SSH remote console) and SFTP (remote file system)
-Setting up FileZilla and Putty</p>
+Setting up FileZilla and Putty. Install DoxyGen with Eclipse Marktplace.</p>
 <h4 id="how-to-prepare-the-txt-controller-">How to prepare the TXT controller?</h4>
 <p>  It is time to create the connections with your TXT.</p>
 <ul>
@@ -191,8 +187,8 @@ the password: <code>ROBOPro</code>.<ul>
 </ul>
 <img src="./docs/toolbox/install(FileZilla01).png" width="60%">
 
-<p>Start FileZilla and observe what you are seeing.
-Remark: The public maps can also be inspected and maintain via the TXT web interface.
+<p>Start FileZilla and observe what you are seeing.<br>
+Remark: The public maps can also be inspected and maintain via the TXT web interface.<br>
 See for an introduction the first part on <a href="https://github.com/fischertechnik/txt_training_factory/blob/master/doc/WEBServer_de.md">this link:</a></p>
 <img src="./docs/toolbox/install(FileZilla02).png" width="60%">
 
@@ -202,9 +198,8 @@ See for an introduction the first part on <a href="https://github.com/fischertec
  Here you will find the maps for the <code>Data</code>, <code>libs</code>, <code>C-program</code>, etc.</li>
 </ul>
 <h4 id="how-to-set-up-eclipse-">How to set up Eclipse?</h4>
-<p>How to work with the SLI workspace and set up a new project will discuss Later. But we still have to install the DoxyGen tool.
-  Code documentation plugin for Eclipse.
-   installation <a href="https://anb0s.github.io/eclox/">Eclox via Eclipse Markplace</a>, <a href="http://www.doxygen.nl/download.html">See also</a></p>
+<p>How to work with the SLI workspace and set up a new project will discuss later. But we still have to install the DoxyGen tool as code documentation plugin for Eclipse.</p>
+<p>   installation: <a href="https://anb0s.github.io/eclox/">Eclox via Eclipse Markplace</a>,<br> <a href="http://www.doxygen.nl/download.html">See also</a></p>
 <ul>
 <li>Start Eclipse</li>
 <li>Go to top menu <code>Help</code></li>
@@ -220,7 +215,7 @@ See for an introduction the first part on <a href="https://github.com/fischertec
 <p>We are ready to start with the <a href="HowToStartProgramming.md">set up of the SLI workspace and start programming</a></p>
 <h1 id="document-history">document history</h1>
 <ul>
-<li>2020-05-16/17 v 466.1.1 new</li>
+<li>2020-05-16/17/18 v 466.1.1 new</li>
 <li>Original: on-line training SLI-programming
 &#xA9; 2020-04  ing. C. van Leeuwen Btw.  Enschede Netherlands</li>
 </ul>

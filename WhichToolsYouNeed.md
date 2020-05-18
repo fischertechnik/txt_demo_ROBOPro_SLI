@@ -5,11 +5,10 @@ As software developer you need a tool box, the sofware development environment. 
 - implement this solution including documentation
 - testing an error searching.
 
-For this there are a set of tools needed.
-Here an overview.
+For this there is  needed a set of tools. Hereby an overview:
 
-- a program development environment with some plug in tools
-  - documentation generator
+- a program development environment with some plug in tools, like
+  - a  documentation generator
 - a basic text editor for text, markdown, XML/JSON/HTML
 - a remote SSH terminal
 - a SFTP file transfer tools
@@ -17,39 +16,43 @@ Here an overview.
 - TXT with firmware 4.6.6 or 4.7.0
 
 ## Toolbox for the starter (advice)
-### Step 1 What do download?
+### Step 1 What to download?
 
 1. Eclipse
 Versie: Eclipse 2020-03 or higher (only 64 bits)
-[Download]( https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-ide-cc-developers-includes-incubating-components)
-Remark: This is only the installer.
-Here you can find [additional help]( https://help.eclipse.org/2020-03/index.jsp)
-Eclipse has two different possibilities to install additinal functionality.
+
+   [Download]( https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-ide-cc-developers-includes-incubating-components)  Remark: This is only the installer.
+
+   Here you can find [additional help]( https://help.eclipse.org/2020-03/index.jsp) <br/>
+   Eclipse has two different possibilities to install additinal functionality.
 
 1. Linaro
 The TXT firmware is using gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.
-[Download]( https://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/arm-linux-gnueabihf/gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.tar.xz)
+
+   [Download]( https://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/arm-linux-gnueabihf/gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.tar.xz)
 
 2. FileZilla
-[Download]( https://filezilla-project.org/download.php)
+
+   [Download]( https://filezilla-project.org/download.php)
 
 4. Putty
-[Download](https://putty.org/)
+
+    [Download](https://putty.org/)
 
 
 5. Notepad ++
+
     [Download]( https://notepad-plus-plus.org/downloads/)
     This software can be use to inspect log files and edit text files.
-
-    [Plugins overview]( https://npp-user-manual.org/docs/plugins/
-https://github.com/notepad-plus-plus/nppPluginList/)
+ [Plugins overview]( https://npp-user-manual.org/docs/plugins/)<br/>
+ [Plugins List](https://github.com/notepad-plus-plus/nppPluginList/)<br/>
      Suggestions for Plugins:
     - MarkdownViewerPlusPlus
 
-
 6. ATOM editor
-Download: https://atom.io/ Atom 1.46.0 ot higher
-Packages: [The functionality of Atom can be extended with the so called packages.](https://atom.io/packages)
+
+   [Download](https://atom.io/ Atom 1.46.0 ot higher) <br/>
+   Packages: [The functionality of Atom can be extended with the so called packages.](https://atom.io/packages)<br/>
 Suggestions for packages:
     - language-markdown
     - markdown-preview-plus
@@ -96,21 +99,22 @@ See also the following 3 screen dumps:
 
 <img src="./docs/toolbox/install(Eclipse01).png" width="40%" >
 <img src="./docs/toolbox/install(Eclipse02).png" width="40%" >
- <img src="./docs/toolbox/install(Eclipse03).png" width="40%" >
+<img src="./docs/toolbox/install(Eclipse03).png" width="40%" >
 
 - Linaro
-    Last but not least is making the Linaro toolchain available.
-Unzip the Linaro toolchain into the map \TXT\toolchain\.
-You will get something like this.
- `H:\TXT\toolchain\gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf`
-In this case `H:` can be a different drive. This path you will need later to configurate the tool chain in your C/C++ project in Eclipse.
+
+    Last but not least is making the Linaro toolchain available.<br/>
+Unzip the Linaro toolchain into the map \TXT\toolchain\.<br/>
+You will get something like this.<br/>
+ `H:\TXT\toolchain\gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf`<br/>
+In this case `H:` can be a different drive. This path you will need later to configurate the tool chain in your C/C++ project in Eclipse.<br/>
 An image of how this looks like in the Windows explorer:
 
   <img src="./docs/toolbox/install(Linaro01).png" width="70%" >
 
 ### Step 3 How to setup the software?
 Prepare the TXT, the SSH remote console) and SFTP (remote file system)
-Setting up FileZilla and Putty
+Setting up FileZilla and Putty. Install DoxyGen with Eclipse Marktplace.
 
 #### How to prepare the TXT controller?
 
@@ -156,8 +160,8 @@ The user name: `ROBOPro`,
 
 <img src="./docs/toolbox/install(FileZilla01).png" width="60%" >
 
-Start FileZilla and observe what you are seeing.
-Remark: The public maps can also be inspected and maintain via the TXT web interface.
+Start FileZilla and observe what you are seeing.<br/>
+Remark: The public maps can also be inspected and maintain via the TXT web interface.<br/>
 See for an introduction the first part on [this link:]( https://github.com/fischertechnik/txt_training_factory/blob/master/doc/WEBServer_de.md)
 
 <img src="./docs/toolbox/install(FileZilla02).png" width="60%" >
@@ -167,9 +171,9 @@ See for an introduction the first part on [this link:]( https://github.com/fisch
     Here you will find the maps for the `Data`, `libs`, `C-program`, etc.
 
 #### How to set up Eclipse?
-How to work with the SLI workspace and set up a new project will discuss Later. But we still have to install the DoxyGen tool.
-  Code documentation plugin for Eclipse.
-   installation [Eclox via Eclipse Markplace](https://anb0s.github.io/eclox/), [See also](http://www.doxygen.nl/download.html)
+How to work with the SLI workspace and set up a new project will discuss later. But we still have to install the DoxyGen tool as code documentation plugin for Eclipse.
+
+   installation: [Eclox via Eclipse Markplace](https://anb0s.github.io/eclox/),<br/> [See also](http://www.doxygen.nl/download.html)
    - Start Eclipse
    - Go to top menu `Help`
    - Select `Eclipse Markplace..`
@@ -185,6 +189,6 @@ We are ready to start with the [set up of the SLI workspace and start programmin
 
 
 # document history
-- 2020-05-16/17 v 466.1.1 new
+- 2020-05-16/17/18 v 466.1.1 new
 - Original: on-line training SLI-programming
   © 2020-04  ing. C. van Leeuwen Btw.  Enschede Netherlands
