@@ -72,36 +72,38 @@ https://github.com/fischertechnik/FT-TXT/releases)
 Firmware 4.7.0 can be boot from SD-card ans used in coorporation with RoboPro 4.6.6.
 
 ### Step 2 How to install?
+Note: Graphviz needs to be install after the installing  Eclox from the Eclipse Marktplace.
 #### Maps
 First of all, create on the same drive, the following maps:
--	\eclipse\\
+-	\eclipse\\<br/>
   Installation map for Eclipse
--	\workspaces\\
+-	\workspaces\\<br/>
   Map were you can put the root maps for the Eclipse workspaces.
--	\TXT\
--	\TXT\toolchain\
+-	\TXT\<br/>
+-	\TXT\toolchain\<br/>
   Installation map for the Linaro toochain
--	\Log\
-- \Log\Putty\
+-	\Log\<br/>
+- \Log\Putty\<br/>
    Map for the Putty Log-files
+
 #### Software
 After this start with the installations of the downloaded software
--	Install Notepad ++, Atom ,FileZilla, Putty and RealVNC viewer
- like you are use to do with Windows programs.
-Their installation programs will guide you through the process.
+-	Install Notepad ++, Atom ,FileZilla, Putty and RealVNC viewer<br/>
+ like you are use to do with Windows programs.<br/>
+ Their installation programs will guide you through the process.
 
-- Eclipse
-Run the installer.
-Install “Eclipse IDE for C/C++ developers” in the map: `H:\eclipse\cpp-2020-03`.
-The installer will also install or ask for “Java 1.8+ VM”
-Eclipse is a JAVA application and needs Java.
+- Eclipse<br/>
+Run the installer.<br/>
+Install “Eclipse IDE for C/C++ developers” in the map: `H:\eclipse\cpp-2020-03`.<br/>
+The installer will also install or ask for “Java 1.8+ VM”.<br/>
+Eclipse is a JAVA application and needs Java.<br/>
 See also the following 3 screen dumps:
 
 <img src="./docs/toolbox/install(Eclipse01).png" width="40%" >
 <img src="./docs/toolbox/install(Eclipse02).png" width="40%" >
 <img src="./docs/toolbox/install(Eclipse03).png" width="40%" >
 
-- Linaro
+- Linaro<br/>
 
     Last but not least is making the Linaro toolchain available.<br/>
 Unzip the Linaro toolchain into the map \TXT\toolchain\.<br/>
@@ -111,6 +113,8 @@ In this case `H:` can be a different drive. This path you will need later to con
 An image of how this looks like in the Windows explorer:
 
   <img src="./docs/toolbox/install(Linaro01).png" width="70%" >
+
+
 
 ### Step 3 How to setup the software?
 Prepare the TXT, the SSH remote console) and SFTP (remote file system)
@@ -182,15 +186,19 @@ How to work with the SLI workspace and set up a new project will discuss later. 
    - Search for `Eclox`
    - Instal eclox
    - `Instal Now` and `Finish`
-<img src="./docs/toolbox/install(DoxyGen01).png" width="45%" >
-<img src="./docs/toolbox/install(DoxyGen02).png" width="50%" >
+<img src="./docs/toolbox/install(DoxyGen01).png" width="45%">
 
+<img src="./docs/toolbox/install(DoxyGen02).png" width="50%">
 
-We are ready to start with the [set up of the SLI workspace and start programming](HowToStartProgramming.md)
+#### Install Graphviz
+Install the WIndows application `Graphviz`.<br/> **Check after the installation** if the path to the bin has been added to the System Environment variable `Path`!)
 
+<img src="./docs/toolbox/install(grap01).png" width="99%"><br/>
+
+Now we are ready to start with the [set up of the SLI workspace and start programming](HowToStartProgramming.md)
 
 
 # document history
-- 2020-05-16/17/18 v 466.1.1 new
-- Original: on-line training SLI-programming
+- 2020-05-16/17/18 v 466.1.1 new<br/>
+  Original: on-line training SLI-programming<br/>
   © 2020-04  ing. C. van Leeuwen Btw.  Enschede Netherlands
