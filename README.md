@@ -9,7 +9,11 @@ It enables the user to add functionality to RoboPro.
 - As TXT local programs
 A local program replaces a local RoboPro program.
 
-  <img src="./docs/ProjectSetup/start(04).png" width="90%" >
+  <img src="./docs/workspace/start(04).png" width="90%" >
+  <img src="./docs/toolbox/install(DoxyGen01).png" width="90%" >
+  
+  ![img](./docs/workspace/start(04).png)
+  ![img](./docs/toolbox/install(DoxyGen01).png)
 
 A **developer** will find here information about the toolbox needed, setting up a development environment on MS-Windows. How to use this environment to ceate, document and use your custom SLI's or executable.
 An **end-user** will find here information and examples about how to use the results of what has been develop.
