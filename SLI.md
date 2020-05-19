@@ -1,7 +1,7 @@
 
-# What is an SLI?
+# What is a fischertechnik RoboPro SLI?
 ## Introduction
-From the perspectif of RoboPro an SLI is a functional unit. RoboPro can send data to a SLI and can get data back from the SLI. But RoboPro can also start and stop more complex activities in a SLI, for example dedicated websocket or MQTT based communication with the outsife world, more complex closed control loops, etc.<br/>
+From the perspectif of RoboPro an SLI is a functional unit. RoboPro can send data to a SLI and can get data back from the SLI. But RoboPro can also start and stop more complex activities in a SLI, for example dedicated websocket or MQTT based communication with the outside world, image processing, I2C drivers, more complex closed control loops, etc.<br/>
 The fischertechnic TXT SLI makes it possible that C/C++ functions can be access via a RoboPro elements.
 For this RoboPro knows 2 elements, the `Shared library Input` element and the `Shared library Output` element. Thats is all.
 
@@ -90,14 +90,25 @@ This are the two:
    SharedLibraryInterface_ExecuteWriteINT16 libExampleSLI.so setValueShort RESULT -2 5
 
    ```
-1. Lock Interface
+4. Lock Interface<br/>
     If Lock Interface is checked, the shared library IO is locked to the current ROBOPro thread. This allows safe combination of several shared library input and output elements without interruptions from other threads. The last element in a sequence must have this unchecked. Otherwise no other ROBOPro thread can use the shared library interface.
-
-
-
 
 ## How to trace/debug SLI's
   The fischertechnik RoboPro SLI run time writes enough data to the stout and sterr, in the SLI the developer can also add his own trace information or use SpdLog. In combination with een SSH-terminal (Putty), the log file from Putty and a editor like Notpad++ (search in the text) is this an important source during the development of the SLI.
+## Known issues<br/>
+### Online modules
+RoboPro will lost the connection with the SLI when a SLI is not used for more then 5 sec. This gives error without informatie in the trace.<br/> Workaround: Add a StayAwake function to the SLI an activate this fanction in the RoboPro programma.
+### Blocking
+When a fucntion is in progress, the acces to the other functions in the SLI are blocked. So don't at sleep function to a SLI function. The wait element in RoboPro is not blocking.
+### Stays in memory
+The library will be load by the RoboPro runtime into the memory at the first use. It stays in the memory after the termination of the RoboPro program. The globale varaible and objects will keep there last values too.<br/>
+RoboPro does not signal the end of his program to the SLI. Sometimes it can be nessary to take care of a decent termination of the program.
+###Errors after replacing a SLI shared library file.
+The first time that a RoboPro program, which is using the SLI, has been restarted after renewing a SLI .so file., it will terminate with errors. The new SLI will be loaded after this failure. The next time the RoboPro program will start fine.<br/>
+The SSH and SFTP connection are also last.<br/>
+Workaround: Restart the TXT after replacing a SLI.
+
 
 # document history
-- 2020-05-19 CvL 466.1.1 new
+- 2020-05-19 CvL 466.1.1 new<br/>
+  Some parts are copy from the original README.md
