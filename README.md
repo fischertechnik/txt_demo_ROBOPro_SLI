@@ -1,16 +1,20 @@
-﻿# Extended C/C++ programming for the TXT
+﻿# Extended C/C++ programming for the fischertechnik TXT
 ## Introduction
-This is all about creating and/or using local programs on the TXT and RoboPro extensions.
+This is all about creating and/or using local programs on the fischertechnik TXT and RoboPro extensions.
 
-There are different possibilities to use C/C++ programs localy on the TXT.
+There are several possibilities to use C/C++ programs localy on the TXT:
 - As TXT Shared Library Interface (SLI) for ROBOPro<br/>
 A SLI extends the basic set of RoboPro elements with new one's.
-It enables the user to add functionality to RoboPro.
-- As TXT local programs
-A local program replaces a local RoboPro program.
+It enables also for the user to add functionality to RoboPro.
 
->  A **developer** will find here information about the toolbox needed, setting up a development environment on MS-Windows. How to use this environment to ceate, document and use your custom SLI's or executable.
-> An **end-user** will find here information and examples about how to use the results of what has been develop.
+  SLI are very interesting because they can add functionality to RoboPro snf fot the end-users.<br/>
+SLI can also be very helpful in eductional learning project. Designers of eductional material can use SLI to hide not relevant parts so that there is more focus on the main learning  objectives.
+- As TXT local programs<br/>
+A local program insteat of a local RoboPro program.<br/>
+Faster because the leak of overhead from the RoboPro. In combination with technologies like Civetweb, Mosquitto MQTT this offers a possibility to create functional units which can be part of a bigger system. Also interesting for the end-user and the educatiinal world.
+
+>  A **developer** is an somebody with at least basic software engineerings skills. He/she will find here information about how to create new SLI's or modifier existing SLI's Suggestions for the the toolbox needed, setting up a development environment on MS-Windows. How to use this environment to ceate, document and use your custom SLI's or executable.<br/>
+> An **end-user** is somebody with the focus on RoboPro and user of the functionality offer by the SLI's. He/she  will find here information and examples about how to use a SLI, the results of what has been develop.
 
 Besides the local use, there are also possibilities to incorporate the TXT remotely in programs which are running on other systems.
 - The TXT works with Berkely sockets and so called transfer area (TA) for communication.
@@ -22,7 +26,7 @@ Besides the local use, there are also possibilities to incorporate the TXT remot
 
 However this C/C++ part covers only programs that will run directly on the TXT.
 
-## The organisation of this GitHub  repossitory
+## The organisation of this GitHub repossitory
 - The map `FtTxtExamples` is aiming on the end user<br/>
 The map contains usable examples.
 - The map `FtTxtWorkspace` is aiming on the developer<br/>
@@ -31,8 +35,8 @@ The root contains Eclipse example projects and the supporting TXT libraries.
 
 Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "release" as seperate zip files.
 
-
 ## Documentation
+
 ### For the developer:
 - this Document
 - [What is an SLI?](SLI.md).
