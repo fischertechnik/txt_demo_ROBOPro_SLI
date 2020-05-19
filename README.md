@@ -9,11 +9,11 @@ It enables the user to add functionality to RoboPro.
 - As TXT local programs
 A local program replaces a local RoboPro program.
 
-  <img src="./docs/workspace1/start(04).png" width="90%" >
-  
+  <img src="./docs/toolbox/start(03).png" width="90%" >
+
   <img src="./docs/toolbox/install(DoxyGen01).png" width="90%" >
 
-  ![img](./docs/workspace1/start(04).png)
+  ![img](./docs/toolbox/start(03).png)
 
   ![img](./docs/toolbox/install(DoxyGen01).png)
 
