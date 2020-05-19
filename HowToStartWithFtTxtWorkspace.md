@@ -17,11 +17,11 @@ Now that our toolbox [our toolbox](./WhichToolsYouNeed.md) is ready, it is time 
 
 - Close the `Welcome` screen
 
-   <img src="./docs/ProjectSetup/start(03).png" width="90%" >
+   <img src="./docs/workspace1/start(03).PNG" width="90%" >
 
    You will see this screen
 
-  <img src="./docs/ProjectSetup/start(04).png" width="90%" >
+  <img src="./docs/workspace1/start(04).PNG" width="90%" >
 
   ![](./docs/ProjectSetup/start(04).png)
 
