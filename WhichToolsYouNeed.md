@@ -199,6 +199,6 @@ Now we are ready to start with the [set up of the SLI workspace and start progra
 
 
 # document history
-- 2020-05-16/17/18 v 466.1.1 new<br/>
-  Original: on-line training SLI-programming<br/>
+- 2020-05-16/17/18 CvL 466.1.1 new<br/>
+  Original from: on-line training SLI-programming<br/>
   © 2020-04  ing. C. van Leeuwen Btw.  Enschede Netherlands

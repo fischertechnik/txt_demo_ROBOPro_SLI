@@ -1,6 +1,6 @@
 ﻿# Extended C/C++ programming for the TXT
 ## Introduction
-This is all about writing and/or using local programs on the TXT and RoboPro extensions.
+This is all about creating and/or using local programs on the TXT and RoboPro extensions.
 
 There are different possibilities to use C/C++ programs localy on the TXT.
 - As TXT Shared Library Interface (SLI) for ROBOPro<br/>
@@ -9,23 +9,16 @@ It enables the user to add functionality to RoboPro.
 - As TXT local programs
 A local program replaces a local RoboPro program.
 
-  <img src="./docs/toolbox/start(03).png" width="90%" >
-
-  <img src="./docs/toolbox/install(DoxyGen01).png" width="90%" >
-
-  ![img](./docs/toolbox/start(03).png)
-
-  ![img](./docs/toolbox/install(DoxyGen01).png)
-
-A **developer** will find here information about the toolbox needed, setting up a development environment on MS-Windows. How to use this environment to ceate, document and use your custom SLI's or executable.
-An **end-user** will find here information and examples about how to use the results of what has been develop.
+>  A **developer** will find here information about the toolbox needed, setting up a development environment on MS-Windows. How to use this environment to ceate, document and use your custom SLI's or executable.
+> An **end-user** will find here information and examples about how to use the results of what has been develop.
 
 Besides the local use, there are also possibilities to incorporate the TXT remotely in programs which are running on other systems.
 - The TXT works with Berkely sockets and so called transfer area (TA) for communication.
 - The TXT is using a socket with port 65000 for the TA, 65001 for the video and 65002 for the I2C.
-- [Here](https://github.com/fischertechnik/txt_demo_c_online) you will find how to do this from a .NET Visual Studio environment.
-- It is also possible to use Python with the [FtRoboPy](https://github.com/ftrobopy/ftrobopy) (pre installed on the TXT)<br/>
-  However Python is using a connection over the sockets and is in fact a remote program that runs with the IP-address (localhost) 127.0.0.1.
+- [Here](https://github.com/fischertechnik/txt_demo_c_online) you will find how to create a remote program with the .NET Visual Studio (2017, 2019) environment.
+- It is also possible to use Python with the [FtRoboPy](https://github.com/ftrobopy/ftrobopy) (pre installed on the TXT). A Python program can run remote and local.<br/>
+  However FtPythonPy is using a connection over the sockets and in fact it is a remote program that when it runs localy, it runs with the IP-address (localhost) 127.0.0.1.
+- Remote programs can be programmed in a lot of languages, if they are support Berkelet sockets.
 
 However this C/C++ part covers only programs that will run directly on the TXT.
 
@@ -44,7 +37,8 @@ Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "rele
 - this Document
 - [What is an SLI?](SLI.md).
 - [What is in my toolbox? My program development environment](WhichToolsYouNeed.md)
-- [How to setup my Eclipse workspace and start with my first project?](HowToStartWithFtTxtWorkspace.md)
+- [How to setup my Eclipse workspace?](HowToStartWithFtTxtWorkspace.md)
+- [How to start with my first project?](HowToStartMyFirstProject.md)
 - [How to start a new project]()
 - [Notes](Notes.md).
 - [Introduction and overview SLI project for the developer](./FtTxtWorkspace/README.md).

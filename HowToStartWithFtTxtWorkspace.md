@@ -1,7 +1,6 @@
-# How to setup my Eclipse workspace and start with my first project?
- [What is in my toolbox?](WhichToolsYouNeed.md)
+# How to setup my Eclipse workspace?
 
-Now that our toolbox [our toolbox](./WhichToolsYouNeed.md) is ready, it is time to learn how to get started with your own project via the examples.
+Now that [our toolbox](./WhichToolsYouNeed.md) is ready, it is time to learn how to get started with your own project via the examples.
 
 ## How to set up the FtTxtWorkspace?
 `H:/workspaces` has been used  in this example as path to the `FtTxtWorkspace`. But feel free to use your own path.
@@ -67,4 +66,6 @@ Now that our toolbox [our toolbox](./WhichToolsYouNeed.md) is ready, it is time 
 
 
 # document history
-- 2020-05-18,19 CvL 466.1.1 new
+- 2020-05-18/19 CvL 466.1.1 new
+  Original from: on-line training SLI-programming<br/>
+  © 2020-04  ing. C. van Leeuwen Btw.  Enschede Netherlands
