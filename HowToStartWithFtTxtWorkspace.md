@@ -17,43 +17,43 @@ Now that our toolbox [our toolbox](./WhichToolsYouNeed.md) is ready, it is time 
 
 - Close the `Welcome` screen
 
-   <img src="./docs/WSSetup/start(03).PNG" width="90%" >
+   <img src="./docs/WSSetup/start(03).PNG" width="80%" >
 
    You will see this screen
 
-  <img src="./docs/WSSetup/start(04).PNG" width="90%" >
+  <img src="./docs/WSSetup/start(04).PNG" width="80%" >
 
 - Go in the top menu to the item `Windows` en select `Preferences`
 
-  <img src="./docs/WSSetup/start(04A).PNG" width="90%" >
+  <img src="./docs/WSSetup/start(04A).PNG" width="80%" >
 
 - Select `C/C++`, `Build` and then `Environment`, <br/>
   add a new Environment variable `LINAROMAP`,<br/>
   and take your map with the Linaro toochain as value (no / or \ at the end!!),<br/>
   Press `Apply` and `Apply and Close`.
 
-  <img src="./docs/WSSetup/start(04B).PNG" width="90%" >
+  <img src="./docs/WSSetup/start(04B).PNG" width="80%" >
 
   You will see this screen again:
 
-  <img src="./docs/WSSetup/start(04).PNG" width="90%" >
+  <img src="./docs/WSSetup/start(04).PNG" width="80%" >
 
 -  Go in the top menu to the item `FIle` en select `Import`<br/>
    Select `General` and `Existing Projects into Workspace`<br/>
    Press `Next`.
 
-  <img src="./docs/WSSetup/start(05).PNG" width="90%" >
+  <img src="./docs/WSSetup/start(05).PNG" width="80%" >
 
 -  Enter the root directory of the workspace FtTxtWorkSpace,<br/>
    select the appearing 3 projects,<br/>
    press `Finish`.
 
-  <img src="./docs/WSSetup/start(06).PNG" width="90%" >
+  <img src="./docs/WSSetup/start(06).PNG" width="80%" >
 
 - If everything went well, you will see this.<br/>
    In the Eclipse map Includes (this is not the same as the user map inlcudes) you will see something like this. The ${LINARO} variable has been fill in nicely.
 
-  <img src="./docs/WSSetup/start(07).PNG" width="90%" >
+  <img src="./docs/WSSetup/start(07).PNG" width="80%" >
 
    Your workspace is now ready to use, to start programming and testing.
    For example, you can start with compiling the first project `TxtSharedLibraryInterface`.
