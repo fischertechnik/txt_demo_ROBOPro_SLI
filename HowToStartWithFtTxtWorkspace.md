@@ -1,4 +1,4 @@
-# How to setup my Eclipse workspace?
+# How to setup my fischertechnik SLI workspace in Eclipse?
 
 Now that [our toolbox](./WhichToolsYouNeed.md) is ready, it is time to learn how to get started with your own project via the examples.
 
@@ -68,4 +68,4 @@ Now that [our toolbox](./WhichToolsYouNeed.md) is ready, it is time to learn how
 # document history
 - 2020-05-18/19 CvL 466.1.1 new
   Original from: on-line training SLI-programming<br/>
-  © 2020-04  ing. C. van Leeuwen Btw.  Enschede Netherlands
+  © 2020-04 ing. C. van Leeuwen Btw.  Enschede Netherlands

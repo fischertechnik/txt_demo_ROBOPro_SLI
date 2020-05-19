@@ -1,5 +1,5 @@
-# Which tools you need?
-As software developer you need a tool box, the sofware development environment. For the more experiance software engineers this is a personal set of tools. But were to start as beginner? Creatif programming and problem solving is more then only entering program code and compiling. It has also something to do with:
+# What is in my toolbox?
+As software developer you need a tool box, your sofware development environment. For the more experiance software engineers this is a personal set of tools. But were to start as beginner?<br/> Creatif programming and problem solving is more then only entering program code and compiling. It has also something to do with:
 - understand and decrib the problem
 - create and decrib a solution
 - implement this solution including documentation
@@ -8,68 +8,71 @@ As software developer you need a tool box, the sofware development environment. 
 For this there is  needed a set of tools. Hereby an overview:
 
 - a program development environment with some plug in tools, like
-  - a  documentation generator
-- a basic text editor for text, markdown, XML/JSON/HTML
 - a remote SSH terminal
 - a SFTP file transfer tools
 - RoboPro 4.6.6
 - TXT with firmware 4.6.6 or 4.7.0
+- a  documentation generator
+- a basic text editor for text (and later markdown, XML/JSON/HTML, etc.)
 
-## Toolbox for the starter (advice)
+
+## Toolbox for the starter
+This is an advice only. However these tools can be used in this introduction.
+
 ### Step 1 What to download?
 
-1. Eclipse
-Versie: Eclipse 2020-03 or higher (only 64 bits)
+1. Eclipse<br/>
+Versie: Eclipse 2020-03 or higher (only 64 bits)<br/>
 
    [Download]( https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-ide-cc-developers-includes-incubating-components)  Remark: This is only the installer.
 
    Here you can find [additional help]( https://help.eclipse.org/2020-03/index.jsp) <br/>
    Eclipse has two different possibilities to install additinal functionality.
 
-1. Linaro
+1. Linaro<br/>
 The TXT firmware is using gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.
 
    [Download]( https://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/arm-linux-gnueabihf/gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.tar.xz)
 
-2. FileZilla
+1. FileZilla<br/>
 
    [Download]( https://filezilla-project.org/download.php)
 
-4. Putty
+1. Putty<br/>
 
     [Download](https://putty.org/)
 
 
-5. Notepad ++
+1. Notepad ++<br/>
 
     [Download]( https://notepad-plus-plus.org/downloads/)
-    This software can be use to inspect log files and edit text files.
+    This software can be use to inspect log files and edit text files.<br/>
  [Plugins overview]( https://npp-user-manual.org/docs/plugins/)<br/>
- [Plugins List](https://github.com/notepad-plus-plus/nppPluginList/)<br/>
-     Suggestions for Plugins:
+ [Plugins List](https://github.com/notepad-plus-plus/nppPluginList/), suggestions for Plugins:<br/>
     - MarkdownViewerPlusPlus
 
-6. ATOM editor
+1. ATOM editor<br/>
 
    [Download](https://atom.io/ Atom 1.46.0 ot higher) <br/>
-   Packages: [The functionality of Atom can be extended with the so called packages.](https://atom.io/packages)<br/>
+   Packages: [the functionality of Atom can be extended with the so called packages.](https://atom.io/packages)<br/>
 Suggestions for packages:
     - language-markdown
     - markdown-preview-plus
     - markdown-image-paste
 
-1. VNC-client
-   To make use of the TXT VNC-server you will need a viewer:
-   [Download RealVNC viewer ](https://www.realvnc.com/en/connect/download/viewer/)
+1. VNC-client<br/>
+   The TXT has an VNC-server. This makes it possible that the screen of the TXT can be control remotely. A nice possibilety when you RoboPro program runs localy.<br/>
+   To make use of the TXT VNC-server you will need a VNC-viewer (client):
+   [Download RealVNC viewer](https://www.realvnc.com/en/connect/download/viewer/)
 
-1. Graphviz
+1. Graphviz<br/>
 For the graphical part of the DOxyGen documentation tool you will need to install graphviz.
 [Download](https://graphviz.gitlab.io/_pages/Download/Download_windows.html)
 
-1.	RoboPro
-    [See RoboPro 4.6.6 and the firmware 4.6.6 and 4.7.0](
-https://github.com/fischertechnik/FT-TXT/releases)
-Firmware 4.7.0 can be boot from SD-card ans used in coorporation with RoboPro 4.6.6.
+1.	RoboPro<br/>
+    [See here for RoboPro 4.6.6 and the firmware 4.6.6 and 4.7.0](
+https://github.com/fischertechnik/FT-TXT/releases)<br/>
+Firmware 4.7.0 can be boot from SD-card and used in coorporation with RoboPro 4.6.6.
 
 ### Step 2 How to install?
 Note: Graphviz needs to be install after the installing  Eclox from the Eclipse Marktplace.
@@ -106,15 +109,13 @@ See also the following 3 screen dumps:
 - Linaro<br/>
 
     Last but not least is making the Linaro toolchain available.<br/>
-Unzip the Linaro toolchain into the map \TXT\toolchain\.<br/>
+Unzip the Linaro toolchain into the map `<drive>\TXT\toolchain\`.<br/>
 You will get something like this.<br/>
  `H:\TXT\toolchain\gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf`<br/>
-In this case `H:` can be a different drive. This path you will need later to configurate the tool chain in your C/C++ project in Eclipse.<br/>
+In this case the drive is `H:` but it could be a different drive. This path you will need later to configurate the tool chain in your C/C++ project in Eclipse.<br/>
 An image of how this looks like in the Windows explorer:
 
   <img src="./docs/toolbox/install(Linaro01).png" width="70%" >
-
-
 
 ### Step 3 How to setup the software?
 Prepare the TXT, the SSH remote console) and SFTP (remote file system)
@@ -126,7 +127,7 @@ Setting up FileZilla and Putty. Install DoxyGen with Eclipse Marktplace.
 
   - Start your TXT and test the connection with RoboPro.
   - Write down the IP-address of this connection. It does not matter if you are using Bluetooth, USB, Wifi or Wifi-access point.
-  - Don’t forget to activate on the your the SSH Daemon and WEB server
+  - Don’t forget to activate on the your the SSH Daemon, VNC server and WEB server (fw 4.6.6 and fw 4.7.0) and SD boot (4.6.6) (The screen shot are from fw 4.7.0)
 
 <img src="./docs/toolbox/install(TXT01).png" width="35%" >
 <img src="./docs/toolbox/install(TXT02).png" width="35%" >
@@ -138,13 +139,13 @@ We are using Putty as console.
 Start Putty and create a new SSH-session with the general user ROBOPro.
 The user name: `ROBOPro`, the password: `ROBOPro`
 - Fill in the IP-address from your TXT01
-- Choose SHH
-- Fill in the map for the logfiles: `h:/Log/Putty/putty_&Y-&M-&D_&T.log` .
+- Choose SSH
+- Fill in the map for the logfiles: `H:/Log/Putty/putty_&Y-&M-&D_&T.log` .
 -	As remote command: [screen -r](https://www.geeksforgeeks.org/screen-command-in-linux-with-examples/)
-     You can find what this means in the Linux command help on the internet.
-When you leave this line blanc, you will get the console prompt.
--  Save these setting and start the connection.
--  Run with RoboPro a small RoboPro program and observe what the console shows you.
+   You can find what this means in the Linux command help on the internet.<br/>
+   When you leave this line blanc, you will get the LINUX command prompt.
+- Save these setting and start the connection.
+- Run with RoboPro a small RoboPro program and observe what the console shows you.
 - Go with the Windows file manager to the \Log\Putty\ map and open with Notepad++ the log file.
 Now you can also inspect the results. When the log file changes, Notepad++ will reload the file.
 - Warning: Use only the TXT root account for very special activities.
@@ -188,17 +189,17 @@ How to work with the SLI workspace and set up a new project will discuss later. 
    - `Instal Now` and `Finish`
 <img src="./docs/toolbox/install(DoxyGen01).png" width="45%">
 
-<img src="./docs/toolbox/install(DoxyGen02).png" width="50%">
+<img src="./docs/toolbox/install(DoxyGen02).png" width="45%">
 
 #### Install Graphviz
-Install the WIndows application `Graphviz`.<br/> **Check after the installation** if the path to the bin has been added to the System Environment variable `Path`!)
+Install the WIndows application `Graphviz`.<br/> **Check after the installation** if the path to the bin has been added to the System Environment variable `Path`!
 
-<img src="./docs/toolbox/install(grap01).png" width="99%"><br/>
+<img src="./docs/toolbox/install(grap01).png" width="95%"><br/>
 
-Now we are ready to start with the [set up of the SLI workspace and start programming](HowToStartProgramming.md)
+Now we are ready to start with the [How to setup my fischertechnik SLI workspace in Eclipse?](./HowToStartWithFtTxtWorkspace.md)
 
 
 # document history
-- 2020-05-16/17/18 CvL 466.1.1 new<br/>
+- 2020-05-16/17/18/19 CvL 466.1.1 new<br/>
   Original from: on-line training SLI-programming<br/>
-  © 2020-04  ing. C. van Leeuwen Btw.  Enschede Netherlands
+  © 2020-04 ing. C.van Leeuwen Btw. Enschede Netherlands

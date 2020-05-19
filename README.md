@@ -37,9 +37,9 @@ Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "rele
 - this Document
 - [What is an SLI?](SLI.md).
 - [What is in my toolbox? My program development environment](WhichToolsYouNeed.md)
-- [How to setup my Eclipse workspace?](HowToStartWithFtTxtWorkspace.md)
-- [How to start with my first project?](HowToStartMyFirstProject.md)
-- [How to start a new project]()
+- [How to setup my fischertechnik SLI workspace in Eclipse?](HowToStartWithFtTxtWorkspace.md)
+- [How to start with my first fischertechnik SLI project?](HowToStartMyFirstProject.md)
+- [How to start a new Fischertechnik SLI project]()
 - [Notes](Notes.md).
 - [Introduction and overview SLI project for the developer](./FtTxtWorkspace/README.md).
 ### For the end-user:
