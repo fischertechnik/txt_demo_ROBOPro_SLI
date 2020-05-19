@@ -8,12 +8,12 @@ Now that our toolbox [our toolbox](./WhichToolsYouNeed.md) is ready, it is time 
 - Download the `FtTxtWorkspace.zip` from the [txt_demo_ROBOPro_SLI/releases](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/releases)
 - Unzip this file in the `H:/workspaces`. This will looks like something like:
 
-  <img src="./docs/psetup/start(01).png" width= "65%" >
+  <img src="./docs/workspace1/start(01).png" width= "65%" >
 - Start now Eclipse <br/>
   Select the right path to your workspace, here: `H:/workspaces/FtTxtWorkspace`:<br/>
   Press `Launch`.
 
-  <img src="./docs/psetup/start(02).png" width="65%">
+  <img src="./docs/workspace1/start(02).png" width="65%">
 
 - Close the `Welcome` screen
 
@@ -24,7 +24,7 @@ Now that our toolbox [our toolbox](./WhichToolsYouNeed.md) is ready, it is time 
   <img src="./docs/ProjectSetup/start(04).png" width="90%" >
 
   ![](./docs/ProjectSetup/start(04).png)
-  
+
 
 - Go in the top menu to the item `Windows` en select `Preferences`
 
