@@ -8,7 +8,7 @@ To have more control over the model, the power is corrected to avoid too less po
 
 Basic information about the SLI can be found in the TxtSharedLibraryInterface, the starting example.
 
-> You need TXT firmware version >=4.4.3
+> You need TXT firmware version >=4.6.6
 
 > see ROBOPro help in section 8.2.9 and 8.2.10
 
@@ -78,7 +78,6 @@ In this library are two main RoboPro element available
     
 
 
-## Shared Library in C / C++
 
 
 

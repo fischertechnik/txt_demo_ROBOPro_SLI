@@ -96,8 +96,19 @@ This are the two:
 ## How to trace/debug SLI's
   The fischertechnik RoboPro SLI run time writes enough data to the stout and sterr, in the SLI the developer can also add his own trace information or use SpdLog. In combination with een SSH-terminal (Putty), the log file from Putty and a editor like Notpad++ (search in the text) is this an important source during the development of the SLI.
 ## Known issues<br/>
-### Online modules
+### Online use
 RoboPro will lost the connection with the SLI when a SLI is not used for more then 5 sec. This gives error without informatie in the trace.<br/> Workaround: Add a StayAwake function to the SLI an activate this fanction in the RoboPro programma.
+```
+int setStayAwakeShort(short t) {
+	if (!IsInit) {
+		fprintf(stderr, "setStayAwakeShort: Not initialized!\n");
+		return -1;
+	}
+	return 0;
+}
+```
+ ![RoboPro](./docs/sli/element(5s).png)<br/>
+
 ### Blocking
 When a fucntion is in progress, the acces to the other functions in the SLI are blocked. So don't at sleep function to a SLI function. The wait element in RoboPro is not blocking.
 ### Stays in memory
