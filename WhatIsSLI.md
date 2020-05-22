@@ -1,12 +1,12 @@
 #Intro
-The shared library input/output element allows to call functions and return/supply a value from/to shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing ROBOPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing.
+The shared library input/output element allows to call functions and return/supply a value from/to shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing RoboPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing.
 
 ![blocks](docs/blocks.png)
 
 ## Shared Library / C Input
 Each input element allows to return only one numeric value. If parameters are required, the shared library output element can be used to first set parameters in the library. If multiple parameters or multiple return values are required, multiple input and/or output elements can be used. This means that it is typically required to write a small wrapper layer to interface ROBOPro to existing shared libraries. fischertechnik provides a library for the BME680 environmental sensor as example.
 
-The input element can either retrieve a 16 bit signed short or a 64 bit double value from the shared library. Example C decalartions for such functions are:
+The input element can either retrieve a 16 bit signed short or a 64 bit double value from the shared library. Example C declarations for such functions are:
 ```c
 int getValueDouble(double* t);
 int getValueShort(short* t);
@@ -37,18 +37,13 @@ static INT16 value_s;
 extern "C" {
 
 // Return value:
-//  0: success, continue with waiting for pFinishVar becoming 1
-//  1: not finished
-//  2: busy (entity locked by other process)
-// -1: error
-// Other positive values can be used for other waiting codes
-// Other negative values can be used for other error codes
+//  0: success, other values error work flow
 
 int init(short* t)
 {
     if(!IsInit)
     {
-        // Do whatever inititialization is required
+        // Do whatever initialization is required
         value_d = 0.0;
         value_s = 0;
         IsInit = true;

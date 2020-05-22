@@ -28,7 +28,7 @@ Now that [our toolbox](./WhichToolsYouNeed.md) is ready, it is time to learn how
 
 - Select `C/C++`, `Build` and then `Environment`, <br/>
   add a new Environment variable `LINAROMAP`,<br/>
-  and take your map with the Linaro toochain as value (no / or \ at the end!!),<br/>
+  and take your map with the Linaro toolchain as value (no / or \ at the end!!),<br/>
   Press `Apply` and `Apply and Close`.
 
   <img src="./docs/WSSetup/start(04B).PNG" width="80%" >
@@ -37,7 +37,7 @@ Now that [our toolbox](./WhichToolsYouNeed.md) is ready, it is time to learn how
 
   <img src="./docs/WSSetup/start(04).PNG" width="80%" >
 
--  Go in the top menu to the item `FIle` en select `Import`<br/>
+-  Go in the top menu to the item `File` en select `Import`<br/>
    Select `General` and `Existing Projects into Workspace`<br/>
    Press `Next`.
 
@@ -50,7 +50,7 @@ Now that [our toolbox](./WhichToolsYouNeed.md) is ready, it is time to learn how
   <img src="./docs/WSSetup/start(06).PNG" width="80%" >
 
 - If everything went well, you will see this.<br/>
-   In the Eclipse map Includes (this is not the same as the user map inlcudes) you will see something like this. The ${LINARO} variable has been fill in nicely.
+   In the Eclipse map Includes (this is not the same as the user map includes) you will see something like this. The ${LINARO} variable has been fill in nicely.
 
   <img src="./docs/WSSetup/start(07).PNG" width="80%" >
 

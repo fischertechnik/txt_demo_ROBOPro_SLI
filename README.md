@@ -7,33 +7,33 @@ There are several possibilities to use C/C++ programs localy on the TXT:
 A SLI extends the basic set of RoboPro elements with new one's.
 It enables also for the user to add functionality to RoboPro.
 
-  SLI are very interesting because they can add functionality to RoboPro snf fot the end-users.<br/>
-SLI can also be very helpful in eductional learning project. Designers of eductional material can use SLI to hide not relevant parts so that there is more focus on the main learning  objectives.
+  SLI's are very interesting because they can add functionality to RoboPro for the end-users.<br/>
+SLI can also be very helpful in educational learning project. Designers of educational material can use SLI to hide not relevant parts so that there is more focus on the main learning  objectives.
 - As TXT local programs<br/>
-A local program insteat of a local RoboPro program.<br/>
-Faster because the leak of overhead from the RoboPro. In combination with technologies like Civetweb, Mosquitto MQTT this offers a possibility to create functional units which can be part of a bigger system. Also interesting for the end-user and the educatiinal world.
+A local program instead of a local RoboPro program.<br/>
+Faster because the leak of overhead from the RoboPro. In combination with technologies like Civetweb, Mosquitto MQTT this offers a possibility to create functional units which can be part of a bigger system. Also interesting for the end-user and the educational world.
 
->  A **developer** is an somebody with at least basic software engineerings skills. He/she will find here information about how to create new SLI's or modifier existing SLI's Suggestions for the the toolbox needed, setting up a development environment on MS-Windows. How to use this environment to ceate, document and use your custom SLI's or executable.<br/>
+>  A **developer** is an somebody with at least basic software engineering's skills. He/she will find here information about how to create new SLI's or modifier existing SLI's Suggestions for the  toolbox needed, setting up a development environment on MS-Windows. How to use this environment to create documents and how to use your custom SLI's or executable.<br/>
 > An **end-user** is somebody with the focus on RoboPro and user of the functionality offer by the SLI's. He/she  will find here information and examples about how to use a SLI, the results of what has been develop.
 
 Besides the local use, there are also possibilities to incorporate the TXT remotely in programs which are running on other systems.
-- The TXT works with Berkely sockets and so called transfer area (TA) for communication.
+- The TXT works with Berkeley sockets and so called transfer area (TA) for communication.
 - The TXT is using a socket with port 65000 for the TA, 65001 for the video and 65002 for the I2C.
 - [Here](https://github.com/fischertechnik/txt_demo_c_online) you will find how to create a remote program with the .NET Visual Studio (2017, 2019) environment.
 - It is also possible to use Python with the [FtRoboPy](https://github.com/ftrobopy/ftrobopy) (pre installed on the TXT). A Python program can run remote and local.<br/>
-  However FtPythonPy is using a connection over the sockets and in fact it is a remote program that when it runs localy, it runs with the IP-address (localhost) 127.0.0.1.
-- Remote programs can be programmed in a lot of languages, if they are support Berkelet sockets.
+  However FtPythonPy is using a connection over the sockets and in fact it is a remote program that when it runs locally, it runs with the IP-address (localhost) 127.0.0.1.
+- Remote programs can be programmed in a lot of languages, if they are support Berkeley sockets.
 
 However this C/C++ part covers only programs that will run directly on the TXT.
 
-## The organisation of this GitHub repossitory
+## The organization of this GitHub repository
 - The map `FtTxtExamples` is aiming on the end user<br/>
 The map contains usable examples.
 - The map `FtTxtWorkspace` is aiming on the developer<br/>
 The root contains Eclipse example projects and the supporting TXT libraries.
 - In the root you will find a descriptions of "How to ... ? and overviews"
 
-Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "release" as seperate zip files.
+Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "release" as separate zip files.
 
 ## Documentation
 

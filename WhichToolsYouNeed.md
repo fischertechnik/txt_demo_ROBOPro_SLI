@@ -1,7 +1,7 @@
 # What is in my toolbox?
-As software developer you need a tool box, your sofware development environment. For the more experiance software engineers this is a personal set of tools. But were to start as beginner?<br/> Creatif programming and problem solving is more then only entering program code and compiling. It has also something to do with:
-- understand and decrib the problem
-- create and decrib a solution
+As software developer you need a tool box, your software development environment. For the more experience software engineers this is a personal set of tools. But were to start as beginner?<br/> Creative programming and problem solving is more then only entering program code and compiling. It has also something to do with:
+- understand and describe the problem
+- create and describe a solution
 - implement this solution including documentation
 - testing an error searching.
 
@@ -27,7 +27,7 @@ Versie: Eclipse 2020-03 or higher (only 64 bits)<br/>
    [Download]( https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-ide-cc-developers-includes-incubating-components)  Remark: This is only the installer.
 
    Here you can find [additional help]( https://help.eclipse.org/2020-03/index.jsp) <br/>
-   Eclipse has two different possibilities to install additinal functionality.
+   Eclipse has two different possibilities to install additional functionality.
 
 1. Linaro<br/>
 The TXT firmware is using gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf.
@@ -61,7 +61,7 @@ Suggestions for packages:
     - markdown-image-paste
 
 1. VNC-client<br/>
-   The TXT has an VNC-server. This makes it possible that the screen of the TXT can be control remotely. A nice possibilety when you RoboPro program runs localy.<br/>
+   The TXT has an VNC-server. This makes it possible that the screen of the TXT can be control remotely. A nice possibility when you RoboPro program runs locally.<br/>
    To make use of the TXT VNC-server you will need a VNC-viewer (client):
    [Download RealVNC viewer](https://www.realvnc.com/en/connect/download/viewer/)
 
@@ -72,7 +72,7 @@ For the graphical part of the DOxyGen documentation tool you will need to instal
 1.	RoboPro<br/>
     [See here for RoboPro 4.6.6 and the firmware 4.6.6 and 4.7.0](
 https://github.com/fischertechnik/FT-TXT/releases)<br/>
-Firmware 4.7.0 can be boot from SD-card and used in coorporation with RoboPro 4.6.6.
+Firmware 4.7.0 can be boot from SD-card and used in corporation with RoboPro 4.6.6.
 
 ### Step 2 How to install?
 Note: Graphviz needs to be install after the installing  Eclox from the Eclipse Marktplace.
@@ -84,7 +84,7 @@ First of all, create on the same drive, the following maps:
   Map were you can put the root maps for the Eclipse workspaces.
 -	\TXT\<br/>
 -	\TXT\toolchain\<br/>
-  Installation map for the Linaro toochain
+  Installation map for the Linaro toolchain
 -	\Log\<br/>
 - \Log\Putty\<br/>
    Map for the Putty Log-files
@@ -185,14 +185,14 @@ How to work with the SLI workspace and set up a new project will discuss later. 
    - Go to top menu `Help`
    - Select `Eclipse Markplace..`
    - Search for `Eclox`
-   - Instal eclox
-   - `Instal Now` and `Finish`
+   - Install eclox
+   - `Install Now` and `Finish`
 <img src="./docs/toolbox/install(DoxyGen01).png" width="45%">
 
 <img src="./docs/toolbox/install(DoxyGen02).png" width="45%">
 
 #### Install Graphviz
-Install the WIndows application `Graphviz`.<br/> **Check after the installation** if the path to the bin has been added to the System Environment variable `Path`!
+Install the Windows application `Graphviz`.<br/> **Check after the installation** if the path to the bin has been added to the System Environment variable `Path`!
 
 <img src="./docs/toolbox/install(grap01).png" width="95%"><br/>
 

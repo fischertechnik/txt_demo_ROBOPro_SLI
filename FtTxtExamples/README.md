@@ -22,10 +22,13 @@ URL= http://<ip-addres of the TXT>
 ## Overview examples
 
 ### SLI_TeachIn
--  For both the TeachIn for a industrial Robot with 4 motors and switches and a industrial Robot with 2 encoder motors and 2 motor (TX-C set).
--  Target controller: fischertechnik TXT
--  With the libTxtSliSaveTeachIn.so. This SLI makes it possible to read and write files with the 4D coordinate set from and to /etc/knobloch/Data (Date area on the TXT)
+- For both the TeachIn for a industrial Robot with 4 motors and switches and a industrial Robot with 2 encoder motors and 2 motor (TX-C set).
+- One player for both versions.
+- Target controller: fischertechnik TXT
+- With the libTxtSliSaveTeachIn.so. This SLI makes it possible to read and write files with the 4D coordinate set from and to `/etc/knobloch/Data` (Date area on the TXT)
 
+![console](..\SLI_TeachIn\docs\player(panel_02).png)
+![console](.\SLI_TeachIn\docs\TeachIn(panel_02).png)
 
 # document history
 - 2020-05-16/22 v 466.1.1 new
