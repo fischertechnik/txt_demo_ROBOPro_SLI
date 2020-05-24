@@ -11,12 +11,12 @@ The support this introduction you will find a set of projects with the name `Txt
 - compiling
 - installing
 - using in a RoboPro programming
-- tracing with Putty and consultation of the trace log with Notepad++
+- tracing with Putty and consultation of the trace log with Notepad++, [See also](.//README.md#howtracelog)
 - tracing with SPDlog.
 
 The 'TxtDeps` root contains a README.me about the instruction of how to make use of these libraries and includes in your projects
 
-Each root  of the following projects  contains a README.md with the detail, description  and instructions for that project
+Each root  of the following projects contains a README.md with the detail, description  and instructions for that project
 ### TxtSharedLibraryInterface
 `TxtSharedLibraryInterface` is about the basics.
 

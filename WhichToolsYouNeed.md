@@ -91,11 +91,11 @@ First of all, create on the same drive, the following maps:
 
 #### Software
 After this start with the installations of the downloaded software
--	Install Notepad ++, Atom ,FileZilla, Putty and RealVNC viewer<br/>
+-	Install Notepad ++ <a id="notepad"></a>, Atom ,FileZilla, Putty and RealVNC viewer<br/>
  like you are use to do with Windows programs.<br/>
  Their installation programs will guide you through the process.
 
-- Eclipse<br/>
+- Eclipse<br/> 
 Run the installer.<br/>
 Install “Eclipse IDE for C/C++ developers” in the map: `H:\eclipse\cpp-2020-03`.<br/>
 The installer will also install or ask for “Java 1.8+ VM”.<br/>
@@ -156,7 +156,7 @@ Now you can also inspect the results. When the log file changes, Notepad++ will 
 
 <img src="./docs/toolbox/install(Putty03).png" width="45%" >
 
-#### How to set up FileZilla?
+#### How to set up FileZilla? <a id="filezillasetup"></a>
 FileZilla is a file transfer program.
 - Start FileZilla, go to the “file” menu and start the “site manager”.
 - Create a “new site” for a SFTP- (Secure File Transfer Protocol)
