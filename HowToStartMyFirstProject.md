@@ -1,14 +1,16 @@
+
 [Back to main content overview](./README.md#overview)
 
 # How to start with my first fischertechnik SLI project?
 
-In [How to setup my Eclipse workspace?](./HowToStartWithFtTxtWorkspace.md) we see how we can make Eclipse ready to start for the real work: creating, compiling and testing of program.<br/>
+We saw in [How to setup my Eclipse workspace?](./HowToStartWithFtTxtWorkspace.md)   how we were able to prepare eclipse start for the real thing: creating, compiling and testing of programs for the TXT.<br/>
 Now we are going to compile and run a SLI and setup our first new SLI.
-We will also see how to trace the progression of a running RoboPro program, which is using a SLI with Putty and Notepad++
+We will also see how to track and analyze the progress of an ongoing RoboPro program using an SLI with Putty and Notepad ++
 
-The support this introduction you will find a set of projects with the name `TxtSharedLibraryInterface``in the `FtTxtWorkspace`. 
+The support this SLI introduction you will find a set of projects with the name `TxtSharedLibraryInterface`in the `FtTxtWorkspace`. 
+[The FtTxtWorkspace README](./FtTxtWorkspace/README.md)
 
-## TxtSharedLibraryInterface
+## `TxtSharedLibraryInterface`
 `TxtSharedLibraryInterface` is about the basics:
 - compiling
 - installing
@@ -19,23 +21,33 @@ The support this introduction you will find a set of projects with the name `Txt
 The 'TxtDeps` root contains a README.me about the instruction of how to make use of these libraries and includes in your projects
 
 Each root  of the following projects contains a README.md with the detail, description  and instructions for that project
-### TxtSharedLibraryInterface
+### `TxtSharedLibraryInterface`
+
 `TxtSharedLibraryInterface` is about the basics.
 
-### TxtSharedLibraryInterface2
-`TxtSharedLibraryInterface2` is about the on-line 5 sec problem
+### `TxtSharedLibraryInterface2`
+
+`TxtSharedLibraryInterface2` is about the on-line 5 sec problem.
+
 ### `TxtSharedLibraryInterface3`
+
 `TxtSharedLibraryInterface3` the blocking problem.
-### TxtSharedLibraryInterfaceDemo01
- `TxtSharedLibraryInterfaceDemo01`is about the use of the TA (`transfer area`)- -
-### TxtSharedLibraryInterfaceDemo02
+
+### `TxtSharedLibraryInterfaceDemo01`
+
+ `TxtSharedLibraryInterfaceDemo01`is about the use of the TA (`transfer area`)
+ 
+ 
+### `TxtSharedLibraryInterfaceDemo02`
+
  `TxtSharedLibraryInterfaceDemo02` is about the use of an encoder motor
-### TxtMyProject
+### `TxtMyProject`
+
 Is about creating the start code for your first project.
 
 ## Adding projects to this `FtTxtWorkspace`
 Later you can add more new projects or projects from others into this `FtTxtWorkspace`.
-It is also possible to have both SLI and executable projects in this `FtTxtWorkspace`. Both are using the same FtxDeps and `LinaroMap` Environment variable. Only the asset different.
+It is also possible to have both SLI and executable projects in this `FtTxtWorkspace`. Both are using the same `FtxDeps`project and `LinaroMap` Environment variable. Only the 'asset' different.
 - Add an existing Eclipse TXT project to this workspace.
   Copy that relevant project into the `FtTxtWorkspace` and use the Eclipse menu `file|Import` to add this project to the workspace. **Check if the project properties are fine!** 
   
@@ -46,7 +58,7 @@ It is also possible to have both SLI and executable projects in this `FtTxtWorks
   You will see a popup-box with the question for a new name. Fill the name for your project in. Press the `Copy` button.<br/>
   Check the project properties of the `C/C++ General`| `Paths and Symbols`  for the includes are fine. Probably you will need to change some paths.<br/>
   Clean the `src` file and start with coding. 
-- How the create  a new SLI project from scratch has been describe in:   ![link]() 
+- How the create a new SLI project from scratch has been describe in:   [Project setup from scratch](./ProjectSetUp(so).md) 
 
 That is all folks, have fun and success with your proper SLI's and/or executables.
 
