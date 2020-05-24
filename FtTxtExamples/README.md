@@ -4,7 +4,7 @@
 [link](../HowToStartMyFirstProject.md#dinpanel)
 
 
-[link2](#how-to-consult-the-trace-log)
+[link2](../#txtmyproject)
 
 Here you will find pre-compiled examples.
 ## What are these maps about?
