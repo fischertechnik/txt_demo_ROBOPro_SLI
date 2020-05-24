@@ -1,4 +1,4 @@
-[Back to main content overview](./README.md#overview)
+[Back to main content overview](/README.md#overview)
 
 # How to setup my fischertechnik SLI workspace in Eclipse?
 

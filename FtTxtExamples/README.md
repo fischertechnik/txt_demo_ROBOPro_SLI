@@ -1,7 +1,7 @@
 [Back to main content overview](../README.md#overview)
 
 # Examples for the end-user
-(readme of the 'FtTxtExamples' root)
+(read-me of the 'FtTxtExamples' root)
 
 Here you will find pre-compiled examples.
 ## What are these maps about?
