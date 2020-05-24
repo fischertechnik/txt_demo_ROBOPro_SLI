@@ -1,5 +1,5 @@
-[Back to main content overview](./README.md#overview)
 
+[Back to main content overview](./README.md#overview)
 # What is in my toolbox?
 As software developer you need a tool box, your software development environment. For the more experience software engineers this is a personal set of tools. But were to start as beginner?<br/> Creative programming and problem solving is more then only entering program code and compiling. It has also something to do with:
 - understand and describe the problem
@@ -202,6 +202,6 @@ Now we are ready to start with the [How to setup my fischertechnik SLI workspace
 
 
 # document history <a id="history"></a>
-- 2020-05-16/17/18/19 CvL 466.1.1 new<br/>
+- 2020-05-16/17/18/19/24 CvL 466.1.1 new<br/>
 - Original from: on-line training SLI-programming<br/>
   © 2020-04 ing. C.van Leeuwen Btw. Enschede Netherlands

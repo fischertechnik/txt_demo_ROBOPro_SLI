@@ -1,3 +1,16 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Extended C/C++ programming for the fischertechnik TXT](#extended-cc-programming-for-the-fischertechnik-txt)
+	- [Introduction](#introduction)
+	- [The organization of this GitHub repository](#the-organization-of-this-github-repository)
+	- [Documentation](#documentation)
+		- [For the developer:](#for-the-developer)
+		- [For the end-user:](#for-the-end-user)
+		- [General](#general)
+- [document history <a id="history"></a>](#document-history-a-idhistorya)
+
+<!-- /TOC -->
+
 #  Extended C/C++ programming for the fischertechnik TXT
 ## Introduction
 This is all about creating and/or using local programs on the fischertechnik TXT and RoboPro extensions.

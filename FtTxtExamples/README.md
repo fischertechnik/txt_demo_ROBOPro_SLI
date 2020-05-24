@@ -55,6 +55,9 @@ SharedLibraryInterface_ExecuteReadINT16 libTxtSliSaveTeachIn.so getCoorRShort RE
 ### SLI_TeachIn
 
 - This SLI TeachIn is the industrial Robot with 4 motors and switches as for the industrial Robot with 2 encoder motors and 2 motor (TX-C set).
+- 
+![console](./SLI_TeachIn/docs/DSC_4652.JPG)
+
 - Both the TeachIn RoboPro programs has been extended.
   There is now one extended player for both versions.
 - Target controller: fischertechnik TXT
