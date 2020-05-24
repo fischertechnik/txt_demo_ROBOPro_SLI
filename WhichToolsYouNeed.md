@@ -199,7 +199,7 @@ Install the Windows application `Graphviz`.<br/> **Check after the installation*
 Now we are ready to start with the [How to setup my fischertechnik SLI workspace in Eclipse?](./HowToStartWithFtTxtWorkspace.md)
 
 
-# document history
+# document history <a id="history"></a>
 - 2020-05-16/17/18/19 CvL 466.1.1 new<br/>
-  Original from: on-line training SLI-programming<br/>
+- Original from: on-line training SLI-programming<br/>
   © 2020-04 ing. C.van Leeuwen Btw. Enschede Netherlands

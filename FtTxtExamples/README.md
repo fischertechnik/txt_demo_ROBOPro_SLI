@@ -51,12 +51,13 @@ SharedLibraryInterface_ExecuteReadINT16 libTxtSliSaveTeachIn.so getCoorRShort RE
 ## Overview examples
 
 ### SLI_TeachIn
-[See also](./SLI_TeachIn/README.md)
+
 - This SLI TeachIn is the industrial Robot with 4 motors and switches as for the industrial Robot with 2 encoder motors and 2 motor (TX-C set).
 - Both the TeachIn RoboPro programs has been extended.
   There is now one extended player for both versions.
 - Target controller: fischertechnik TXT
 - The libTxtSliSaveTeachIn.so SLI makes it possible to read and to write files with  4D-coordinate set from and to the `/etc/knobloch/Data` (Date area on the TXT)
+- [See also the project readme](./SLI_TeachIn/README.md)
 #### Panel player
 ![console](./SLI_TeachIn/docs/player(panel_02).png)
 #### Panel TeachIn

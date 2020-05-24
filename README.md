@@ -28,9 +28,9 @@ However this C/C++ part covers only programs that will run directly on the TXT.
 
 ## The organization of this GitHub repository
 - The map `FtTxtExamples` is aiming on the end user<br/>
-The map contains usable examples.
+The map contains usable examples. [See also](./FtTxtExamples/README.md)
 - The map `FtTxtWorkspace` is aiming on the developer<br/>
-The root contains Eclipse example projects and the supporting TXT libraries.
+The root contains Eclipse example projects and the supporting TXT libraries. [See also](./FtTxtWorkspace/README.md)
 - In the root you will find a descriptions of "How to ... ? and overviews"
 
 Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "release" as separate zip files.
@@ -43,11 +43,12 @@ Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "rele
 - [What is in my toolbox? My program development environment](WhichToolsYouNeed.md)
 - [How to setup my fischertechnik SLI workspace in Eclipse?](HowToStartWithFtTxtWorkspace.md)
 - [How to start with my first fischertechnik SLI project?](HowToStartMyFirstProject.md)
-- [How to start a new Fischertechnik SLI project]()
-- [Notes](Notes.md).
+- [How to start a new Fischertechnik SLI project](./ProjectSetUp(so).md)
+- [Notes](./Notes.md).
 - [Introduction and overview SLI project for the developer](./FtTxtWorkspace/README.md).
 ### For the end-user:
 - [Introduction and overview SLI projects for the end user](./FtTxtExamples/README.md).
-
-# document history
-- 2020-05-16,18 CvL 466.1.1 new
+### General
+- [How to use the TXT web server interface](./HowToUseTxtWeb.md)
+# document history <a id="history"></a>
+- 2020-05-16/18/24 CvL 466.1.1 new
