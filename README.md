@@ -12,6 +12,7 @@
 <!-- /TOC -->
 
 #  Extended C/C++ programming for the fischertechnik TXT
+
 ## Introduction
 This is all about creating and/or using local programs on the fischertechnik TXT and RoboPro extensions.
 
@@ -27,6 +28,7 @@ A local program instead of a local RoboPro program.<br/>
 Faster because the leak of overhead from the RoboPro. In combination with technologies like Civetweb, Mosquitto MQTT this offers a possibility to create functional units which can be part of a bigger system. Also interesting for the end-user and the educational world.
 
 >  A **developer** is an somebody with at least basic software engineering's skills. He/she will find here information about how to create new SLI's or modifier existing SLI's Suggestions for the  toolbox needed, setting up a development environment on MS-Windows. How to use this environment to create documents and how to use your custom SLI's or executable.<br/>
+
 > An **end-user** is somebody with the focus on RoboPro and user of the functionality offer by the SLI's. He/she  will find here information and examples about how to use a SLI, the results of what has been develop.
 
 Besides the local use, there are also possibilities to incorporate the TXT remotely in programs which are running on other systems.
@@ -50,6 +52,7 @@ Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "rele
 
 ## Documentation
 Overview <a id="overview"></a>
+
 ### For the developer:
 - this Document
 - [What is an SLI?](SLI.md).
@@ -59,9 +62,12 @@ Overview <a id="overview"></a>
 - [How to start a new Fischertechnik SLI project](./ProjectSetUp(so).md)
 - [Notes](./Notes.md).
 - [Introduction and overview SLI project for the developer](./FtTxtWorkspace/README.md).
+- 
 ### For the end-user:
 - [Introduction and overview SLI projects for the end user](./FtTxtExamples/README.md).
+- 
 ### General
 - [How to use the TXT web server interface](./HowToUseTxtWeb.md)
+- 
 # document history <a id="history"></a>
 - 2020-05-16/18/24 CvL 466.1.1 new

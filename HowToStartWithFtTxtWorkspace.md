@@ -1,4 +1,10 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [How to setup my fischertechnik SLI workspace in Eclipse?](#how-to-setup-my-fischertechnik-sli-workspace-in-eclipse)
+	- [How to set up the FtTxtWorkspace?](#how-to-set-up-the-fttxtworkspace)
+- [document history <a id="history"></a>](#document-history-a-idhistorya)
+
+<!-- /TOC -->
 [Back to main content overview](/README.md#overview)
 
 # How to setup my fischertechnik SLI workspace in Eclipse?

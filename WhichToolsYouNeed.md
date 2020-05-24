@@ -1,6 +1,24 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [What is in my toolbox?](#what-is-in-my-toolbox)
+	- [Toolbox for the starter](#toolbox-for-the-starter)
+		- [Step 1 What to download?](#step-1-what-to-download)
+		- [Step 2 How to install?](#step-2-how-to-install)
+			- [Maps](#maps)
+			- [Software](#software)
+		- [Step 3 How to setup the software?](#step-3-how-to-setup-the-software)
+			- [How to prepare the TXT controller?](#how-to-prepare-the-txt-controller)
+			- [How to set up Putty for a SSH connection with the TXT? <a id="puttysetup"></a>](#how-to-set-up-putty-for-a-ssh-connection-with-the-txt-a-idputtysetupa)
+			- [How to set up FileZilla? <a id="filezillasetup"></a>](#how-to-set-up-filezilla-a-idfilezillasetupa)
+			- [How to set up Eclipse?](#how-to-set-up-eclipse)
+			- [Install Graphviz](#install-graphviz)
+- [document history <a id="history"></a>](#document-history-a-idhistorya)
+
+<!-- /TOC -->
 [Back to main content overview](./README.md#overview)
+
 # What is in my toolbox?
+
 As software developer you need a tool box, your software development environment. For the more experience software engineers this is a personal set of tools. But were to start as beginner?<br/> Creative programming and problem solving is more then only entering program code and compiling. It has also something to do with:
 - understand and describe the problem
 - create and describe a solution
@@ -19,6 +37,7 @@ For this there is  needed a set of tools. Hereby an overview:
 
 
 ## Toolbox for the starter
+
 This is an advice only. However these tools can be used in this introduction.
 
 ### Step 1 What to download?
@@ -78,6 +97,7 @@ Firmware 4.7.0 can be boot from SD-card and used in corporation with RoboPro 4.6
 
 ### Step 2 How to install?
 Note: Graphviz needs to be install after the installing  Eclox from the Eclipse Marktplace.
+
 #### Maps
 First of all, create on the same drive, the following maps:
 -	\eclipse\\<br/>

@@ -29,27 +29,29 @@ Here you will the TXT library and some Eclipse projects.
 All examples are Eclipse projects.
 ###  TxtSharedLibraryInterface
 [See readme](./TxtSharedLibraryInterface/README.md)<br/>
-    SLI basics.
+    Step 1 What are the SLI basics?
     
 ### TxtSharedLibraryInterface2
 [See readme](./TxtSharedLibraryInterface2/README.md)<br/>
-    Workaround for the online 5sec problem. 
+    Step 2 Does  fischertechnik RoboPro SLI-mechanism knows some peculiarities?<br/>
+    Blocking issues, a workaround for the online 5sec problem and init/stop issues. 
        .    
 ### TxtSharedLibraryInterfaceDemo01
-[See readme](./TxtSharedLibraryInterfaceDemo01/README.md)<br/
+[See readme](./TxtSharedLibraryInterfaceDemo01/README.md)<br/>
     SLI show the use of the Joystick<br/>
     A control element for a two wheels FT-bot (TXT discovery kit)
     
 ### TxtSharedLibraryInterfaceDemo02
-[See readme](./TxtSharedLibraryInterfaceDemo01/README.md)<br/
+[See readme](./TxtSharedLibraryInterfaceDemo01/README.md)<br/>
     (not yet available)
     SLI show the use of the Extended Motor control
 
 ### TxtDeps
-[See readme](./TxtDeps/README.md)<br/
+[See readme](./TxtDeps/README.md)<br/>
     This project contains the include and library fields for the fischertechnik SLI's and local programs Eclipse project. It is as it is, no need to compile or change.
 		
 ## My first project
+Advice: Stdy carefully the TxtSharedLibraryInterface, TxtSharedLibraryInterface2 and TxtSharedLibraryInterface3 before you start with proper project.
 Exercise:<br/>
 You are going make the basics for your first project. 
 
