@@ -1,32 +1,27 @@
 # Examples for the end-user
-[link](#dinpanel)
-
-[link](../HowToStartMyFirstProject.md#dinpanel)
-
-
-[link2](../HowToStartMyFirstProject.md#txtmyproject)
 
 Here you will find pre-compiled examples.
 ## What are these maps about?
 ### For a SLI:
-- lib map: The shared library in the
-- RoboPro map: One or more RoboPro programs, which shows how to use this SLI
-- root: Documentation about the functionality of this SLI
+- `libs` map: The shared libraries. 
+- `RoboPro` map: One or more RoboPro programs, which shows how to use this SLI
+- root: Documentation about the functionality of this SLI  |   |  
+
 ### For the local executable
-- C-Program map: The executable
+- `C-Program` map: The executables
 - root: Documentation about the functionality of this executable.
 
 ## How to install?
-The installation of the SLI's and executable can be done with the TXT web interface.
-The TXT interface enables also the maintenance of the public maps on the TXT, including connected USB-memory and SD-card (formatted as FAT32)
+The installation of the SLI's and executable can be done with the [TXT web server interface]().
+The TXT web server interface enables also the maintenance of the public maps on the TXT, including connected USB-memory and SD-card (formatted as FAT32)
 - The TXT web server needs to be activated.
 - Use your web browser to access the web page
 URL= http://<ip-addres of the TXT>
-- ID=TXT, pasword= the actual number of the TXT
+- ID=TXT, password= the actual number of the TXT
 - upload the SLI library to the libs map.
 - upload the executable to the C-Program map
 
-## How to consult the trace log? {#tracelog}
+## How to consult the trace log? 
 When you are developing a RoboPro application which is using a SLI, it could be useful to consult the trace log.
 How to do that?
 - Start a SSH connection with Putty with a screen -r command.
@@ -46,6 +41,6 @@ How to do that?
 #### Panel TeachIn
 ![console](./SLI_TeachIn/docs/TeachIn(panel_02).png)
 
-<a id="dinpanel"></a>
+
 # document history
 - 2020-05-16/22 v 466.1.1 new
