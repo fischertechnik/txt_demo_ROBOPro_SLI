@@ -29,7 +29,7 @@ Now that [our toolbox](./WhichToolsYouNeed.md) is ready, it is time to learn how
   <img src="./docs/WSSetup/start(04A).PNG" width="80%" >
 
 - Select `C/C++`, `Build` and then `Environment`, <br/>
-  add a new Environment variable `LINAROMAP` ([see](-/WhichToolsYouNeed.md#linaromap)),<br/>
+  add a new Environment variable `LINAROMAP` ([see](./WhichToolsYouNeed.md#linaromap)),<br/>
   and take your path to the Linaro toolchain as value (no / or \ at the end!!),<br/>
   Press `Apply` and `Apply and Close`.
 
