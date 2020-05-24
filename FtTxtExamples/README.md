@@ -1,7 +1,7 @@
 # Examples for the end-user
 [link](#tracelog)
 
-[link](#dinpanel)
+[link](../HowToStartMyFirstProject.md#dinpanel)
 
 
 [link2](#how-to-consult-the-trace-log)
