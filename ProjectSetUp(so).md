@@ -4,7 +4,7 @@ version: 2020-05-16
 
 
 ## Introduction
-### Step 1 Preparation
+### Step 1 Preparation 
 > If you have already a workspace with the TxtDeps ready then you can  [skip this step](#skip1).
 
 - To start with a new SLI-project, you need to have a workspace, for example `H:\workspace\FtTxtWorkspace` .  
