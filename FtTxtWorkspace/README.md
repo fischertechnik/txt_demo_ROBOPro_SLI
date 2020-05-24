@@ -2,11 +2,11 @@
 
 - [Eclipse example projects](#eclipse-example-projects)
 	- [Overview example projects](#overview-example-projects)
-		- [[TxtSharedLibraryInterface](./TxtSharedLibraryInterface/README.md)](#txtsharedlibraryinterfacetxtsharedlibraryinterfacereadmemd)
-		- [[TxtSharedLibraryInterface2](./TxtSharedLibraryInterface2/README.md)](#txtsharedlibraryinterface2txtsharedlibraryinterface2readmemd)
-		- [[TxtSharedLibraryInterfaceDemo01](./TxtSharedLibraryInterfaceDemo01/README.md)](#txtsharedlibraryinterfacedemo01txtsharedlibraryinterfacedemo01readmemd)
-		- [[TxtSharedLibraryInterfaceDemo02](./TxtSharedLibraryInterfaceDemo01/README.md)](#txtsharedlibraryinterfacedemo02txtsharedlibraryinterfacedemo01readmemd)
-		- [[TxtDeps](./TxtDeps/README.md)](#txtdepstxtdepsreadmemd)
+		- [TxtSharedLibraryInterface](#txtsharedlibraryinterface)
+		- [TxtSharedLibraryInterface2](#txtsharedlibraryinterface2)
+		- [TxtSharedLibraryInterfaceDemo01](#txtsharedlibraryinterfacedemo01)
+		- [TxtSharedLibraryInterfaceDemo02](#txtsharedlibraryinterfacedemo02)
+		- [TxtDeps](#txtdeps)
 	- [My first project](#my-first-project)
 		- [Copy and Paste the start projects](#copy-and-paste-the-start-projects)
 		- [Rename some files](#rename-some-files)
@@ -27,21 +27,26 @@ Here you will the TXT library and some Eclipse projects.
 ## Overview example projects
 
 All examples are Eclipse projects.
-### [TxtSharedLibraryInterface](./TxtSharedLibraryInterface/README.md)
+###  TxtSharedLibraryInterface
+[See readme](./TxtSharedLibraryInterface/README.md)<br/>
     SLI basics.
     
-### [TxtSharedLibraryInterface2](./TxtSharedLibraryInterface2/README.md)
+### TxtSharedLibraryInterface2
+[See readme](./TxtSharedLibraryInterface2/README.md)<br/>
     Workaround for the online 5sec problem. 
        .    
-### [TxtSharedLibraryInterfaceDemo01](./TxtSharedLibraryInterfaceDemo01/README.md)
+### TxtSharedLibraryInterfaceDemo01
+[See readme](./TxtSharedLibraryInterfaceDemo01/README.md)<br/
     SLI show the use of the Joystick<br/>
     A control element for a two wheels FT-bot (TXT discovery kit)
     
-### [TxtSharedLibraryInterfaceDemo02](./TxtSharedLibraryInterfaceDemo01/README.md)
+### TxtSharedLibraryInterfaceDemo02
+[See readme](./TxtSharedLibraryInterfaceDemo01/README.md)<br/
     (not yet available)
     SLI show the use of the Extended Motor control
 
-### [TxtDeps](./TxtDeps/README.md)
+### TxtDeps
+[See readme](./TxtDeps/README.md)<br/
     This project contains the include and library fields for the fischertechnik SLI's and local programs Eclipse project. It is as it is, no need to compile or change.
 		
 ## My first project
@@ -85,7 +90,7 @@ After this you project is ready to start with writing code.
 - You can remove the 4 examples functions but you can also use them as templates.
 - Update the iit and stop.
 - Add the `StayAwake` function
-  ```	
+  ```C	
 int setStayAwakeShort(short t) {
 	if (!IsInit) {
 		fprintf(stderr, "setStayAwakeShort: Not initialized!\n");
