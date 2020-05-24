@@ -4,7 +4,7 @@
 [link](../HowToStartMyFirstProject.md#dinpanel)
 
 
-[link2](../#txtmyproject)
+[link2](../HowToStartMyFirstProject.md#txtmyproject)
 
 Here you will find pre-compiled examples.
 ## What are these maps about?
