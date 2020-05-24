@@ -1,6 +1,9 @@
 # Examples for the end-user
 [link](#tracelog)
 
+[link](#dinpanel)
+
+
 [link2](#how-to-consult-the-trace-log)
 
 Here you will find pre-compiled examples.
@@ -43,5 +46,6 @@ How to do that?
 #### Panel TeachIn
 ![console](./SLI_TeachIn/docs/TeachIn(panel_02).png)
 
+<a name="#dinpanel"></a>
 # document history
 - 2020-05-16/22 v 466.1.1 new
