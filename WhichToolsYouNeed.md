@@ -132,7 +132,7 @@ Setting up FileZilla and Putty. Install DoxyGen with Eclipse Marktplace.
 <img src="./docs/toolbox/install(TXT01).png" width="35%" >
 <img src="./docs/toolbox/install(TXT02).png" width="35%" >
 
-#### How to set up Putty for a SSH connection with the TXT?
+#### How to set up Putty for a SSH connection with the TXT? <a id="puttysetup"></a>
 Putty is a remote console; it can be used to work with LINUX command.
 We are using Putty as console.
 

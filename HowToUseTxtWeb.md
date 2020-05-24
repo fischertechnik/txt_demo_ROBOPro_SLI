@@ -1,10 +1,12 @@
 # TXT WEB Server
-The TXT controller firmware version> = 4.5.0 contains an integrated WEB server that can be used to upload and download programs and files to the TXT. In this way, e.g. C programs are copied from the computer to the TXT controller and then started via the user interface of the TXT controller.
+## Introduction
+The TXT controller firmware version> = 4.5.0 contains an integrated WEB server that can be used to upload and download programs, SLI's data and data files to/from the TXT controller. In this way, e.g.  compiled C/C++ programs are copied from the computer to the TXT controller and then started via the user interface of the TXT controller.
 
+## How to activate the web server?
 If the WEB server is not yet switched on, it must first be activated in the TXT menu (*Settings* -> *(down arrow)* -> *Security* -> *WEB Server*). When the WEB server is switched on, a "ws" symbol is displayed in the upper TXT status bar.
 
 ![Settings WEBServer](./docs/webserver/Settings_WEBServer0.png) ![Settings WEBServer](./docs/webserver/Settings_WEBServer1.png) ![Settings WEBServer](./docs/webserver/Settings_WEBServer2.png) ![Settings WEBServer](./docs/webserver/Settings_WEBServer_Off.png) ![Statusbar WS](./docs/webserver/Settings_WEBServer_On.png)
-
+## How to connect?
 The TXT controller can be connected to the computer via *USB* / *WLAN* / *Bluetooth*.
 
 The WEB page of the TXT controller can be accessed when the IP address is entered in the WEB browser (*Chrome* or *Firefox* are recommended). Depending on the interface, a different IP address must be entered.
@@ -28,6 +30,9 @@ The following query of the password is displayed in the WEB browser:
 After entering the password, the page of the TXT controller should now be visible.
 
 ![TXT WEB Site](./docs/webserver/TXT_WEB_Site_2.png)
+## How to managed directories and files
+There exist a number of predefined directories (maps). The use can add his proper files and maps.<br/>
+It is also possible to use a USB stick or SD-card (if not in use as boot device).
 
 - To upload (copy) **compiled C/C++ programs** to the TXT controller, change to the directory "C-Program" by clicking on it with the mouse. In this directory  are stored on the TXT controller.
 - To upload (copy) **compiled C/C++ SLI libraries** to the TXT controller, change to the directory "libs" by clicking on it with the mouse. In this directory (.so) SLI shared libraries are stored on the TXT controller. <br/> Remark: This directory is not usable for normal C/C++ share libraries.
@@ -55,8 +60,24 @@ In the screenshot is the compiled C/C++ program `TxtFactoryVGR` (an executable h
 If the program is started, the button will change to red. The program can be stopped again with the red button.
 
 ![TXT Start](./docs/webserver/TXT_Start.png) ![TXT Stop](./docs/webserver/TXT_Stop.png)
+## How to make use of a USB storage device or a SD-card?
+On the web page with the root you could see this:
+
+![TXT Autoload](./docs/webserver/TXT_WEB_Site_4.png)
+
+On the web page under ExternalUSB and ExternalSD you could see the device names of already used devices.<br/>
+These maps kan not be deleted. The device that is realy present can also be inspected.
+
+![TXT Autoload](./docs/webserver/TXT_WEB_Site_5.png)
+
+You could see something like this:
+
+![TXT Autoload](./docs/webserver/TXT_WEB_Site_6.png)
+
+
 
 
 # document history <a id="history"></a>
--  [Based on fischertechnik Training Factory] (https://github.com/fischertechnik/txt_training_factory/blob/master/doc/WEBServer.md)<br/>
+- 2020-05-24 CvL 466.1.1 new
+-  [Based on fischertechnik Training Factory](https://github.com/fischertechnik/txt_training_factory/blob/master/doc/WEBServer.md)<br/>
   

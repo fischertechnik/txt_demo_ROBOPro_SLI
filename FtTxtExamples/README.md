@@ -12,7 +12,7 @@ Here you will find pre-compiled examples.
 - root: Documentation about the functionality of this executable.
 
 ## How to install?
-The installation of the SLI's and executable can be done with the [TXT web server interface]().
+The installation of the SLI's and executable can be done with the [TXT web server interface](../HowToUseTxtWeb.md).
 The TXT web server interface enables also the maintenance of the public maps on the TXT, including connected USB-memory and SD-card (formatted as FAT32)
 - The TXT web server needs to be activated.
 - Use your web browser to access the web page
@@ -25,7 +25,7 @@ URL= http://<ip-addres of the TXT>
 When you are developing a RoboPro application which is using a SLI, it could be useful to consult the trace log.
 How to do that?
 - Start a SSH connection with Putty with a screen -r command.
-  Be sure that Putty is login to a file. See also: 
+  Be sure that Putty is login to a file. [See also:](../WhichToolsYouNeed.md#puttysetup)
 - 
  
 ## Overview examples
@@ -42,5 +42,5 @@ How to do that?
 ![console](./SLI_TeachIn/docs/TeachIn(panel_02).png)
 
 
-# document history
-- 2020-05-16/22 v 466.1.1 new
+# document history <a id="history"></a>
+- 2020-05-16/22 CvL 466.1.1 new
