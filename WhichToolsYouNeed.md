@@ -108,13 +108,13 @@ See also the following 3 screen dumps:
 <img src="./docs/toolbox/install(Eclipse02).png" width="40%" >
 <img src="./docs/toolbox/install(Eclipse03).png" width="40%" >
 
-- Linaro<br/>
+- Linaro <a id="linaromap"></a>
 
     Last but not least is making the Linaro toolchain available.<br/>
 Unzip the Linaro toolchain into the map `<drive>\TXT\toolchain\`.<br/>
 You will get something like this.<br/>
  `H:\TXT\toolchain\gcc-linaro-7.2.1-2017.11-i686-mingw32_arm-linux-gnueabihf`<br/>
-In this case the drive is `H:` but it could be a different drive. This path `<drive>\TXT`<a id="linaromap"></a> you will need later as [workspace Environment variable](./HowToStartWithFtTxtWorkspace.md#wsenvvar) to configurate the tool chain in your C/C++ project in Eclipse.<br/>
+In this case the drive is `H:` but it could be a different drive. This path `<drive>\TXT` you will need later as [workspace Environment variable](./HowToStartWithFtTxtWorkspace.md#wsenvvar) to configurate the tool chain in your C/C++ project in Eclipse.<br/>
 An image of how this looks like in the Windows explorer:
 
   <img src="./docs/toolbox/install(Linaro01).png" width="70%" >
