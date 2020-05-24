@@ -89,8 +89,8 @@ int setStayAwakeShort(short msSleep) {
 		// fprintf( "ExampleSLI:setValueDouble: already initialized!\n");
 	}
 	//Add sleep to the StayAwake
-	if(msSleep>0) std::this_thread::sleep_for(std::chrono::milliseconds(msSleep));
-	else printf( "setStayAwakeShort: t not Ok!\n");
+	//if(msSleep>0) std::this_thread::sleep_for(std::chrono::milliseconds(msSleep));
+	//the `Lock Interface` property
 	return 0;
 }
 /*****************************************************************************************
