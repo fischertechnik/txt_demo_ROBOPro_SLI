@@ -19,7 +19,7 @@ The 'TxtDeps` root contains a README.me about the instruction of how to make use
 Each root  of the following projects  contains a README.md with the detail, description  and instructions for that project
 ### TxtSharedLibraryInterface
 `TxtSharedLibraryInterface` is about the basics.
-<a id="#dinpanel"></a>
+
 ### TxtSharedLibraryInterface2
 `TxtSharedLibraryInterface2` is about the on-line 5 sec problem
 ### `TxtSharedLibraryInterface3`
@@ -48,7 +48,7 @@ It is also possible to have both SLI and executable projects in this `FtTxtWorks
 
 That is all folks, have fun and success with your proper SLI's and/or executables.
 
-# document history
+# document history <a id="#dinpanel"></a>
 - 2020-05-24 CvL 466.1.1 new<br/>
   Original from: on-line training SLI-programming<br/>
   © 2020-04 ing. C. van Leeuwen Btw. Enschede Netherlands
