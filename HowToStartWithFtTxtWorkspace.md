@@ -1,3 +1,4 @@
+[Back to main content overview][/README.me#overview]
 # How to setup my fischertechnik SLI workspace in Eclipse?
 
 Now that [our toolbox](./WhichToolsYouNeed.md) is ready, it is time to learn how to get started with your own project via the examples.
