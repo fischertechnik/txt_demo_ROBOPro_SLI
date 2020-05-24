@@ -1,16 +1,4 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [Eclipse example projects](#eclipse-example-projects)
-	- [Overview example projects](#overview-example-projects)
-	- [Overview examples](#overview-examples)
-		- [[TxtSharedLibraryInterface](./TxtSharedLibraryInterface/README.md)](#txtsharedlibraryinterfacetxtsharedlibraryinterfacereadmemd)
-		- [[TxtSharedLibraryInterface2](./TxtSharedLibraryInterface2/README.md)](#txtsharedlibraryinterface2txtsharedlibraryinterface2readmemd)
-		- [[TxtSharedLibraryInterfaceDemo01](./TxtSharedLibraryInterfaceDemo01/README.md)](#txtsharedlibraryinterfacedemo01txtsharedlibraryinterfacedemo01readmemd)
-		- [[TxtSharedLibraryInterfaceDemo02](./TxtSharedLibraryInterfaceDemo01/README.md)](#txtsharedlibraryinterfacedemo02txtsharedlibraryinterfacedemo01readmemd)
-		- [TxtDeps](#txtdeps)
-- [document history <a id="history"></a>](#document-history-a-idhistorya)
-
-<!-- /TOC -->
+[Back to main content overview](../README.md#overview)
 
 # Eclipse example projects
 Here you will the TXT library and some Eclipse projects.
@@ -34,8 +22,8 @@ All examples are Eclipse projects.
     (not yet available)
     SLI show the use of the Extended Motor control
 
-### TxtDeps
+### [TxtDeps](./TxtDeps/README.md)
     Contains the include and library fields for the fischertechnik SLI's and local programs Eclipse project (TxtDeps is also a project)
 
 # document history <a id="history"></a>
-- 2020-05-16 Cvl 466.1.1 new
+- 2020-05-16,24 Cvl 466.1.1 new

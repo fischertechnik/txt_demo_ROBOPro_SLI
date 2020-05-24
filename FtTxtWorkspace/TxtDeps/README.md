@@ -1,3 +1,4 @@
+[Back to main content overview](../README.md)
 # TXT Shared Library Interface (SLI) Supporting libraries
 version: 2020-04-26
 
@@ -34,7 +35,7 @@ You can also copy this list into the .cproject file (XML-file)
 1. Close the project. 
 1. Open the .cproject in Notepad++.
 1. Search the DummyXXX and add the code lines.
-1. DOn't forget to temove the dummy.
+1. Don't forget to temove the dummy.
 
 ![Image Dummyxx](./docs/ProjectPropLib4.JPG)
 
@@ -71,8 +72,9 @@ You can also copy this list into the .cproject file (XML-file)
 									<listOptionValue builtIn="false" value="tiff"/>
 									<listOptionValue builtIn="false" value="jsoncpp"/>
 ```
+# document history <a id="history"></a>
+- 2020-05-,24 Cvl 466.1.1 new
 
-(c) 2020 C. van Leeuwen Enschede Netherlands
 
 
 

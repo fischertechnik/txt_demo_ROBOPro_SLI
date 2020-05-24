@@ -3,7 +3,7 @@
 
 # How to start with my first fischertechnik SLI project?
 
-We saw in [How to setup my Eclipse workspace?](./HowToStartWithFtTxtWorkspace.md)   how we were able to prepare eclipse start for the real thing: creating, compiling and testing of programs for the TXT.<br/>
+We saw in [How to setup my Eclipse workspace](./HowToStartWithFtTxtWorkspace.md)   how we were able to prepare eclipse start for the real thing: creating, compiling and testing of programs for the TXT.<br/>
 Now we are going to compile and run a SLI and setup our first new SLI.
 We will also see how to track and analyze the progress of an ongoing RoboPro program using an SLI with Putty and Notepad ++
 
