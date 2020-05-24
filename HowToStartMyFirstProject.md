@@ -1,4 +1,5 @@
-[Back to main content overview](/README.me#overview)
+[Back to main content overview](./README.me#overview)
+
 # How to start with my first fischertechnik SLI project?
 
 In [How to setup my Eclipse workspace?](./HowToStartWithFtTxtWorkspace.md) we see how we can make Eclipse ready to start for the real work: creating, compiling and testing of program.<br/>

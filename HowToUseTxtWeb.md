@@ -1,4 +1,5 @@
-[Back to main content overview](/README.me#overview)
+[Back to main content overview](./README.me#overview)
+
 # TXT WEB Server
 ## Introduction
 The TXT controller firmware version> = 4.5.0 contains an integrated WEB server that can be used to upload and download programs, SLI's data and data files to/from the TXT controller. In this way, e.g.  compiled C/C++ programs are copied from the computer to the TXT controller and then started via the user interface of the TXT controller.
