@@ -1,4 +1,4 @@
-[Back to main content overview](./README.me#overview)
+[Back to main content overview](./README.md#overview)
 
 # How to start with my first fischertechnik SLI project?
 
