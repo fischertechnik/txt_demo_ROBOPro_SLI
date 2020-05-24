@@ -80,7 +80,7 @@ int stop(short *t) {
  * \param t not in use
  * \return 0
  */
-int setStayAwakeShort(short t) {
+int setStayAwakeShort(short msSleep) {
 
 	if (!IsInit) {
 		fprintf(stderr, "setStayAwakeShort: Not initialized!\n");
@@ -88,7 +88,9 @@ int setStayAwakeShort(short t) {
 	} else {
 		// fprintf( "ExampleSLI:setValueDouble: already initialized!\n");
 	}
-
+	//Add sleep to the StayAwake
+	if(msSleep>0) std::this_thread::sleep_for(std::chrono::milliseconds(msSleep));
+	else printf( "setStayAwakeShort: t not Ok!\n");
 	return 0;
 }
 /*****************************************************************************************
