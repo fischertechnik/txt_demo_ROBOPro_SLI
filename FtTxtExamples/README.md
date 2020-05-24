@@ -1,4 +1,4 @@
-[Back to main content overview][/README.me#overview]
+[Back to main content overview](/README.me#overview)
 # Examples for the end-user
 (readme of the 'FtTxtExamples' root)
 
