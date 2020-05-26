@@ -8,7 +8,7 @@
 		- [Part A blocking](#part-a-blocking)
 		- [Part B `Lock Interface` property](#part-b-lock-interface-property)
 	- [What have you learn?](#what-have-you-learn)
-- [document history <a id="history"></a>](#document-history-a-idhistorya)
+- [document history](#history)
 
 <!-- /TOC -->
 
