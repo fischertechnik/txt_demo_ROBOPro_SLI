@@ -5,4 +5,7 @@
 /Debug/
 /Release/src/
 /Release/*.*
-
+/Documentation/html/
+/Documentation/*.*
+Documentation/html/
+Documentation/*.*
