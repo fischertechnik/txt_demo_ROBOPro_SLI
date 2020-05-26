@@ -4,6 +4,6 @@
 /.tracecompass/
 /Debug/
 /Release/src/
-/Release/*.*
+/Release/
 /Documentation/html/
-/Documentation/*.*
+/Documentation/
