@@ -1,5 +1,5 @@
-#/.metadata/
-#.settings/
+/.metadata/
+.settings/
 RemoteSystemsTempFiles/
 .tracecompass/
 /TxtSharedLibraryInterface/Debug/
@@ -7,8 +7,8 @@ RemoteSystemsTempFiles/
 /TxtSharedLibraryInterface/Release/*.*
 /TxtSharedLibraryInterface/Documentation/html/
 /TxtSharedLibraryInterfaceDemo01/Debug
-#/TxtSharedLibraryInterfaceDemo01/Release/src
-#/TxtSharedLibraryInterfaceDemo01/Release/*.*
+/TxtSharedLibraryInterfaceDemo01/Release/src
+/TxtSharedLibraryInterfaceDemo01/Release/*.*
 /TxtSharedLibraryInterfaceDemo01/Documentation/html/
 
 
