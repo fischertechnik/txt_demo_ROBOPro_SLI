@@ -1,0 +1,7 @@
+10:14:08 **** Rebuild of configuration Release for project TxtSharedLibraryInterface ****
+Info: Internal Builder is used for build
+arm-linux-gnueabihf-g++ "-IH:\\WorkspaceGitHub\\fischertechnik\\txt_demo_ROBOPro_SLI\\FtTxtWorkspace\\TxtSharedLibraryInterface\\includes" "-IH:\\WorkspaceGitHub\\fischertechnik\\txt_demo_ROBOPro_SLI\\FtTxtWorkspace\\TxtDeps\\Txt_Includes" -O3 -Wall -c -fmessage-length=0 -fPIC -o "src\\LibExampleSLI.o" "..\\src\\LibExampleSLI.cpp" 
+arm-linux-gnueabihf-g++ "-LH:\\WorkspaceGitHub\\fischertechnik\\txt_demo_ROBOPro_SLI\\FtTxtWorkspace\\TxtDeps\\Txt_Libs" "-LH:\\WorkspaceGitHub\\fischertechnik\\txt_demo_ROBOPro_SLI\\FtTxtWorkspace\\TxtDeps\\Txt_Libs_deps" -shared -o libExampleSLI.so "src\\LibExampleSLI.o" -lROBOProLib -lKeLibTxt -lMotorIOLib -lTxtControlLib -ldl -lpthread -lSDLWidgetsLib -lSDL -lSDL_gfx -lSDL_ttf -lSDL_image -lpaho-mqttpp3 -lpaho-mqtt3c -lpaho-mqtt3a -lopencv_core -lopencv_videoio -lopencv_imgcodecs -lopencv_imgproc -lts -lfreetype -lz -lpng16 -lbz2 -ljpeg -lasound -ldirectfb -lfusion -ldirect -ltiff -ljsoncpp 
+
+10:14:22 Build Finished. 0 errors, 0 warnings. (took 13s.695ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TxtSharedLibraryInterface/ROBOPro/TxtSharedLibraryInterface.rpp&apos; to &apos;LibExample01(SLI).rpp&apos;" description="Rename resource &apos;TxtSharedLibraryInterface.rpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ROBOPro/TxtSharedLibraryInterface.rpp" name="LibExample01(SLI).rpp" stamp="1589898615476" updateReferences="true"/>
+</session>
