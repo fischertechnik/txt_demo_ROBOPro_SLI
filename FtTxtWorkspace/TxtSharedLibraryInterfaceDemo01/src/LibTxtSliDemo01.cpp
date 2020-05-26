@@ -1,4 +1,4 @@
-/*
+/*!
  * Shared Library Interface
  * Demo about the use of the Transfer Area and the Ir (Joystick) part
  * started 2018-09-16
@@ -6,6 +6,7 @@
  * version 1.1.1.2 2018-09-23 resolve some bugs, M1..M4, and Joysticks
  * version 1.1.1.3 2018-11-16 resolve some bugs, M1..M4, and Joysticks
  * version 1.1.1.4 2019-05-04 adjust some details in the algoritme
+ * version 1.1.2.1 2020-05-26
  *
  * For fischertechnik GmbH by ing. C. van Leeuwen Btw.
  */
@@ -18,14 +19,15 @@ using namespace std;
 #include "KeLibTxtDl.h"          // TXT Lib
 #include "FtShmem.h"
 #include "XYTransformer.h"
-/*
- * Some parts of this demo works only in the local mode.
+/*!
+ * @remark Some parts of this demo works only in the local mode.
  * The problem in the online mode is that the "Motor IOLib Thread" is not
  * running.
  * How this thread could be activate is part of research [2018-09-15]
  *
  */
-/* static variables
+/*!
+ * @remark static variables
  * note 01: The library is loaded on the first time of use and note removed from
  *          the memory after the ending of the program.
  *          So the IsInit can be true at the restart of an RoboPro program.
@@ -39,6 +41,22 @@ using namespace std;
  *          https://filezilla-project.org/
  *          or https://winscp.net
  */
+/*! @var static bool IsInit
+    \brief Set  by #init() .
+    @var static INT16 motorRightPower=0
+    \brief Set motor power for the right motor[-512..512].
+    @var static INT16 motorLeftPower=0
+    \brief Set motor power for the left motor[-512..512].
+    @var static INT16 motorIdLeft=1
+    \brief Set which  motor output will be used for the left motor, range [1,2,3,4], #constrain motorIdLeft!=#motorIdRight.
+     @var static INT16 motorIdRight=1
+    \brief Set which  motor output will be used for the right motor,range [1,2,3,4], #constrain #motorIdLeft!=#motorIdRight
+     @var static INT16 motorLeftDirection=0
+      \brief The direction for the motor [CCW=-1, halt=0, CW=1]
+     @var static INT16 motorRightDirection=0
+      \brief The direction for the motor [CCW=-1, halt=0, CW=1]
+  */
+
 static bool IsInit = false;
 static INT16 motorRightPower=0,motorLeftPower=0; //power [-512..512]
 static INT16 motorRightDirection=0, motorLeftDirection=0; //direction [CCW=-1, halt=0, CW=1]
@@ -94,7 +112,7 @@ extern "C" {
   * the SLI functions.
   *****************************************************************************************/
 
-  /* First example
+  /*! First example:
    * Recalculate based on X and Y the power for the left and right motor
    *
    *  Sets  the motorLeftPower and motorRightPower
@@ -140,10 +158,13 @@ extern "C" {
 
 
   }
-  /* First example, choice of motors will be done in the RoboPro program self.
-   * The result of the calculation in Joystick for the left motor [-512..0..512]
+  /*! @brief First example,
+   * @details Choice of motors will be done in the RoboPro program self.
+   * The result of the calculation in setJoystickShort for the left motor [-512..0..512]
+   * @see getMotorRightPowerShort
+   * @see getMotorLeftPowerShort
    */
-  int getMotorLeftPowerShort(INT16* v)
+  int getMotorLeftPowerShort(INT16 * v)
   {
     if( !IsInit )
       {
@@ -154,10 +175,17 @@ extern "C" {
     printf( "SliDemo01.getMotorLeftPowerShort: %d\n", *v);
     return 0;
   }
-  /* First example, choice of motors will be done in the RoboPro program self.
+  /*! First example, choice of motors will be done in the RoboPro program self.
    * The result of the calculation in Joystick for the right motor [-512..0..512]
    */
-  int getMotorRightPowerShort(INT16* v)
+  /*! @brief First example,
+     * @details Choice of motors will be done in the RoboPro program self.
+     * The result of the calculation in setJoystickShort for the rightt motor [-512..0..512]
+     * @see getMotorRightPowerShort
+     * @see getMotorLeftPowerShort
+     * @param [out] v
+     */
+  int getMotorRightPowerShort(INT16 * v)
   {
     if( !IsInit )
       {
@@ -168,7 +196,7 @@ extern "C" {
     printf( "SliDemo01.getMotorRightPowerShort: %d\n", *v);
     return 0;
   }
-  /*
+  /*!
    *
    */
   int setTransformerShort(INT16 v)
@@ -189,9 +217,9 @@ extern "C" {
   }
 
 
-  /*  For the second example
+  /*!  For the second example
    *  Set which motor is in use as left motor [1..4]
-   *  uses: transformer,
+   *  @param v left motor [1..4]
    */
   int setMotorIdLeftShort(INT16 v)
   {
@@ -209,8 +237,9 @@ extern "C" {
     printf( "SliDemo01.setMotorLeftShort: motor left = M%d\n", v);
     return 0;
   }
-  /*  For the second example
+  /*!  For the second example
      *  Set which motor is in use as right motor [1..4]
+     *  @param v right motor [1..4]
      */
   int setMotorIdRightShort(INT16 v)
   {
@@ -228,15 +257,20 @@ extern "C" {
     printf( "SliDemo01.setMotorRightShort: motor right = M%d\n", v);
     return 0;
   }
-  /* Second example
-    * Recalculate based on X and Y the power for the left and right motor
+  /*! @brief Second example
+    * @details Recalculate based on X and Y the power for the left and right motor
     * and send this information directly to the motors.
     * Sets also the motorLeftPower and motorRightPower
     * These variables are accessible with: getMotorRightPowerShort
     *  and getMotorLeftPowerShort.
     * Note: runs only in the local mode.
+	* @param v  Ir device selector: 0=all, 1,2,3,4 = device0,.. device3.
+	* @return 0= no error,
+	* -1= is not init,
+	* -2=Ir device out of range,
+	* -3=TA is not available.
+	* -4= Error in transformer
     */
-
    int setJoystickMotorsShort(INT16 v)
    {
     bool rr;
@@ -256,20 +290,19 @@ extern "C" {
    if (!pTArea)
 	  {
 	    fprintf(stderr, "SliDemo2.setJoystickMotorsShort: Error, TA is not available!\n");
-	    return -1;
+	    return -3;
 	  }
 
    INT16 varX = pTArea->sTxtInputs.sIrInput[v].i16JoyLeftX ;                  //
    INT16 varY = pTArea->sTxtInputs.sIrInput[v].i16JoyLeftY ;                  //
    int PowerLeft=0, PowerRight=0;
    rr= fischertechnik::joystick::XYTransformer::transformXYtoLeftRight(varX, varY, PowerLeft,  PowerRight,transformer);
-   //  rr= fischertechnik::joystick::XYTransformer::transformXYtoLeftRightSimple(varX, varY, PowerLeft,  PowerRight);
-    if (!rr)
+     if (!rr)
       {
 	fprintf (
 	    stderr,
 	    "SliDemo01.setJoystickMotorsShort:Error in  XYTransformation \n");
-	return -3;
+	return -4;
       }
 
     motorLeftPower = PowerLeft;
