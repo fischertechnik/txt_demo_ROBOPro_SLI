@@ -1,7 +1,6 @@
 # Content
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Content](#content)
 - [TXT Shared Library Interface (SLI) 2 for ROBOPro](#txt-shared-library-interface-sli-2-for-robopro)
 	- [Assignment 1](#assignment-1)
 	- [Assignment 2](#assignment-2)
@@ -34,6 +33,7 @@ int setStayAwakeShort(short t) {
 And in `LibExample02_A(SLI).rpp`
 
 ![](./docs/StayAwake.png)
+
 ## Assignment 1 
 Use now `libExampleSLI2.so`.<br/>
 Repeat Assignment 3 part A from the `TxtSharedLibraryInterface` project.<br/>
@@ -68,5 +68,7 @@ Now you will see the roll of the `Lock Interface` property.
 - That SLI functions are blocking to each other.
 - What the roll of `Lock Interface` property is.
 
-# document history <a id="history"></a>
+<a id="history"></a>
+
+# document history 
 - 2020-05-24 Cvl 466.1.1 new
