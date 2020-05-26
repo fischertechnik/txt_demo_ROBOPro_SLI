@@ -1,7 +1,25 @@
+# Content
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Content](#content)
+- [What are shared libs?](#what-are-shared-libs)
+	- [Introdcution](#introdcution)
+	- [Shared Library / C Input](#shared-library-c-input)
+	- [Shared Library / C Output](#shared-library-c-output)
+	- [Shared Library in C / C++](#shared-library-in-c-c)
+		- [libExampleSLI.so](#libexamplesliso)
+- [include <stdio.h>](#include-stdioh)
+- [include "KeLibTxtDl.h"          // TXT Lib](#include-kelibtxtdlh-txt-lib)
+- [include "FtShmem.h"             // TXT Transfer Area](#include-ftshmemh-txt-transfer-area)
+	- [ROBOPro](#robopro)
+		- [Property Window](#property-window)
+- [document history](#document-history)
+
+<!-- /TOC -->
 [Back to main content overview](/README.md#overview)
 # What are shared libs?
 ## Introdcution
-The shared library input/output element allows to call functions and return/supply a value from/to shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing RoboPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing.
+The shared library input/output element allows to call functions and return/supply a value from/to shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing RoboPro with C/C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing.
 
 ![blocks](docs/blocks.png)
 
@@ -125,4 +143,4 @@ The function names should start with get and end with Short or Double to indicat
 - The Data type of the value returned can be either a 16 bit signed integer or a floating point value. If the data type is floating point, the value is converted from C 64 bit double format to ROBOPro 48 bit float format. Please note that the range and precision of these types is different and conversion errors may occur, especially for out of range values. Please also note that for 16 bit integers values a value of -32768 is treated as undefined/error in ROBOPro and is usually displayed as '?'.
 
 # document history
-- 2020-05-16 v 466.1.1 new
+- 2020-05-16,26 v 466.1.1 new

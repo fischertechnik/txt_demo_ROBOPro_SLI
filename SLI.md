@@ -1,11 +1,32 @@
+# Content
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Content](#content)
+- [What is a fischertechnik RoboPro SLI?](#what-is-a-fischertechnik-robopro-sli)
+	- [Introduction](#introduction)
+	- [The `Shared library Input` and the `Shared library Output` element.](#the-shared-library-input-and-the-shared-library-output-element)
+		- [Where to find?](#where-to-find)
+		- [What is the meaning of their properties?](#what-is-the-meaning-of-their-properties)
+			- [General properties](#general-properties)
+	- [How to trace/debug SLI's](#how-to-tracedebug-slis)
+	- [Known issues<br/>](#known-issuesbr)
+		- [Online use](#online-use)
+		- [Blocking](#blocking)
+		- [Stays in memory](#stays-in-memory)
+		- [Errors after replacing a SLI shared library file.](#errors-after-replacing-a-sli-shared-library-file)
+- [document history](#document-history)
+
+<!-- /TOC -->
 [Back to main content overview](/README.md#overview)
 # What is a fischertechnik RoboPro SLI?
 ## Introduction
 From the perspective of RoboPro an SLI is a functional unit. RoboPro can send data to a SLI and can get data back from the SLI. But RoboPro can also start and stop more complex activities in a SLI, for example dedicated websocket or MQTT based communication with the outside world, image processing, I2C drivers, more complex closed control loops, etc.<br/>
-The fischertechnic TXT SLI makes it possible that C/C++ functions can be access via a RoboPro elements.
-For this RoboPro knows 2 elements, the `Shared library Input` element and the `Shared library Output` element. Thats is all.
+The fischertechnik TXT SLI makes it possible that C/C++ functions can be access via a RoboPro elements.
+For this RoboPro knows 2 elements, the `Shared library Input` element and the `Shared library Output` element. 
 
-The shared library input/output element allows to call functions and return/supply a value from/to shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing ROBOPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing
+The shared library `input/output element` allows to call functions and return/supply a value from/to shared library modules installed on the TXT controller. 
+Such libraries are typically written in the C or C++ programming language. 
+This allows interfacing ROBOPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing
 
 For outputs the C functions should be declared like:<br/>
  `int setValueDouble(double v);int getValueDouble(double * v);`<br/> `int setValueShort(short v);int getValueShort(short * v); `
@@ -121,5 +142,5 @@ Workaround: Restart the TXT after replacing a SLI.
 
 
 # document history
-- 2020-05-19/22 CvL 466.1.1 new<br/>
+- 2020-05-19/22/26 CvL 466.1.1 new<br/>
   Some parts are copy from the original README.md

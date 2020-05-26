@@ -1,8 +1,9 @@
+# Content
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [How to setup my fischertechnik SLI workspace in Eclipse?](#how-to-setup-my-fischertechnik-sli-workspace-in-eclipse)
 	- [How to set up the FtTxtWorkspace?](#how-to-set-up-the-fttxtworkspace)
-- [document history <a id="history"></a>](#document-history-a-idhistorya)
+- [document history](#document-history)
 
 <!-- /TOC -->
 [Back to main content overview](/README.md#overview)
@@ -71,10 +72,9 @@ Now that [our toolbox](./WhichToolsYouNeed.md) is ready, it is time to learn how
 
 
 
+<a id="history"></a>
 
-
-
-# document history <a id="history"></a>
-- 2020-05-18/19/24 CvL 466.1.1 new
+# document history 
+- 2020-05-18/19/24/26 CvL 466.1.1 new
 - Original from: on-line training SLI-programming<br/>
   © 2020-04 ing. C. van Leeuwen Btw.  Enschede Netherlands
