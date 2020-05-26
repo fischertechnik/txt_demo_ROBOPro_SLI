@@ -1,7 +1,9 @@
+# Content
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Eclipse example projects](#eclipse-example-projects)
-	- [Overview example projects](#overview-example-projects)
+- [About using DoxyGen](#about-using-doxyGen)
+  - [Overview example projects](#overview-example-projects)
 		- [TxtSharedLibraryInterface](#txtsharedlibraryinterface)
 		- [TxtSharedLibraryInterface2](#txtsharedlibraryinterface2)
 		- [TxtSharedLibraryInterfaceDemo01](#txtsharedlibraryinterfacedemo01)
@@ -12,7 +14,7 @@
 		- [Rename some files](#rename-some-files)
 		- [Inspecting and updating the project properties](#inspecting-and-updating-the-project-properties)
 		- [Start with coding](#start-with-coding)
-- [document history <a id="history"></a>](#document-history-a-idhistorya)
+- [document history></a>](#history)
 
 <!-- /TOC -->
 [Back to main content overview](../README.md#overview)
@@ -23,6 +25,12 @@ Here you will the TXT library and some Eclipse projects.
 > You need TXT firmware version >=4.6.6
 
 > see ROBOPro help in section 8.2.9 and 8.2.10
+
+## About using DoxyGen
+The examples contain a option to generate a DoxyGen based documentation.<br/>
+After running the documention, select the `doxyfile` and run it with the ![DoxyGen](./docs/doxygen1.png) symbol, you need to refresh the `Project Explorer view` with top menu `File|Refresh` or `F5`.
+ 
+![DoxyGen](./docs/doxygen.png)
 
 ## Overview example projects
 
@@ -104,5 +112,7 @@ int setStayAwakeShort(short t) {
 ``` 	
 - Don't forget to keep your documentation up to date.
 
-# document history <a id="history"></a>
-- 2020-05-16,24 Cvl 466.1.1 new
+<a id="history"></a>
+
+# document history 
+- 2020-05-16,24,26 Cvl 466.1.1 new
