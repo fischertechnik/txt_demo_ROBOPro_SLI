@@ -7,8 +7,8 @@ RemoteSystemsTempFiles/
 /TxtSharedLibraryInterface/Release/*.*
 /TxtSharedLibraryInterface/Documentation/html/
 /TxtSharedLibraryInterfaceDemo01/Debug
-/TxtSharedLibraryInterfaceDemo01/Release/src
-/TxtSharedLibraryInterfaceDemo01/Release
+#/TxtSharedLibraryInterfaceDemo01/Release/src
+#/TxtSharedLibraryInterfaceDemo01/Release/*.*
 /TxtSharedLibraryInterfaceDemo01/Documentation/html/
 
 
