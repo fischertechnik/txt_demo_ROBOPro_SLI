@@ -1,24 +1,25 @@
 /*!
- * Shared Library Interface
- * Demo about the use of the Transfer Area and the Ir (Joystick) part
- * started 2018-09-16
- * version 1.1.1.1
- * version 1.1.1.2 2018-09-23 resolve some bugs, M1..M4, and Joysticks
- * version 1.1.1.3 2018-11-16 resolve some bugs, M1..M4, and Joysticks
- * version 1.1.1.4 2019-05-04 adjust some details in the algoritme
- * version 1.1.2.1 2020-05-26
- *
- * For fischertechnik GmbH by ing. C. van Leeuwen Btw.
+ * @brief Example about the use of the Transfer Area and the Ir (Joystick) part
+ * project started 2018-09-16
+ * @version 1.1.1.1
+ * @version 1.1.1.2 2018-09-23 resolve some bugs, M1..M4, and Joysticks
+ * @version 1.1.1.3 2018-11-16 resolve some bugs, M1..M4, and Joysticks
+ * @version 1.1.1.4 2019-05-04 adjust some details in the algoritme
+ * @version 1.1.2.1
+ * \date 2020-05-26
+ * \copyright (c) 2018..2020 C. van Leeuwen
+ * \author ing. C. van Leeuwen Btw for fischertechnik GmbH
  */
 #include <stdio.h>          // for printf()
 #include <unistd.h>         // for sleep()
 #include <math.h>
 #include <iostream>
 #include <fstream>
-using namespace std;
 #include "KeLibTxtDl.h"          // TXT Lib
 #include "FtShmem.h"
 #include "XYTransformer.h"
+using namespace std;
+
 /*!
  * @remark Some parts of this demo works only in the local mode.
  * The problem in the online mode is that the "Motor IOLib Thread" is not
@@ -48,7 +49,7 @@ using namespace std;
     @var static INT16 motorLeftPower=0
     \brief Set motor power for the left motor[-512..512].
     @var static INT16 motorIdLeft=1
-    \brief Set which  motor output will be used for the left motor, range [1,2,3,4], #constrain motorIdLeft!=#motorIdRight.
+    \brief Set which  motor output will be used for the left motor, range [1,2,3,4], constrain #motorIdLeft!=#motorIdRight.
      @var static INT16 motorIdRight=1
     \brief Set which  motor output will be used for the right motor,range [1,2,3,4], #constrain #motorIdLeft!=#motorIdRight
      @var static INT16 motorLeftDirection=0
@@ -112,13 +113,13 @@ extern "C" {
   * the SLI functions.
   *****************************************************************************************/
 
-  /*! First example:
-   * Recalculate based on X and Y the power for the left and right motor
+  /*!
+   * @brief Recalculate based on X and Y the power for the left and right motor
    *
    *  Sets  the motorLeftPower and motorRightPower
     * These variables are accessible with: getMotorRightPowerShort
     *  and getMotorLeftPowerShort.
-    *  input: transformation algorithme [0..3]
+    *  @param[in] input: transformation algorithme [0..3]
    */
 
   int setJoystickShort(INT16 v)
@@ -163,6 +164,7 @@ extern "C" {
    * The result of the calculation in setJoystickShort for the left motor [-512..0..512]
    * @see getMotorRightPowerShort
    * @see getMotorLeftPowerShort
+   * @param[out] *v
    */
   int getMotorLeftPowerShort(INT16 * v)
   {
