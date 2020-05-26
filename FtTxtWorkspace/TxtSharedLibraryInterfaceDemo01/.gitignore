@@ -3,7 +3,7 @@
 /.externalToolBuilders/
 /.tracecompass/
 /Debug/
-/Release/src/
-/Release/*.*
+#/Release/src/
+#/Release/*.*
 /Documentation/html/
 /Documentation/*.*
