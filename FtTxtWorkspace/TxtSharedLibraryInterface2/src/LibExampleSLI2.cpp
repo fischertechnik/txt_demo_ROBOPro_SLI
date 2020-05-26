@@ -77,7 +77,7 @@ int stop(short *t) {
  * \bug In the online mode, RoboPro is terminating
  * ("ERROR calling read") the contact with the SLI modules after 5 sec of inactivity.
  * As workaround for this bug, RoboPro can call this empty function every  msec <5000.
- * \param t not in use
+ * \param msSleep not in use or sleep time in msec
  * \return 0
  */
 int setStayAwakeShort(short msSleep) {

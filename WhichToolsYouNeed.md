@@ -38,7 +38,7 @@ For this there is  needed a set of tools. Hereby an overview:
 
 ## Toolbox for the starter
 
-This is an advice only. However these tools can be used in this introduction.
+This is a piece of advice only. However, these tools can be used in this introduction.
 
 ### Step 1 What to download?
 
@@ -112,10 +112,11 @@ First of all, create on the same drive, the following maps:
    Map for the Putty Log-files
 
 #### Software
-After this start with the installations of the downloaded software
--	Install Notepad ++ <a id="notepad"></a>, Atom ,FileZilla, Putty and RealVNC viewer<br/>
- like you are use to do with Windows programs.<br/>
+After this, start with the installation of the downloaded software
+-	Install Notepad ++, Atom ,FileZilla, Putty and RealVNC viewer<br/>
+ like you are used to doing with Windows programs.<br/>
  Their installation programs will guide you through the process.
+
 
 - Eclipse<br/> 
 Run the installer.<br/>
@@ -166,11 +167,12 @@ The user name: `ROBOPro`, the password: `ROBOPro`
 -	As remote command: [screen -r](https://www.geeksforgeeks.org/screen-command-in-linux-with-examples/)
    You can find what this means in the Linux command help on the internet.<br/>
    When you leave this line blanc, you will get the LINUX command prompt.
-- Save these setting and start the connection.
-- Run with RoboPro a small RoboPro program and observe what the console shows you.
-- Go with the Windows file manager to the \Log\Putty\ map and open with Notepad++ the log file.
-Now you can also inspect the results. When the log file changes, Notepad++ will reload the file.
-- Warning: Use only the TXT root account for very special activities.
+	 - Save these settings and start the connection.
+	 - Run with RoboPro a small RoboPro program and observe what the console shows you.
+	 - Go with the Windows file manager to the \Log\Putty\ map and open the log file with Notepad++.
+	 Now you can also inspect the results. When the log file changes, Notepad++ will reload the file.
+	 - Warning: Use only the TXT root account for exceptional activities.
+
 
 <img src="./docs/toolbox/install(Putty01).png" width="45%" >
 
@@ -190,8 +192,9 @@ The user name: `ROBOPro`,
 <img src="./docs/toolbox/install(FileZilla01).png" width="60%" >
 
 Start FileZilla and observe what you are seeing.<br/>
-Remark: The public maps can also be inspected and maintain via the TXT web interface.<br/>
+Remark: The public maps can also be inspected and maintained via the TXT web interface.<br/>
 See for an introduction the first part on [this link:]( https://github.com/fischertechnik/txt_training_factory/blob/master/doc/WEBServer_de.md)
+
 
 <img src="./docs/toolbox/install(FileZilla02).png" width="60%" >
 

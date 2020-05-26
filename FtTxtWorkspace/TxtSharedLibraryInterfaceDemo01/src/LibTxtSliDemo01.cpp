@@ -53,12 +53,7 @@ FILE *DebugFile;
 extern "C" {
 
   // Return value:
-  //  0: success, continue with waiting for pFinishVar becoming 1
-  //  1: not finished
-  //  2: busy (entity locked by other process)
-  // -1: error
-  // Other positive values can be used for other waiting codes
-  // Other negative values can be used for other error codes
+  //  0: success, otherwise error and continuation of the workflow by the error output
 
   int init(short* t)
   {
@@ -77,6 +72,27 @@ extern "C" {
       }
     return 0;
   }
+  /*! \brief need to be used in the online mode.
+   * \bug In the online mode, RoboPro is terminating
+   * ("ERROR calling read") the contact with the SLI modules after 5 sec of inactivity.
+   * As workaround for this bug, RoboPro can call this empty function every  msec <5000.
+   * \param t not in use
+   * \return 0
+   */
+  int setStayAwakeShort(short t) {
+
+  	if (!IsInit) {
+  		fprintf(stderr, "setStayAwakeShort: Not initialized!\n");
+  		return -1;
+  	} else {
+  		// fprintf( "ExampleSLI:setValueDouble: already initialized!\n");
+  	}
+
+  	return 0;
+  }
+  /*****************************************************************************************
+  * the SLI functions.
+  *****************************************************************************************/
 
   /* First example
    * Recalculate based on X and Y the power for the left and right motor
