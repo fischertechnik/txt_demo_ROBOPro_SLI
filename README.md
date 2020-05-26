@@ -1,148 +1,77 @@
-﻿# TXT Shared Library Interface (SLI) for ROBOPro
 
-The shared library input/output element allows to call functions and return/supply a value from/to shared library modules installed on the TXT controller. Such libraries are typically written in the C or C++ programming language. This allows interfacing ROBOPro with C / C++ programs, which is useful for accessing advanced sensors or for compute intensive tasks like image processing.
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-![blocks](docs/blocks.png)
+- [Extended C/C++ programming for the fischertechnik TXT](#extended-cc-programming-for-the-fischertechnik-txt)
+	- [Introduction](#introduction)
+	- [The organization of this GitHub repository](#the-organization-of-this-github-repository)
+	- [Documentation](#documentation)
+		- [For the developer:](#for-the-developer)
+		- [For the end-user:](#for-the-end-user)
+		- [General](#general)
+- [document history <a id="history"></a>](#document-history-a-idhistorya)
 
-> You need TXT firmware version >=4.4.3
+<!-- /TOC -->
 
-> see ROBOPro help in section 8.2.9 and 8.2.10
+#  Extended C/C++ programming for the fischertechnik TXT
 
-## Overview examples
-(2018-09-18)
-All examples are Eclipse projects.
-### TxtSharedLibraryInterface
-    SLI basics.
-### TxtSharedLibraryInterfaceDemo01
-    SLI show the use of the Joystick
-    A control element for a two wheels FT-bot (TXT discovery kit)
-### TxtSharedLibraryInterfaceDemo02 (not yet available)
-    SLI show the use of the Extended Motor control
-    
-### TxtDemo
-    Contains the include and library fiels for the Eclipse projec (is also a project)
+## Introduction
+This is all about creating and/or using local programs on the fischertechnik TXT and RoboPro extensions.
+
+There are several possibilities to use C/C++ programs localy on the TXT:
+- As TXT Shared Library Interface (SLI) for ROBOPro<br/>
+A SLI extends the basic set of RoboPro elements with new one's.
+It enables also for the user to add functionality to RoboPro.
+
+SLI's are very interesting because they can add functionality to RoboPro for the end-users.<br/>
+SLI can also be beneficial in educational learning projects. Designers of educational material can use SLI to hide  irrelevant parts so that there is more focus on the main learning objectives.
+- As TXT local programs<br/>
+A local program instead of a local RoboPro program.<br/>
+This is faster because of the leak of overhead from the RoboPro. In combination with technologies like Civetweb, or Mosquitto MQTT this offers a possibility to create functional units which can be part of a bigger system. Also interesting for the end-user and the educational world.
 
 
-## Shared Library / C Input
-Each input element allows to return only one numeric value. If parameters are required, the shared library output element can be used to first set parameters in the library. If multiple parameters or multiple return values are required, multiple input and/or output elements can be used. This means that it is typically required to write a small wrapper layer to interface ROBOPro to existing shared libraries. fischertechnik provides a library for the BME680 environmental sensor as example.
+>  A **developer** is someone with at least basic software engineering's skills. He/she will find information about how to create new SLI's or modify existing SLI's suggestions for thetoolbox needed, setting up a development environment on MS-Windows. How to use this environment to create documents, and how to use your custom SLI's or an executable.
 
-The input element can either retrieve a 16 bit signed short or a 64 bit double value from the shared library. Example C decalartions for such functions are:
-```c
-int getValueDouble(double* t);
-int getValueShort(short* t);
-```
+> An **end-user** is somebody with the focus on RoboPro and a user of the functionality offered by the SLI's. He/she will find here information and examples about how to use an SLI, the results of what has been developed.
 
-## Shared Library / C Output
-For outputs the C functions should be declared like:
-```c
-int setValueDouble(double v);
-int setValueShort(short v);
-```
 
-## Shared Library in C / C++
-The next section shows an example interface written in C / C++.
+Besides the local use, there are also possibilities to incorporate the TXT remotely in programs which are running on other systems.
+- The TXT works with Berkeley sockets and so called transfer area (TA) for communication.
+- The TXT is using a socket with port 65000 for the TA, 65001 for the video and 65002 for the I2C.
+- [Here](https://github.com/fischertechnik/txt_demo_c_online) you will find how to create a remote program with the .NET Visual Studio (2017, 2019) environment.
+- It is also possible to use Python with the [FtRoboPy](https://github.com/ftrobopy/ftrobopy) (pre-installed on the TXT). A Python program can run remotely and local.<br/>
+- However, FtPythonPy is using a connection over the sockets, and in fact, it is a remote program that when it runs locally, it runs with the IP-address (localhost) 127.0.0.1.
+- Remote programs can be programmed in a lot of languages, if they support Berkeley sockets.
 
-### libExampleSLI.so
-```c
-#include <stdio.h>
 
-#include "KeLibTxtDl.h"          // TXT Lib
-#include "FtShmem.h"             // TXT Transfer Area
+However this C/C++ part covers only programs that will run directly on the TXT.
 
-static bool IsInit = false;
+## The organization of this GitHub repository
+- The map `FtTxtExamples` is aiming at the end user<br/>
+The map contains usable examples. [See also](./FtTxtExamples/README.md)
+- The map `FtTxtWorkspace` is aiming on the developer<br/>
+The root contains Eclipse example projects and the supporting TXT libraries. [See also](./FtTxtWorkspace/README.md)
+- In the root you will find a descriptions of "How to ... ? and overviews"
 
-static double value_d;
-static INT16 value_s;
+Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "release" as separate zip files.
 
-extern "C" {
+## Documentation
+Overview <a id="overview"></a>
 
-// Return value:
-//  0: success, continue with waiting for pFinishVar becoming 1
-//  1: not finished
-//  2: busy (entity locked by other process)
-// -1: error
-// Other positive values can be used for other waiting codes
-// Other negative values can be used for other error codes
-
-int init(short* t)
-{
-    if(!IsInit)
-    {
-        // Do whatever inititialization is required
-        value_d = 0.0;
-        value_s = 0;
-        IsInit = true;
-    }
-    return 0;
-}
-
-int setValueDouble(double v)
-{
-    if( !IsInit )
-    {
-        fprintf(stderr, "ExampleSLI:setValueDouble: Not initialized!\n");
-        return -1;
-    }
-    value_d = v;
-    printf( "ExampleSLI:setValueDouble: %lg\n", v);
-    return 0;
-}
-
-int setValueShort(INT16 v)
-{
-    if( !IsInit )
-    {
-        fprintf(stderr, "ExampleSLI:setValueShort: Not initialized!\n");
-        return -1;
-    }
-    value_s = v;
-    printf( "ExampleSLI:setValueShort: %d\n", v);
-    return 0;
-}
-
-int getValueDouble(double* v)
-{
-    if( !IsInit )
-    {
-        fprintf(stderr, "ExampleSLI:getValueDouble: Not initialized!\n");
-        return -1;
-    }
-    *v = value_d;
-    printf( "ExampleSLI:getValueDouble: %lg\n", *v);
-    return 0;
-}
-
-int getValueShort(INT16* v)
-{
-    if( !IsInit )
-    {
-        fprintf(stderr, "ExampleSLI:getValueShort: Not initialized!\n");
-        return -1;
-    }
-    *v = value_s;
-    printf( "ExampleSLI:getValueShort: %d\n", *v);
-    return 0;
-}
-
-} // extern "C"
-```
-
-## ROBOPro
-The function names should start with get and end with Short or Double to indicate the type, but arbitrary names can be used as well. A return value of 0 is interpreted as success, all other return values as error.
-
-> **Please note:** the functions must be declared as extern “C” in C++ code, because at the link level C++ functions have complicated mengled names, which encode the data type of the function. C functions have their usual name at the link level.
- 
-![Window_input](docs/Window_input.png)
-
-![Window_output](docs/Window_output.png)
-
-### Property Window
-- Under Library name you can enter the name of the shared library file. The library file must be copied to the TXT controller into the ```/opt/knobloch/libs``` or ```/usr/libs``` folder. If Extend library name is checked, the name is prepended with lib and the extension .so is appended.
-
-- Under Function name the C name of the function to be called is entered. If Extend Function Name is checked, the name is prepended with get and the selected data type, either Short or Double, is appended.
-
-- If Error output is checked, the element gets an additional flow output, which is used when the called C function returns an error (that is 1).
-
-- If Lock Interface is checked, the shared library IO is locked to the current ROBOPro thread. This allows safe combination of several shared library input and output elements without interruptions from other threads. The last element in a sequence must have this unchecked. Otherwise no other ROBOPro thread can use the shared library interface.
-
-- The Data type of the value returned can be either a 16 bit signed integer or a floating point value. If the data type is floating point, the value is converted from C 64 bit double format to ROBOPro 48 bit float format. Please note that the range and precision of these types is different and conversion errors may occur, especially for out of range values. Please also note that for 16 bit integers values a value of -32768 is treated as undefined/error in ROBOPro and is usually displayed as '?'.
+### For the developer:
+- this Document
+- [What is an SLI?](SLI.md).
+- [What is in my toolbox? My program development environment](WhichToolsYouNeed.md)
+- [How to setup my fischertechnik SLI workspace in Eclipse?](HowToStartWithFtTxtWorkspace.md)
+- [How to start with my first fischertechnik SLI project?](HowToStartMyFirstProject.md)
+- [How to start a new Fischertechnik SLI project](./ProjectSetUp(so).md)
+- [Notes](./Notes.md).
+- [Introduction and overview SLI project for the developer](./FtTxtWorkspace/README.md).
+- 
+### For the end-user:
+- [Introduction and overview SLI projects for the end user](./FtTxtExamples/README.md).
+- 
+### General
+- [How to use the TXT web server interface](./HowToUseTxtWeb.md)
+- 
+# document history <a id="history"></a>
+- 2020-05-16/18/24 CvL 466.1.1 new
