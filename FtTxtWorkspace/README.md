@@ -1,10 +1,14 @@
+
 # Content
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Content](#content)
 - [Eclipse example projects](#eclipse-example-projects)
 	- [Overview example projects](#overview-example-projects)
 		- [Start project 1:  TxtSharedLibraryInterface](#start-project-1-txtsharedlibraryinterface)
 		- [Start project 2: TxtSharedLibraryInterface2](#start-project-2-txtsharedlibraryinterface2)
+		- [Start project 3: TxtSliTestTA1](#start-project-3-txtslitestta1)
+		- [Start project 4: TxtSliTestTA2](#start-project-4-txtslitestta2)
 		- [Example 1: TxtSharedLibraryInterfaceDemo01](#example-1-txtsharedlibraryinterfacedemo01)
 		- [Example 2: TxtSharedLibraryInterfaceDemo02](#example-2-txtsharedlibraryinterfacedemo02)
 		- [The TXT libraries: TxtDeps](#the-txt-libraries-txtdeps)
@@ -16,7 +20,7 @@
 	- [How to make use of DoxyGen?](#how-to-make-use-of-doxygen)
 - [document history](#document-history)
 
-<!-- /TOC -->[Back to main content overview](../README.md#overview)
+<!-- /TOC -->
 
 # Eclipse example projects
 In this workspace you will the TXT library and some Eclipse projects.
@@ -32,17 +36,32 @@ All examples are Eclipse projects.
 ### Start project 1:  TxtSharedLibraryInterface
 
 [See readme](./TxtSharedLibraryInterface/README.md)<br/>
-    Step 1 What are the SLI basics?
+
+Step 1: What are the SLI basics?
     
 ### Start project 2: TxtSharedLibraryInterface2
 
-[See readme](./TxtSharedLibraryInterface2/README.md)<br/>
-    Step 2 Does  fischertechnik RoboPro SLI-mechanism knows some peculiarities?<br/>
-    Blocking issues, a workaround for the online 5sec problem and init/stop issues. 
-       .    
+[See readme](./TxtSharedLibraryInterface2/README.md)
+
+Step 2: Does  fischertechnik RoboPro SLI-mechanism knows some peculiarities?<br/>
+Blocking issues, a workaround for the online 5sec problem and init/stop issues. 
+
+### Start project 3: TxtSliTestTA1 
+        
+[See readme](./TxtSliTestTA1/README.md)
+	
+Introduction into the use of the Transfer Area (TA). 
+
+### Start project 4: TxtSliTestTA2 
+        
+[See readme](./TxtSliTestTA2/README.md)
+
+The same as `TxtSliTestTA1` but now is the functionality removed from the main file and put in a class. The main file takes only care for the RoboPro elements.			                   
+													 				                                   .    
 ### Example 1: TxtSharedLibraryInterfaceDemo01
 
-[See readme](./TxtSharedLibraryInterfaceDemo01/README.md)<br/>
+[See readme](./TxtSharedLibraryInterfaceDemo01/README.md)
+
     SLI show the use of the Joystick<br/>
     A control element for a two wheels FT-bot (TXT discovery kit)
     
