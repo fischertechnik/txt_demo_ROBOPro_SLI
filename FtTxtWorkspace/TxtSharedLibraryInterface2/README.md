@@ -15,7 +15,9 @@
 
 # TXT Shared Library Interface (SLI) 2 for ROBOPro
 
-Basic example shows  the workaround for the online 5 sec problem.<br/>
+Basic example shows:<br/>
+- the workaround for the online 5 sec problem.
+- the blocking
 New almost empty function has been added.<br/>
 This function with be called every less then 5 sec.
 
@@ -36,7 +38,7 @@ And in `LibExample02_A(SLI).rpp`
 
 ## Assignment 1 
 Use now `libExampleSLI2.so`.<br/>
-Repeat Assignment 3 part A from the `TxtSharedLibraryInterface` project.<br/>
+Repeat [Assignment 3 part A from the `TxtSharedLibraryInterface` project](../TxtSharedLibraryInterface/READ.md).<br/>
 Try to explain what is happening?
 
 ## Assignment 2
@@ -63,12 +65,12 @@ Now you will see the roll of the `Lock Interface` property.
 - Start `LibExample02_B(SLI)`
 - You will probably see that the four `Value` elements will not wait 3 sec. Only before the start of the first there is a waiting on the `StayAwake`  element.
 
-## What have you learn?
-- The roll (of a StayAwake element in the online mode.
+## What have you learn here?
+- The roll of a StayAwake element in the online mode.
 - That SLI functions are blocking to each other.
-- What the roll of `Lock Interface` property is.
+- The roll of `Lock Interface` property.
 
 <a id="history"></a>
 
 # document history 
-- 2020-05-24 Cvl 466.1.1 new
+- 2020-05-24,28 Cvl 466.1.2 new, update

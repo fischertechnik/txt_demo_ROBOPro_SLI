@@ -115,8 +115,12 @@ int setStayAwakeShort(short t) {
 - Don't forget to keep your documentation up to date.
 
 ## How to make use of DoxyGen?
+DoxyGen is a nice tool to help you with creating documentation for your project.
+The examples contain already a option to generate a DoxyGen based documentation, the *`doxyfile` file<br/>
+If not this file can be add with `File | New | Others | Others | Doxyfile`.
 
-The examples contain a option to generate a DoxyGen based documentation.<br/>
+![DoxyGen](./docs/doxygen2.png)
+
 After running the documentation, select the `doxyfile` and run it with the ![DoxyGen](./docs/doxygen1.png) symbol, you need to refresh the `Project Explorer view` with top menu `File | Refresh` or `F5`.
  
 ![DoxyGen](./docs/doxygen.png)
