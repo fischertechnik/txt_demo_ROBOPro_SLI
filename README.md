@@ -81,7 +81,7 @@ Overview <a id="overview"></a>
   Same for both application and SLI development)
 - [How to start with my first fischertechnik SLI project?](HowToStartMyFirstProject_sli.md)<br/>
   Almost the same for both application and SLI development.
-- [How to start a new Fischertechnik SLI project](./ProjectSetUp_sli.md)
+- [How to start a new Fischertechnik SLI project](./ProjectSetUp.md)
 - [Notes](./notes_sli.md).
 - [Introduction and overview SLI project for the developer](./FtTxtWorkspace/README.md).
 - 
