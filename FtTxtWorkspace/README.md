@@ -1,17 +1,14 @@
-
 # Content
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Content](#content)
 - [Eclipse example projects](#eclipse-example-projects)
-	- [How to make use of DoxyGen?](#how-to-make-use-of-doxygen)
 	- [Overview example projects](#overview-example-projects)
 		- [Start project 1:  TxtSharedLibraryInterface](#start-project-1-txtsharedlibraryinterface)
 		- [Start project 2: TxtSharedLibraryInterface2](#start-project-2-txtsharedlibraryinterface2)
 		- [Example 1: TxtSharedLibraryInterfaceDemo01](#example-1-txtsharedlibraryinterfacedemo01)
 		- [Example 2: TxtSharedLibraryInterfaceDemo02](#example-2-txtsharedlibraryinterfacedemo02)
 		- [The TXT libraries: TxtDeps](#the-txt-libraries-txtdeps)
-	- [My first project](#my-first-project)
+	- [How can I create my first Eclipse SLI project](#how-can-i-create-my-first-eclipse-sli-project)
 		- [Copy and Paste the start projects](#copy-and-paste-the-start-projects)
 		- [Rename some files](#rename-some-files)
 		- [Inspecting and updating the project properties](#inspecting-and-updating-the-project-properties)
@@ -19,22 +16,14 @@
 	- [How to make use of DoxyGen?](#how-to-make-use-of-doxygen)
 - [document history](#document-history)
 
-<!-- /TOC -->
-[Back to main content overview](../README.md#overview)
+<!-- /TOC -->[Back to main content overview](../README.md#overview)
 
 # Eclipse example projects
-Here you will the TXT library and some Eclipse projects.
+In this workspace you will the TXT library and some Eclipse projects.
 
 > You need TXT firmware version >=4.6.6
 
 > see ROBOPro help in section 8.2.9 and 8.2.10
-
-## How to make use of DoxyGen?
-
-The examples contain a option to generate a DoxyGen based documentation.<br/>
-After running the documention, select the `doxyfile` and run it with the ![DoxyGen](./docs/doxygen1.png) symbol, you need to refresh the `Project Explorer view` with top menu `File|Refresh` or `F5`.
- 
-![DoxyGen](./docs/doxygen.png)
 
 ## Overview example projects
 
@@ -68,8 +57,8 @@ All examples are Eclipse projects.
 [See readme](./TxtDeps/README.md)<br/>
     This project contains the include and library fields for the fischertechnik SLI's and local programs Eclipse project. It is as it is, no need to compile or change.
 		
-## My first project
-Advice: Study carefully `TxtSharedLibraryInterface` and `TxtSharedLibraryInterface2`   before you start with your own project.
+## How can I create my first Eclipse SLI project
+Advice: Study carefully `TxtSharedLibraryInterface` and `TxtSharedLibraryInterface2` before you start with your own project.
 Exercise:<br/>
 You are going make the basics for your first Eclipse SLI project. 
 
@@ -112,7 +101,7 @@ After this you project is ready to start with writing code.
 - Update the iit and stop.
 - Add the `StayAwake` function
 
-  ```C	
+```C	 
 int setStayAwakeShort(short t) {
 	if (!IsInit) {
 		fprintf(stderr, "setStayAwakeShort: Not initialized!\n");
