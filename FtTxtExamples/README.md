@@ -1,3 +1,4 @@
+
 [Back to main content overview](../README.md#overview)
 
 # Examples for the end-user
@@ -52,15 +53,14 @@ SharedLibraryInterface_ExecuteReadINT16 libTxtSliSaveTeachIn.so getCoorRShort RE
  ```
 ## Overview examples
 ### example 1: SLI_TxtSliSave4C
-    Gives an example of reading/writing set of coordinates to/from the public TXT Data map.
-    
-    [See the project readme](./SLI_TxtSliSave4C/README.md)
-    
-    
+Gives an example of reading/writing set of coordinates to/from the public TXT Data map.
+
+[See the project readme](./SLI_TxtSliSave4C/README.md)
+
 ### example 1: SLI_TeachIn
 
 - This SLI TeachIn is the industrial Robot with 4 motors and switches as for the industrial Robot with 2 encoder motors and 2 motor (TX-C set).
-- 
+
 ![console](./SLI_TeachIn/docs/DSC_4652.JPG)
 
 - Both the TeachIn RoboPro programs has been extended.
