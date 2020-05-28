@@ -46,20 +46,20 @@ To show how the TA can be used to activate a motor or the extended motor
 # Note SPDlog
 [SpdLog](https://github.com/gabime/spdlog/blob/v1.x/README.md) has been added to this SLI.
 
-# Functions
-## Overview
-### General
+## Overview of the main C/C++ functions
+### Overview
+#### General
 int init (short *t)   
 int setKeepAwakeShort (short t)    
 int stop (short *t)
 
-### Spdlog related
+#### Spdlog related
 int getInitSpdLogShort (short *t)  
 int getDropdLogShort (short *t)  
 int getFlushSpdLogShort (short *t)   
 int getFlushDropSpdLogShort (short *t)
 
-## TA motor related   
+#### TA motor related   
 int setMPowerShort (INT16 power)   
 int setMDistanceShort (INT16 distance)   
 int setMStartWaitShort (INT16 mId)   

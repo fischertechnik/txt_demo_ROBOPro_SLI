@@ -1,6 +1,5 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [TXT Shared Library Interface (SLI) `TxtSliTest2` for ROBOPro](#txt-shared-library-interface-sli-txtslitest2-for-robopro)
+- [TXT Shared Library Interface (SLI) `TxtSliTestTA2` for ROBOPro](#txt-shared-library-interface-sli-txtslitest2-for-robopro)
 	- [Note](#note)
 	- [Note SPDlog](#note-spdlog)
 	- [TxtSliTest2](#txtslitest2)
@@ -22,7 +21,7 @@
 - [document history](#document-history)
 
 <!-- /TOC -->
-# TXT Shared Library Interface (SLI) `TxtSliTest2` for ROBOPro
+# TXT Shared Library Interface (SLI) `TxtSliTestTA2` for ROBOPro
 
 ## Note 
 > You need TXT firmware version >=4.6.6  
@@ -34,27 +33,34 @@
 ## Note SPDlog
 [SpdLog](https://github.com/gabime/spdlog/blob/v1.x/README.md) has been added to this SLI.  
 
-
-
-## TxtSliTest2
-The TxtSliTest2 is as far as the functionality the same as ![TxtSliTest1](./TxtSliTest1/README.md).
+## TxtSliTestTA2
+The TxtSliTestTA2 is as far as the functionality the same as ![TxtSliTestTA1](./TxtSliTestTA1/README.md).
 However the functionality has been moved from the main program file into the supporting class.
      						
-## Overview of the extended RoboPro functions
 
+##  Overview of the main C/C++ functions
+### Overview
+#### General
 int init (short *t)  
 int setKeepAwakeShort (short t)   
-int stop (short *t)   
+int stop (short *t) 
+
+#### Spdlog related  
 int getInitSpdLogShort (short *t)    
 int getDropdLogShort (short *t)   
 int getFlushSpdLogShort (short *t)   
-int getFlushDropSpdLogShort (short *t)   
+int getFlushDropSpdLogShort (short *t)  
+
+#### TA motor related  
 int setTest01Short (short n)   
 int setTest02Short (short n)   
 int getFunc01Short (short *resultV)  
 int setFunc02Short (short inputV)   
 int getRetValue02Short (short *t)
-										
+
+## TxtSliTestTA2A  						
+Overview of the extended RoboPro functions.
+
 ### init:
 Result:  Set the some general variable.  
 Error flow:  in case of an error
