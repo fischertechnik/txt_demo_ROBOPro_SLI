@@ -51,9 +51,10 @@ SharedLibraryInterface_ExecuteReadINT16 func 0xb40482fd
 SharedLibraryInterface_ExecuteReadINT16 libTxtSliSaveTeachIn.so getCoorRShort RESULT 0 11 
  ```
 ## Overview examples
-### example 1: SLI_FileReadWrite
-    Gives an example of reading/writing set of coordinates to/from the public TXT Data map.<br/>
-    [See the project readme](./SLI_FileReadWrite/README.md)
+### example 1: SLI_TxtSliSave4C
+    Gives an example of reading/writing set of coordinates to/from the public TXT Data map.
+    
+    [See the project readme](./SLI_TxtSliSave4C/README.md)
     
     
 ### example 1: SLI_TeachIn
