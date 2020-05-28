@@ -51,8 +51,12 @@ SharedLibraryInterface_ExecuteReadINT16 func 0xb40482fd
 SharedLibraryInterface_ExecuteReadINT16 libTxtSliSaveTeachIn.so getCoorRShort RESULT 0 11 
  ```
 ## Overview examples
-
-### SLI_TeachIn
+### example 1: SLI_FileReadWrite
+    Gives an example of reading/writing set of coordinates to/from the public TXT Data map.<br/>
+    [See the project readme](./SLI_FileReadWrite/README.md)
+    
+    
+### example 1: SLI_TeachIn
 
 - This SLI TeachIn is the industrial Robot with 4 motors and switches as for the industrial Robot with 2 encoder motors and 2 motor (TX-C set).
 - 
