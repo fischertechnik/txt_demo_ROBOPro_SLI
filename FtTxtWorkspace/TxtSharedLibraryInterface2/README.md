@@ -38,7 +38,7 @@ And in `LibExample02_A(SLI).rpp`
 
 ## Assignment 1 
 Use now `libExampleSLI2.so`.<br/>
-Repeat [Assignment 3 part A from the `TxtSharedLibraryInterface` project](../TxtSharedLibraryInterface/READ.md).<br/>
+Repeat [Assignment 3 part A from the `TxtSharedLibraryInterface` project](../TxtSharedLibraryInterface/README.md).<br/>
 Try to explain what is happening?
 
 ## Assignment 2
