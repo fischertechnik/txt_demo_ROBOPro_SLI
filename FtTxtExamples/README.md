@@ -1,5 +1,23 @@
+#Content
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-[Back to main content overview](../README.md#overview)
+- [Content](#content)
+- [Examples for the end-user](#examples-for-the-end-user)
+	- [What are these maps about?](#what-are-these-maps-about)
+		- [For a SLI:](#for-a-sli)
+		- [For the local executable](#for-the-local-executable)
+	- [How to install?](#how-to-install)
+	- [How to get and to inspect the trace log?<a id="howtracelog"></a>](#how-to-get-and-to-inspect-the-trace-loga-idhowtraceloga)
+	- [Overview examples](#overview-examples)
+		- [example 1: SLI_TxtSliSave4C](#example-1-slitxtslisave4c)
+		- [example 2: SLI_TeachIn](#example-2-sliteachin)
+			- [Panel player](#panel-player)
+			- [Panel TeachIn](#panel-teachin)
+		- [example 3: SLI_Bosch_BNO055](#example-3-sliboschbno055)
+- [document history](#document-history)
+
+<!-- /TOC -->
+[Back to main content overview](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/blob/master/README.md#overview)
 
 # Examples for the end-user
 (read-me of the 'FtTxtExamples' root)
@@ -57,9 +75,9 @@ Gives an example of reading/writing set of coordinates to/from the public TXT Da
 
 [See the project readme](./SLI_TxtSliSave4C/README.md)
 
-### example 1: SLI_TeachIn
+### example 2: SLI_TeachIn
 
-- This SLI TeachIn is the industrial Robot with 4 motors and switches as for the industrial Robot with 2 encoder motors and 2 motor (TX-C set).
+- This SLI TeachIn is about the industrial Robot with 4 motors and switches as for the industrial Robot with 2 encoder motors and 2 motor (TX-C set).
 
 ![console](./SLI_TeachIn/docs/DSC_4652.JPG)
 
@@ -70,9 +88,31 @@ Gives an example of reading/writing set of coordinates to/from the public TXT Da
 - [See also the project readme](./SLI_TeachIn/README.md)
 #### Panel player
 ![console](./SLI_TeachIn/docs/player(panel_02).png)
+
 #### Panel TeachIn
 ![console](./SLI_TeachIn/docs/TeachIn(panel_02).png)
 
 
-# document history <a id="history"></a>
+### example 3: SLI_Bosch_BNO055
+(The is a beta release, most of the technical information is in the Bosch BNO005 manual)
+This example is about the use of the Bosch [the  Bosch BNO055 sensor](https://www.bosch-sensortec.com/bst/products/all_products/bno055). 
+The two RoboPro programs:
+1. the calibration (creating one of the 6 internal profiles)
+
+![Calibration section](./SLI_Bosch_BNO055/docs/I2C_DeviceInit2.PNG)
+
+2. the options for the normal operation mode.
+- Most of the time the end-user will work in the `Converted fusion mode`
+
+![Converted fusion section](./SLI_Bosch_BNO055/docs/I2C_ConvertedFusionTests.PNG)
+
+- However the  `Raw fusion mode` will also been showed
+
+![Converted fusion section](./SLI_Bosch_BNO055/docs/I2C_ConvertedFusionTests.PNG)
+ 
+- [See also the project readme for more detailed information](./SLI_Bosch_BNO055/README.md)
+
+# document history 
 - 2020-05-16/22 CvL 466.1.1 new
+- 2020-05-29 CvL 466.1.2 add Robot 3D TeachIn
+- 2020-06-01 CvL 466.1.3 add BNO005
