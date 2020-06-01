@@ -108,7 +108,7 @@ The two RoboPro programs:
 
 - However the  `Raw fusion mode` will also been showed
 
-![Converted fusion section](./SLI_Bosch_BNO055/docs/I2C_ConvertedFusionTests.PNG)
+![Converted fusion section](./SLI_Bosch_BNO055/docs/I2C_RawFusionTests.PNG)
  
 - [See also the project readme for more detailed information](./SLI_Bosch_BNO055/README.md)
 
