@@ -1,21 +1,6 @@
-# Content
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+ # TXT Shared Library Interface (SLI) for the BNO055 sensor in RoboPro
 
-- [Content](#content)
-- [TXT Shared Library Interface (SLI) for the BNO055 sensor in RoboPro](#txt-shared-library-interface-sli-for-the-bno055-sensor-in-robopro)
-- [Introduction](#introduction)
-	- [Requirements](#requirements)
-	- [RoboPro library elements](#robopro-library-elements)
-			- [Set up profile (Calibration)  RoboPro application and elements](#set-up-profile-calibration-robopro-application-and-elements)
-			- [Test example  RoboPro elements](#test-example-robopro-elements)
-	- [Operational modes.](#operational-modes)
-- [document history](#document-history)
-
-<!-- /TOC -->
-
-# TXT Shared Library Interface (SLI) for the BNO055 sensor in RoboPro
-
-Readme about the use of a Bosch BNO055 seosor
+Readme about the RoboPro library en examples
 
 # Introduction
 
@@ -53,7 +38,7 @@ The library/examples has been split-up in 3 parts
  
 
 ## Requirements
-> You need TXT firmware version >=4.4.3
+> You need TXT firmware version 4.6.6 or 4.7.0 pre-release
 
 > TXT controller
 
@@ -63,7 +48,12 @@ The library/examples has been split-up in 3 parts
   needs to be uploaded into the TXT into /opt/knobloch/libs
   
   
-## RoboPro library elements 
+## RoboPro library elements
+
+### `init` element
+(since 2020-06-02) 
+The BNO055 can be used with I2C address x28H (init input 1) or x29H (init input 2). ' 
+![`init` element](../docs/I2C_init_BNO055_addresses.PNG)
 
 #### Set up profile (Calibration)  RoboPro application and elements
 
@@ -93,9 +83,15 @@ In your own application, you can use one or more elements to develop your proper
 
 - Raw Fusion Tests RoboPro element
 
+  Main page<br/>
+![blocks](../docs/I2C_RawLoad_BNO055.PNG)
+
 ![blocks](../docs/I2C_RawFusionTests.PNG)
 
 - Converted FusionTests RoboPro element
+ 
+  Main page<br/>
+![blocks](../docs/I2C_FusionLoad_BNO055.PNG)
 
 ![blocks](../docs/I2C_ConvertedFusionTests.PNG)
 
@@ -153,6 +149,8 @@ IMU =Inertial Measurement Unit.
 - 2020-06-01 CvL 466.1.2 both, new<br/>
   - version 1.1.1.2 (2018-10-19, under construction)
   - version 1.1.1.4 (2020-06-01, prototype01)
-
+  - version 1.1.1.5 (2020-06-02, prototype02)
+    replace the .so
+    add a choice for I2C address 1 (x28) or address 2 (x29)
 
 
