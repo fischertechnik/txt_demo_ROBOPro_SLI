@@ -22,7 +22,7 @@
 # Examples for the end-user
 
 In the section you will find pre-compiled examples.<br/>
-The latest 'FtTxtExamples' section is available for downloading as .zip under the menu item [`releases` under `Assets`](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/releases)<br/>
+The latest 'FtTxtExamples' section is available for downloading as .zip under the menu item [`releases` and then look under under `Assets`](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/releases)<br/>
 After downloading you can unzip the file and use the pre-compiled SLI shared libraries and the RoboPro "start with" examples.
 So you don't need Git and C/C++ experiences to use the files. 
 
