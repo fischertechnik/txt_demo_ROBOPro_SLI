@@ -1,3 +1,4 @@
+
 # Content
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
@@ -51,19 +52,15 @@ URL= http://<ip-addres of the TXT>
 When you are developing a RoboPro application which is using a SLI, it could be useful to consult the trace log.
 How to do that?
 - Activate your TXT and check the ip-address.
-- Copy the SLI to the TXT in `libs` map with FileZilla. [See also:](../WhichToolsYouNeed.md#filezillasetup) 
+- Copy the SLI to the TXT in `libs` map with FileZilla. [See also:](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/blob/master/WhichToolsYouNeed.md#filezillasetup) 
 - Start a SSH connection with Putty with a screen -r command.<br/>
-  Be sure that Putty is writing his log to a file. [See also:](../WhichToolsYouNeed.md#puttysetup)
-- Open this trace log file with Notepad++. [See also:](../WhichToolsYouNeed.md#notepad)<br/>
+  Be sure that Putty is writing his log to a file. [See also:](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/blob/master/WhichToolsYouNeed.md#puttysetup)
+- Open this trace log file with Notepad++. [See also:](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/blob/master/WhichToolsYouNeed.md#notepad)<br/>
   When the trace log become longer, Notepad will ask you for reloading it.<br/>
   With Notepad++ it is easy the search in the trace log file and to inspect the trace log.
 - Start the accompanying RoboPro program try to understand wat is in the trace log file.<br/>
 
-This is a typical of a SLI function that has been called from RoboPro.<br>
-- `ENTRY 0`  the start with here a input value 0;
-- `***** get CoorR=0` a line with information written by the SLI. 
-- `RESULT 0 0` end of the call, `0` is the return value and means no error, `11` is the parameter value.
-   
+This is a typical log entry of a SLI function that has been called from RoboPro.<br/>
 ```
 SharedLibraryInterface_ExecuteReadINT16 libTxtSliSaveTeachIn.so getCoorRShort: ENTRY 0
 SharedLibraryInterface_ExecuteReadINT16 lib 0xb3501628
@@ -71,6 +68,12 @@ SharedLibraryInterface_ExecuteReadINT16 func 0xb40482fd
 ***** get CoorR=0
 SharedLibraryInterface_ExecuteReadINT16 libTxtSliSaveTeachIn.so getCoorRShort RESULT 0 11 
  ```
+Explaination of this entry:<br/>
+- `ENTRY 0`  the start of the SLI call with here a input value 0;
+- `***** get CoorR=0` a line with information written by the SLI. 
+- `RESULT 0 0` end of this SLI call, `0` is the return value and means no error, `11` is the parameter value.
+   
+
 ## Overview examples
 ### example 1: SLI_TxtSliSave4C
 
@@ -78,7 +81,7 @@ SharedLibraryInterface_ExecuteReadINT16 libTxtSliSaveTeachIn.so getCoorRShort RE
 
 Gives an example of reading/writing set of coordinates to/from the public TXT Data map.
 
-![impressie](./SLI_TxtSliSave4C/docs/rb(1.3_f01).png)
+![impression](./SLI_TxtSliSave4C/docs/rb(1.3_f01).png)
 
 ### example 2: SLI_TeachIn
 
