@@ -20,9 +20,12 @@
 <!-- /TOC -->
 [Back to main content overview](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/blob/master/README.md#overview)
 # Examples for the end-user
-(read-me of the 'FtTxtExamples' root)
 
-Here you will find pre-compiled examples.
+In the section you will find pre-compiled examples.<br/>
+The latest 'FtTxtExamples' section is available for downloading as .zip under the menu item [`releases`](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/releases)<br/>
+After downloading you can unzip the file and use the pre-compiled SLI shared libraries and the RoboPro "start with" examples.
+So you don't need Git experiences to use the files. 
+
 ## What are these maps about?
 ### For a SLI:
 The project maps contains at least:
@@ -128,4 +131,4 @@ The two RoboPro programs:
 # document history 
 - 2020-05-16/22 CvL 466.1.1 new
 - 2020-05-29 CvL 466.1.2 add Robot 3D TeachIn
-- 2020-06-01 CvL 466.1.3 add BNO005
+- 2020-06-01,02 CvL 466.1.3 add BNO005
