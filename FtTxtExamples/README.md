@@ -22,15 +22,15 @@
 # Examples for the end-user
 
 In the section you will find pre-compiled examples.<br/>
-The latest 'FtTxtExamples' section is available for downloading as .zip under the menu item [`releases`](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/releases)<br/>
+The latest 'FtTxtExamples' section is available for downloading as .zip under the menu item [`releases` under `Assets`](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/releases)<br/>
 After downloading you can unzip the file and use the pre-compiled SLI shared libraries and the RoboPro "start with" examples.
-So you don't need Git experiences to use the files. 
+So you don't need Git and C/C++ experiences to use the files. 
 
 ## What are these maps about?
 ### For a SLI:
 The project maps contains at least:
-- `libs` map: The shared libraries, compiled C/C++ file(s) 
-- `RoboPro` map: One or more RoboPro programs, which shows how to use this SLI
+- `libs` map: The shared libraries, compiled C/C++ file(s). 
+- `RoboPro` map: One or more RoboPro programs, which shows how to use this SLI.
 - `root`: Documentation about the functionality of this SLI  |   |  
 
 ### For the local executable
