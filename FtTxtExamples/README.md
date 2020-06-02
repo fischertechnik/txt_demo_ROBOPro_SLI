@@ -1,4 +1,4 @@
-#Content
+# Content
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Content](#content)
@@ -18,7 +18,6 @@
 
 <!-- /TOC -->
 [Back to main content overview](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/blob/master/README.md#overview)
-
 # Examples for the end-user
 (read-me of the 'FtTxtExamples' root)
 
@@ -28,16 +27,19 @@ Here you will find pre-compiled examples.
 The project maps contains at least:
 - `libs` map: The shared libraries, compiled C/C++ file(s) 
 - `RoboPro` map: One or more RoboPro programs, which shows how to use this SLI
-- `root` Documentation about the functionality of this SLI  |   |  
+- `root`: Documentation about the functionality of this SLI  |   |  
 
 ### For the local executable
 The project maps contains at least:
 - `C-Program` map: The executables, compiled C/C++ file(s).
-- `root`  Documentation about the functionality of this executable.
+- `root`:  Documentation about the functionality of this executable.
 
 ## How to install?
+> Remark: You need a fischertechnik TXT controller with firmware 4.6.6 or 4.7.0.<br/>
+The TXT can also boot from SD-card, see here for [the instructions](https://www.fischertechnik.de/-/media/fischertechnik/fite/service/downloads/robotics/txt-controller/documents/txt_-firmware_microsd.ashx) and here for [the firmware versions](https://github.com/fischertechnik/FT-TXT/releases).<br/>
+
 The installation of the SLI's and executable can be done with the [TXT web server interface](../HowToUseTxtWeb.md).
-The TXT web server interface enables also the maintenance of the public maps on the TXT, including connected USB-memory and SD-card (formatted as FAT32)
+The TXT web server interface enables also the maintenance of the public maps on the TXT, including connected USB-memory and SD-card (formatted as FAT32, but not in use as boot device)
 - The TXT web server needs to be activated.
 - Use your web browser to access the web page
 URL= http://<ip-addres of the TXT>
@@ -71,11 +73,16 @@ SharedLibraryInterface_ExecuteReadINT16 libTxtSliSaveTeachIn.so getCoorRShort RE
  ```
 ## Overview examples
 ### example 1: SLI_TxtSliSave4C
+
+> [See also the project readme for more detailed information](./SLI_TxtSliSave4C/README.md)
+
 Gives an example of reading/writing set of coordinates to/from the public TXT Data map.
 
-[See the project readme](./SLI_TxtSliSave4C/README.md)
+![impressie](./SLI_TxtSliSave4C/docs/rb(1.3_f01).png)
 
 ### example 2: SLI_TeachIn
+
+> [See also the project readme for more detailed information](./SLI_TeachIn/README.md)
 
 - This SLI TeachIn is about the industrial Robot with 4 motors and switches as for the industrial Robot with 2 encoder motors and 2 motor (TX-C set).
 
@@ -85,7 +92,7 @@ Gives an example of reading/writing set of coordinates to/from the public TXT Da
   There is now one extended player for both versions.
 - Target controller: fischertechnik TXT
 - The libTxtSliSaveTeachIn.so SLI makes it possible to read and to write files with  4D-coordinate set from and to the `/etc/knobloch/Data` (Date area on the TXT)
-- [See also the project readme](./SLI_TeachIn/README.md)
+
 #### Panel player
 ![console](./SLI_TeachIn/docs/player(panel_02).png)
 
@@ -94,6 +101,9 @@ Gives an example of reading/writing set of coordinates to/from the public TXT Da
 
 
 ### example 3: SLI_Bosch_BNO055
+
+> [See also the project readme for more detailed information](./SLI_Bosch_BNO055/README.md)
+ 
 (The is a beta release, most of the technical information is in the Bosch BNO005 manual)
 This example is about the use of the Bosch [the  Bosch BNO055 sensor](https://www.bosch-sensortec.com/bst/products/all_products/bno055). 
 The two RoboPro programs:
@@ -110,7 +120,7 @@ The two RoboPro programs:
 
 ![Converted fusion section](./SLI_Bosch_BNO055/docs/I2C_RawFusionTests.PNG)
  
-- [See also the project readme for more detailed information](./SLI_Bosch_BNO055/README.md)
+
 
 # document history 
 - 2020-05-16/22 CvL 466.1.1 new
