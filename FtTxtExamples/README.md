@@ -1,4 +1,4 @@
-
+ 
 # Content
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
@@ -8,7 +8,7 @@
 		- [For a SLI:](#for-a-sli)
 		- [For the local executable](#for-the-local-executable)
 	- [How to install?](#how-to-install)
-	- [How to get and to inspect the trace log?<a id="howtracelog"></a>](#how-to-get-and-to-inspect-the-trace-loga-idhowtraceloga)
+	- [How to get and to inspect the trace log?](#how-to-get-and-to-inspect-the-trace-log)
 	- [Overview examples](#overview-examples)
 		- [example 1: SLI_TxtSliSave4C](#example-1-slitxtslisave4c)
 		- [example 2: SLI_TeachIn](#example-2-sliteachin)
@@ -51,7 +51,9 @@ URL= http://<ip-addres of the TXT>
 - upload the SLI library to the libs map.
 - upload the executable to the C-Program map
 
-## How to get and to inspect the trace log?<a id="howtracelog"></a> 
+<a id="howtracelog"></a>
+
+## How to get and to inspect the trace log? 
 When you are developing a RoboPro application which is using a SLI, it could be useful to consult the trace log.
 How to do that?
 - Activate your TXT and check the ip-address.
@@ -75,7 +77,16 @@ Explaination of this entry:<br/>
 - `ENTRY 0`  the start of the SLI call with here a input value 0;
 - `***** get CoorR=0` a line with information written by the SLI. 
 - `RESULT 0 0` end of this SLI call, `0` is the return value and means no error, `11` is the parameter value.
-   
+
+##  What to do in case of problem or questions?
+If you have any questions, please contact us: [fischertechnik-technik@fischer.de](mailto:fischertechnik-technik@fischer.de) .<br/>
+It is also possible to report a problem as `Issues` [go to `Issues`](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/issues).<br/>
+In both cases:<br/>
+- Mention your name and e-mail address.
+  Mention the (pre-) release version (`Vx.y.z`).
+- Mention the project name and file name.
+- Give a detailed and to the point description of the problem.
+- If possible add trace info (see the previous chapter. )
 
 ## Overview examples
 ### example 1: SLI_TxtSliSave4C

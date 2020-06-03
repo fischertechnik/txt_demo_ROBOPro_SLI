@@ -1,4 +1,4 @@
-# Content
+# Content 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Content](#content)
@@ -66,6 +66,16 @@ The  `FtTxtWorkspace` root contains Eclipse example projects and the supporting 
 
 Both the `FtTxtExamples` and `FtTxtWorkspace` maps will be available under "release" as separate zip files. So you can use them without knowledge of the GitHub (or Git) system. 
 
+##  What to do in case of problem or questions?
+If you have any questions, please contact us: [fischertechnik-technik@fischer.de](mailto:fischertechnik-technik@fischer.de) .<br/>
+It is also possible to report a problem as `Issues` [go to `Issues`](https://github.com/fischertechnik/txt_demo_ROBOPro_SLI/issues).<br/>
+In both cases:<br/>
+- Mention your name and e-mail address.
+  Mention the (pre-) release version (`Vx.y.z`).
+- Mention the project name and file name.
+- Give a detailed and to the point description of the problem.
+- If possible add trace info (see the previous chapter. )
+
 ## Documentation
 Overview <a id="overview"></a>
 
@@ -94,6 +104,18 @@ Overview <a id="overview"></a>
 ### References
 - [Mosquitto MQTT](https://mosquitto.org/)
 - [Civetweb](https://github.com/civetweb/civetweb)
+- Technical information about I2C<br/>
+    1. [Official NXP I2C user guide, a must for the I2C user](https://www.nxp.com/docs/en/user-guide/UM10204.pdf) <br/>
+    2. [NXP AN10216-01 I2C MANUAL](https://www.nxp.com/docs/en/application-note/AN10216.pdf)<br/>
+      All you need to know about for example: I2C device addressing.
+    3. [NXP AN10441 Level shifting techniques in I2C-bus design](https://www.nxp.com/docs/en/application-note/AN10441.pdf)<br/>
+    All you need to know about level shifting.
+    4. [NXP product selector I2C](https://www.nxp.com/docs/en/product-selector-guide/I2CSELECTORBROC.pdf)<br/>
+    5. [I2C BUS](https://www.i2c-bus.org/specification/)<br/>
+    6. [I2C Devices](https://i2cdevices.org/resources)<br/>
+    Information about the pull-up resistor value calculation.<br/>
+
  
 # document history 
-- 2020-05-16/18/24 CvL 466.1.2 sli, new
+- 2020-05-16/18/24 CvL 466.1.2  SLI, new
+- 2020-06-03 CvL 466.1.3 contact, I2C references
