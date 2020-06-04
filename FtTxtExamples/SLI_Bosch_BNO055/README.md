@@ -1,4 +1,3 @@
-# Content
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [TXT Shared Library Interface (SLI) for using the Bosch BNO055 sensor in RoboPro](#txt-shared-library-interface-sli-for-using-the-bosch-bno055-sensor-in-robopro)

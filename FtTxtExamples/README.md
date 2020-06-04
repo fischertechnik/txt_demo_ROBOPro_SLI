@@ -73,7 +73,7 @@ SharedLibraryInterface_ExecuteReadINT16 func 0xb40482fd
 ***** get CoorR=0
 SharedLibraryInterface_ExecuteReadINT16 libTxtSliSaveTeachIn.so getCoorRShort RESULT 0 11 
  ```
-Explaination of this entry:<br/>
+Explanation of this entry:<br/>
 - `ENTRY 0`  the start of the SLI call with here a input value 0;
 - `***** get CoorR=0` a line with information written by the SLI. 
 - `RESULT 0 0` end of this SLI call, `0` is the return value and means no error, `11` is the parameter value.
@@ -118,6 +118,7 @@ Gives an example of reading/writing set of coordinates to/from the public TXT Da
 
 
 ### example 3: SLI_Bosch_BNO055
+**2020-06-04 For the moment not available**
 
 > [See also the project readme for more detailed information](./SLI_Bosch_BNO055/README.md)
  

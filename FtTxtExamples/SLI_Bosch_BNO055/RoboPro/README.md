@@ -1,38 +1,57 @@
- # TXT Shared Library Interface (SLI) for the BNO055 sensor in RoboPro
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [TXT Shared Library Interface (SLI) for the BNO055 sensor in RoboPro](#txt-shared-library-interface-sli-for-the-bno055-sensor-in-robopro)
+- [Introduction](#introduction)
+	- [Requirements](#requirements)
+	- [How to create a calibration profile?](#how-to-create-a-calibration-profile)
+		- [Generating Calibration Data](#generating-calibration-data)
+	- [RoboPro library elements](#robopro-library-elements)
+		- [`init` element](#init-element)
+		- [Set up profile (Calibration)  RoboPro application and elements](#set-up-profile-calibration-robopro-application-and-elements)
+		- [main setup](#main-setup)
+		- [Device set up](#device-set-up)
+		- [Test example  RoboPro elements](#test-example-robopro-elements)
+			- [Raw Fusion Tests RoboPro element](#raw-fusion-tests-robopro-element)
+			- [Converted FusionTests RoboPro element](#converted-fusiontests-robopro-element)
+	- [some output can be used with different output specification: degrees or radian, mm/sec^2 or mg.](#some-output-can-be-used-with-different-output-specification-degrees-or-radian-mmsec2-or-mg)
+	- [Operational modes.](#operational-modes)
+- [document history](#document-history)
+
+<!-- /TOC -->
+
+# TXT Shared Library Interface (SLI) for the BNO055 sensor in RoboPro
 
 Readme about the RoboPro library en examples
 
 # Introduction
 
-The library/examples has been split-up in 3 parts
+The RoboPro examples for the BNO055 has been split-up in 3 parts
 
-- Part 0 (map: `0_ProfileCreation_App`) which contains the RoboPro program and library for creates a profile file on the TXT.
+- Part 0 (map: `0_ProfileCreation_App`) which contains the RoboPro program  for creates a BNO055 profile file on the TXT.
   `TxtSliDemoBNO055_SetupProfile.rpp`
   
   Up to **6 different profile files** are possible.
   A profile file contains a complete description of the settings for the BNO055 sensor, the use can set values for:
   
     - Operation mode
- 
-    -Temperature configuration
- 
+    - Temperature configuration
     - Remapping of the axis
- 
     - Calibration (needed in the fusion modes.)
-    
-    - G-range Accelerometer (see table 3-8 data sheet) (not yet implemented.)
+    - G-range Accelerometer (see table 3-8 data sheet) 
        Needed for the fusion mode.
  
-   The profiles are stored on the TXT and need to be loaded by the application 
+   A generated profile will be stored on the TXT in the `/opt/knobloch` map and it needs to be loaded by the application. 
    
-- Part 1 (map: `1_RawMode_BasicUse_Lib`) which contains the RoboPro elements for the raw mode,
-    and an example.
-    `TxtSliDemoBNO055_Raw_Load_Profile.rpp`
+- Part 1 (map: `1_RawMode_BasicUse_Lib`)
+
+  This map contains an example which shows the available RoboPro elements for the raw mode:<br/>       `TxtSliDemoBNO055_Raw_Load_Profile.rpp`
     
-- Part 2 (map: `2_FusionMode_BasicUse_Lib`) which contains the RoboPro elements for the fusion mode,
-    and an example.
-    `TxtSliDemoBNO055_Fusion_Load_Profile.rpp`
-    
+- Part 2 (map: `2_FusionMode_BasicUse_Lib`)
+  This map contains an example and two variantions on it which shows the available RoboPro elements for the fusion mode:<br/>
+  `TxtSliDemoBNO055_Fusion_Load_Profile.rpp`<br/>
+  `TxtSliDemoBNO055_Fusion_Load_Profile(var01).rpp`<br/>
+  `TxtSliDemoBNO055_Fusion_Load_Profile(var02).rpp` <br/>
+   
 - Part 4 and 5 
   Some left overs, for what it is.
  
@@ -47,7 +66,28 @@ The library/examples has been split-up in 3 parts
 > libSliTxtBNO055.so
   needs to be uploaded into the TXT into /opt/knobloch/libs
   
+## How to create a calibration profile?  
+A profile can be generated with `TxtSliDemoBNO055_SetupProfile.rpp`.<br/>
+Connect the TXT controller with the BNO055 sensor.
+And start `TxtSliDemoBNO055_SetupProfile`.<br/>
+Go to the panel.<br/>
+![Panel](../docs/I2C_DeviceInit3.PNG) 
+
+### Generating Calibration Data
+[See for example `Generating Calibration Data` from AdaFruit](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/device-calibration)
+
+To generate valid calibration data, the following criteria should be met:
   
+-  Gyroscope: 
+  The device must be standing still in any position
+-  Magnetometer: In the past 'figure 8' motions were required in 3 dimensions, but with recent devices fast magnetic compensation takes place with sufficient normal movement of the device
+-  Accelerometer: The BNO055 must be placed in 6 standing positions for +X, -X, +Y, -Y, +Z and -Z.  This is the most onerous sensor to calibrate, but the best solution to generate the calibration data is to find a block of wood or similar object, and place the sensor on each of the 6 'faces' of the block, which will help to maintain sensor alignment during the calibration process.  You should still be able to get reasonable quality data from the BNO055, however, even if the accelerometer isn't entirely or perfectly calibrated.
+-  Persisting Calibration Data
+  Once the device is calibrated, the calibration data will be kept until the BNO is powered off.
+  
+The BNO doesn't contain any internal EEPROM, though, the SLI saves the profile on the TXT in the map `/opt/knobloch`.  
+
+
 ## RoboPro library elements
 
 ### `init` element
@@ -55,14 +95,14 @@ The library/examples has been split-up in 3 parts
 The BNO055 can be used with I2C address x28H (init input 1) or x29H (init input 2). ' 
 ![`init` element](../docs/I2C_init_BNO055_addresses.PNG)
 
-#### Set up profile (Calibration)  RoboPro application and elements
+### Set up profile (Calibration)  RoboPro application and elements
 
--main setup
+### main setup
  Here you choose for the operation mode and which profile.
 
 ![blocks](../docs/I2C_MainSetUp.PNG)
-
--Device set up 
+![Panel](../docs/I2C_DeviceInit3.PNG)
+### Device set up 
 Here you can fill in some more special settings, like:
 remapping
 temperature source and units
@@ -76,32 +116,33 @@ After that the profile file will be saved on the TXT.
 
 ![blocks](../docs/I2C_DeviceInit2.PNG)
 
-#### Test example  RoboPro elements
+### Test example  RoboPro elements
 With these two elements you can see what the basic elements are doing
-These elements only run in the fusion operation modes (0x08..0x0C) and need calibration of the model with the sensor.
+These elements only run in the fusion operation modes (0x08..0x0C).
+Both these modes need a profile file and need calibration of the model with the sensor.
 In your own application, you can use one or more elements to develop your proper algorithm. 
 
-- Raw Fusion Tests RoboPro element
+####  Raw Fusion Tests RoboPro element
 
   Main page<br/>
 ![blocks](../docs/I2C_RawLoad_BNO055.PNG)
 
 ![blocks](../docs/I2C_RawFusionTests.PNG)
 
-- Converted FusionTests RoboPro element
+####  Converted FusionTests RoboPro element
  
   Main page<br/>
 ![blocks](../docs/I2C_FusionLoad_BNO055.PNG)
 
 ![blocks](../docs/I2C_ConvertedFusionTests.PNG)
 
-- some output can be used with different output specification: degrees or radian, mm/sec^2 or mg. 
+##  some output can be used with different output specification: degrees or radian, mm/sec^2 or mg. 
   The data switch helps to change.
   ![blocks](../docs/I2C_DataSwitch.PNG) 
  
   ## The BNO055 sensor documentation
   - General information about [the BNO055 sensor](https://www.bosch-sensortec.com/bst/products/all_products/bno055).
-  [Document overview](https://www.bosch-sensortec.com/products/smart-sensors/bno055.html#documents)
+  - [Document BNO055 overview](https://www.bosch-sensortec.com/products/smart-sensors/bno055.html#documents)
   - For detailed information about the BNO055 sensor see also [the BNO055 data sheet]
   (https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bno055-ds000.pdf).
   
@@ -115,10 +156,10 @@ In your own application, you can use one or more elements to develop your proper
   - [Euler's Formula for the Quaternions](https://www.youtube.com/watch?v=88BA8aO3qXA)
 
 ## Operational modes.
-The RoboPro supports aims in particular on the next fusion modes:
+The RoboPro supports aims for in particular the next fusion modes:
 
-- 0x08  BNO055_OPERATION_MODE_IMUPLUS       3.3.3.1 IMU            (relative orientation modes)
-- 0x0C - BNO055_OPERATION_MODE_NDOF **      3.3.3.5 NDOF           (absolute orientation modes)
+- 0x08  (8) BNO055_OPERATION_MODE_IMUPLUS       3.3.3.1 IMU            (relative orientation modes)
+- 0x0C (12) BNO055_OPERATION_MODE_NDOF **      3.3.3.5 NDOF           (absolute orientation modes)
 
  
 However there is also basic support for all operation modes. The BNO055 can be use in the next operational modes:
