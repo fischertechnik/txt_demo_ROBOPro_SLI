@@ -183,8 +183,8 @@ Is the result the same?
 ### What have you learn?
 - Building and using a simple SLI.
 - How to use the tracing.
-- In the online mode there is an `ERROR calling read`, this is a RoboPro issue.<br/>
-  The workaround for this problem will be presented in the following project.   
+<!-- - In the online mode there is an `ERROR calling read`, this is a RoboPro issue.<br/>
+  The workaround for this problem will be presented in the following project. -->
 
 # document history 
 - 2020-05-24,28 CvL 466.1.2 new, update
